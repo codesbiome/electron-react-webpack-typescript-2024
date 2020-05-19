@@ -2,9 +2,7 @@
   "compilerOptions": {
     "jsx": "react",
     "allowJs": true,
-    /** Specify ECMAScript target version */
     "target": "ES6",
-    /** Specify module code generation */
     "module": "ESNext",
     "skipLibCheck": true,
     "esModuleInterop": true,
