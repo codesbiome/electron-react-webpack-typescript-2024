@@ -2,7 +2,7 @@
   "name": "electron-react-typescript-webpack-2020",
   "productName": "electron-react-typescript-webpack-2020",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "Minimal boilerplate for writing Desktop Applications using Electron, React, Webpack, TypeScript in 2020",
   "main": ".webpack/main",
   "scripts": {
     "start": "electron-forge start",
