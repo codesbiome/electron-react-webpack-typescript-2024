@@ -15,7 +15,7 @@ class App extends React.Component<AppProps, AppState> {
   render(): JSX.Element {
     return (
       <div className='container'>
-        <h2>React Webpack Typescript - 2020256</h2>
+        <h2>React Webpack Typescript - 2020</h2>
         <p>
           Minimal boilerplate for writing Web Applications using React, Webpack,
           TypeScript. This project makes use of latest packages like `react`,
