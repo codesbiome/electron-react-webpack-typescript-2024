@@ -11,7 +11,16 @@
     "publish": "electron-forge publish",
     "lint": "eslint --ext .ts ."
   },
-  "keywords": [],
+  "keywords": [
+    "electron boilerplate",
+    "minimal",
+    "electron-webpack",
+    "electron-react",
+    "electron-typescript",
+    "hmr",
+    "boilerplate",
+    "2020"
+  ],
   "author": "Gary",
   "license": "MIT",
   "config": {
