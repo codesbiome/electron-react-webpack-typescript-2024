@@ -1,0 +1,30 @@
+@import './variables.less';
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: auto;
+  max-width: 38rem;
+  padding: 2rem;
+  text-shadow: -1px 1px 1px black;
+  color: @color-text;
+}
+
+button {
+  background-color: @color-button-bg;
+  color: @color-text;
+  border: none;
+  padding: @padding-normal;
+  border-radius: @radius-normal;
+  font-size: @text-normal;
+  outline: none;
+  text-shadow: -1px 0 0 black;
+  min-width: 10rem;
+}
+
+button:hover {
+  filter: brightness(120%);
+}
+button:active {
+  filter: brightness(110%);
+}

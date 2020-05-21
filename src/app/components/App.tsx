@@ -15,14 +15,17 @@ class App extends React.Component<AppProps, AppState> {
   render(): JSX.Element {
     return (
       <div className='container'>
-        <h2>React Webpack Typescript - 2020</h2>
+        <h2>🌟 Electron React Webpack Typescript - 2020</h2>
         <p>
-          Minimal boilerplate for writing Web Applications using React, Webpack,
-          TypeScript. This project makes use of latest packages like `react`,
-          `typescript` with `webpack` to serve the best environment for every
-          development.
+          Minimal boilerplate for writing Desktop Applications using Electron,
+          React, Webpack & TypeScript. This project makes use of latest packages
+          like electron, react, typescript & webpack to serve the best
+          environment for development.
         </p>
-        <p>Click below button to update the counter state:</p>
+        <p>
+          Click below button to update the counter state using 🔥 Hot Module
+          Replacement :
+        </p>
         <button
           onClick={(): void =>
             this.setState({ counter: this.state.counter + 1 })
