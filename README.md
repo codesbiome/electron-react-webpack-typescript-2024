@@ -10,6 +10,7 @@ This project makes use of latest packages like `electron`, `react`, `typescript`
 
 - 🌟 ElectronJS
 - 🌀 TypeScript
+- 🛶 LESS Loader
 - 🎨 CSS Loader
 - 🧹 ESLint
 - 💪 ReactJS
