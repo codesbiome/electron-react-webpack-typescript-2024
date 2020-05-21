@@ -45,6 +45,7 @@
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-react": "^7.20.0",
     "fork-ts-checker-webpack-plugin": "^4.1.4",
+    "less-loader": "^6.1.0",
     "node-loader": "^0.6.0",
     "react-hot-loader": "^4.12.21",
     "style-loader": "^1.2.1",

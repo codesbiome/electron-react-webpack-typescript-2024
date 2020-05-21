@@ -8,6 +8,15 @@ rules.push({
   use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
 });
 
+rules.push({
+  test: /\.less$/,
+  use: [
+    { loader: 'style-loader' },
+    { loader: 'css-loader' },
+    { loader: 'less-loader' },
+  ],
+});
+
 module.exports = {
   module: {
     rules,
