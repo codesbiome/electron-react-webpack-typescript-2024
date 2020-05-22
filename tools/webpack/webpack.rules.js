@@ -1,3 +1,5 @@
+const inDev = process.env.NODE_ENV === 'development';
+
 module.exports = [
   {
     // Add support for native node modules
@@ -48,7 +50,7 @@ module.exports = [
         loader: 'file-loader',
         options: {
           publicPath: 'images',
-          outputPath: './main_window/images',
+          outputPath: inDev ? 'images' : './main_window/images',
         },
       },
     ],
