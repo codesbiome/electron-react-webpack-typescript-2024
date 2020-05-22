@@ -9,7 +9,6 @@ const createWebpackAliases = (als) => {
   for (const name in als) {
     result[name] = path.join(cwd, als[name]);
   }
-  console.log(result);
   return result;
 };
 
