@@ -1,10 +1,11 @@
 module.exports = [
-  // Add support for native node modules
   {
+    // Add support for native node modules
     test: /\.node$/,
     use: 'node-loader',
   },
   {
+    // Webpack asset relocator loader
     test: /\.(m?js|node)$/,
     parser: { amd: false },
     use: {
@@ -15,6 +16,7 @@ module.exports = [
     },
   },
   {
+    // Typescript loader
     test: /\.tsx?$/,
     exclude: /(node_modules|\.webpack)/,
     use: {
