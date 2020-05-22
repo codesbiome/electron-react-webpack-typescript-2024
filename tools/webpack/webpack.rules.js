@@ -26,4 +26,30 @@ module.exports = [
       },
     },
   },
+  {
+    // CSS Loader
+    test: /\.css$/,
+    use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
+  },
+  {
+    // Less loader
+    test: /\.less$/,
+    use: [
+      { loader: 'style-loader' },
+      { loader: 'css-loader' },
+      { loader: 'less-loader' },
+    ],
+  },
+  {
+    // Images Loader
+    test: /\.(gif|jpe?g|tiff|png|webp|bmp)$/,
+    use: [
+      {
+        loader: 'file-loader',
+        options: {
+          outputPath: 'images',
+        },
+      },
+    ],
+  },
 ];
