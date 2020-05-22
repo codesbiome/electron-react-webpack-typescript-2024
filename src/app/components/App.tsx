@@ -1,5 +1,6 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
+import logo from '@static/logo.png';
 
 interface AppProps {
   title?: string;
@@ -15,7 +16,10 @@ class App extends React.Component<AppProps, AppState> {
   render(): JSX.Element {
     return (
       <div className='container'>
-        <h2>🌟 Electron React Webpack Typescript - 2020</h2>
+        <h2>
+          <img src={logo} width='32' title='Codesbiome' /> &nbsp; Electron React
+          Webpack Typescript - 2020
+        </h2>
         <p>
           Minimal boilerplate for writing Desktop Applications using Electron,
           React, Webpack & TypeScript. This project makes use of latest packages
