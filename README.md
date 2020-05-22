@@ -12,9 +12,11 @@ This project makes use of latest packages like `electron`, `react`, `typescript`
 - 🌀 TypeScript
 - 🛶 LESS Loader
 - 🎨 CSS Loader
+- 📸 Image Loader
 - 🧹 ESLint
 - 💪 ReactJS
 - 🔱 Webpack & Configuration
+- 🧩 Aliases for project paths
 - 🔥 Hot Module Replacement (Live Reload)
 - 🎁 Package Bundling (Distribution / Release)
 
@@ -42,8 +44,8 @@ yarn install
 
 ## Start : Development
 
-#### To develop and run your application, you need to run following command
-
+To develop and run your application, you need to run following command.
+<br />
 Start electron application for development :
 
 ```bash
@@ -54,7 +56,7 @@ yarn start
 
 ## Lint : Development
 
-#### To lint application source code using ESLint via this command :
+To lint application source code using ESLint via this command :
 
 ```bash
 yarn lint
@@ -64,7 +66,7 @@ yarn lint
 
 ## Package : Production
 
-Customize and package your Electron app with OS-specific bundles (.app, .exe, etc.)
+Customize and package your Electron app with OS-specific bundles (.app, .exe etc)
 
 ```bash
 yarn package
