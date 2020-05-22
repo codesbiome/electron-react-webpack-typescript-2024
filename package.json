@@ -42,6 +42,7 @@
     "css-loader": "^3.0.0",
     "electron": "^9.0.0",
     "eslint": "^6.8.0",
+    "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-react": "^7.20.0",
     "fork-ts-checker-webpack-plugin": "^4.1.4",

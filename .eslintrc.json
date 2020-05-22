@@ -17,6 +17,13 @@
     "import/resolver": {
       "node": {
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      },
+      "alias": {
+        "map": [
+          ["@src", "./src"],
+          ["@app", "./src/app"],
+          ["@static", "./src/static"]
+        ]
       }
     },
     "react": {
