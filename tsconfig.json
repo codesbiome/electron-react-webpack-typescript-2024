@@ -14,9 +14,9 @@
     "resolveJsonModule": true,
     "paths": {
       "*": ["node_modules/*"],
-      "@src/*": ["./src/*"],
       "@app/*": ["./src/app/*"],
-      "@static/*": ["./src/static/*"]
+      "@static/*": ["./src/static/*"],
+      "@src/*": ["./src/*"]
     }
   },
   "include": ["src/**/*"]
