@@ -23,7 +23,8 @@
           ["@src", "./src"],
           ["@app", "./src/app"],
           ["@static", "./src/static"]
-        ]
+        ],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
     },
     "react": {
