@@ -4,6 +4,11 @@ const path = require('path');
 const rootDir = process.cwd();
 
 module.exports = {
+  // Packager Config
+  packagerConfig: {
+    // Create asar archive for main, renderer process files
+    asar: true,
+  },
   // Forge Makers
   makers: [
     {
