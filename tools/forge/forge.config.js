@@ -50,6 +50,7 @@ module.exports = {
         mainConfig: path.join(rootDir, 'tools/webpack/webpack.main.js'),
         // Renderer process webpack configuration
         renderer: {
+          // Configuration file path
           config: path.join(rootDir, 'tools/webpack/webpack.renderer.js'),
           // Entrypoints of the application
           entryPoints: [
@@ -62,6 +63,10 @@ module.exports = {
               js: path.join(rootDir, 'src/renderer.ts'),
               // Main Window
               name: 'main_window',
+              // Preload
+              preload: {
+                js: path.join(rootDir, 'src/preload.ts'),
+              },
             },
           ],
         },
