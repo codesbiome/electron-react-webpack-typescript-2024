@@ -1,16 +1,7 @@
-// @ts-nocheck
 /* eslint-disable @typescript-eslint/no-var-requires */
 const rules = require('./webpack.rules');
 const plugins = require('./webpack.plugins');
-const { createWebpackAliases } = require('./webpack.helpers');
-
-// Custom path aliases for Webpack to resolve
-// Aliases gets converted to their base path using cwd (project root)
-const aliases = {
-  '@src': 'src',
-  '@app': 'src/app',
-  '@static': 'src/static',
-};
+const aliases = require('./webpack.aliases');
 
 module.exports = {
   module: {
@@ -23,7 +14,7 @@ module.exports = {
       // React Hot Loader Patch
       'react-dom': '@hot-loader/react-dom',
       // Custom Aliases
-      ...createWebpackAliases(aliases),
+      ...aliases,
     },
   },
 };
