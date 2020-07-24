@@ -30,5 +30,8 @@
     "react": {
       "version": "latest"
     }
+  },
+  "rules": {
+    "react/prop-types": "off"
   }
 }
