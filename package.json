@@ -22,7 +22,10 @@
     "2020",
     "ERWT"
   ],
-  "author": "Gary",
+  "author": {
+    "name": "Gary (Codesbiome)",
+    "url": "https://github.com/codesbiome"
+  },
   "license": "MIT",
   "config": {
     "forge": "./tools/forge/forge.config.js"
