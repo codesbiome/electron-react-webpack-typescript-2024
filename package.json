@@ -1,6 +1,6 @@
 {
   "name": "electron-react-typescript-webpack-2020",
-  "productName": "electron-react-typescript-webpack-2020",
+  "productName": "ERWT Boilerplate",
   "version": "2.0.0",
   "description": "Minimal boilerplate for writing Desktop Applications using Electron, React, Webpack, TypeScript in 2020",
   "main": ".webpack/main",
@@ -19,7 +19,8 @@
     "electron-typescript",
     "hmr",
     "boilerplate",
-    "2020"
+    "2020",
+    "ERWT"
   ],
   "author": "Gary",
   "license": "MIT",
