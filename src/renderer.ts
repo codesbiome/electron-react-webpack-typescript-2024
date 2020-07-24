@@ -28,6 +28,4 @@
 
 import './app';
 
-console.log(
-  '👋 This message is being logged by "renderer.js", included via webpack configuration',
-);
+console.log('renderer.js is so happy to say you 👋 hello....');
