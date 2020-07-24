@@ -1,6 +1,6 @@
+import logo from '@static/logo.png';
 import React from 'react';
 import { hot } from 'react-hot-loader';
-import logo from '@static/logo.png';
 
 interface AppProps {
   title?: string;
@@ -18,7 +18,7 @@ class App extends React.Component<AppProps, AppState> {
       <div className='container'>
         <h2>
           <img src={logo} width='32' title='Codesbiome' /> &nbsp; Electron React
-          Webpack Typescript - 2020
+          Webpack Typescript (v2.0.0)
         </h2>
         <p>
           Minimal boilerplate for writing Desktop Applications using Electron,
