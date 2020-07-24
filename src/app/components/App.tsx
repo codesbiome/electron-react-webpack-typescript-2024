@@ -27,8 +27,13 @@ class App extends React.Component<AppProps, AppState> {
           environment for development.
         </p>
         <p>
-          Click below button to update the counter state using 🔥 Hot Module
-          Replacement :
+          Click below button to update the state (counter) using 🔥
+          react-hot-loader (HMR).
+          <br />
+          <i>
+            Component will not lose their state when modifying their source
+            code.
+          </i>
         </p>
         <button
           onClick={(): void =>
