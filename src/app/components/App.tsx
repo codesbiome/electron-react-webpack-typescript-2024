@@ -16,11 +16,11 @@ class App extends React.Component<AppProps, AppState> {
   render(): JSX.Element {
     return (
       <div className='container'>
-        <h2>
+        <h2 className='heading'>
           <img src={logo} width='32' title='Codesbiome' /> &nbsp; Electron React
           Webpack Typescript (v2.0.0)
         </h2>
-        <p>
+        <p className='teaser'>
           Minimal boilerplate for writing Desktop Applications using Electron,
           React, Webpack & TypeScript. This project makes use of latest packages
           like electron, react, typescript & webpack to serve the best
@@ -40,7 +40,7 @@ class App extends React.Component<AppProps, AppState> {
             this.setState({ counter: this.state.counter + 1 })
           }
         >
-          Counter <span>{this.state.counter}</span>
+          Counter &nbsp; <span>{this.state.counter}</span>
         </button>
       </div>
     );
