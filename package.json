@@ -26,6 +26,10 @@
     "name": "Gary (Codesbiome)",
     "url": "https://github.com/codesbiome"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codesbiome/electron-react-webpack-typescript-2020"
+  },
   "license": "MIT",
   "config": {
     "forge": "./tools/forge/forge.config.js"
