@@ -1,4 +1,4 @@
-# Electron React Webpack Typescript - Boilerplate (2020)
+# Electron React Webpack Typescript - Boilerplate (2021)
 
 Minimal boilerplate for writing Desktop Applications using Electron, React, Webpack & TypeScript.
 This project makes use of latest packages like `electron`, `react`, `typescript` & `webpack` to serve the best environment for development.
