@@ -2,6 +2,20 @@
 
 All notable changes to the "electron-react-webpack-typescript-2020" boilerplate.
 
+### 2.1.0
+
+- New Year 2021 🎉🎊
+- Upgraded outdated dependencies
+    - `electron` version upgraded to `11.1.1`
+    - `react` version upgraded to `17.0.1`
+    - `hot-loader` version upgraded to `17.0.1`
+    - `webpack` version upgraded to `5.13.0`
+    - `typescript` version upgraded to `4.1.3`
+    - `ts-loader` version upgraded to `8.0.14`
+    - `css-loader` version upgraded to `5.0.1`
+    - `style-loader` version upgraded to `2.0.0`
+    - `less` version upgraded to `4.1.0`
+
 ### 2.0.2
 
 - Upgraded outdated dependencies
