@@ -30,9 +30,9 @@ This project makes use of latest packages like `electron`, `react`, `typescript`
 Clone the repository on your hard drive :
 
 ```bash
-git clone https://github.com/codesbiome/electron-react-webpack-typescript-2020
+git clone https://github.com/codesbiome/electron-react-webpack-typescript-2021
 
-cd electron-react-webpack-typescript-2020
+cd electron-react-webpack-typescript-2021
 ```
 
 Install dependencies using Yarn or NPM :
