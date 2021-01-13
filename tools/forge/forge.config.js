@@ -16,7 +16,7 @@ module.exports = {
       // Windows applications and is therefore the most user friendly you can get.
       name: '@electron-forge/maker-squirrel',
       config: {
-        name: 'electron_react_typescript_webpack_2020',
+        name: 'electron-react-typescript-webpack-2021',
       },
     },
     {
