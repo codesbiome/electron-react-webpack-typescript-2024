@@ -1,8 +1,8 @@
 {
   "name": "electron-react-typescript-webpack-2021",
   "productName": "ERWT Boilerplate",
-  "version": "2.1.0",
-  "description": "Minimal boilerplate for writing Desktop Applications using Electron, React, Webpack, TypeScript in 2020",
+  "version": "3.0.0",
+  "description": "Custom boilerplate for writing Desktop Applications using Electron, React, Webpack, TypeScript in 2020",
   "main": ".webpack/main",
   "scripts": {
     "start": "cross-env NODE_ENV=development electron-forge start",
@@ -23,9 +23,15 @@
     "ERWT"
   ],
   "author": {
-    "name": "Gary (Codesbiome)",
+    "name": "codesbiome",
     "url": "https://github.com/codesbiome"
   },
+  "contributors": [
+    {
+      "name": "guasam",
+      "url": "https://github.com/guasam"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/codesbiome/electron-react-webpack-typescript-2020"
