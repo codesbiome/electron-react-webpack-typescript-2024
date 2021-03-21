@@ -60,12 +60,12 @@ module.exports = {
               // HTML index file template
               html: path.join(rootDir, 'src/index.html'),
               // Renderer
-              js: path.join(rootDir, 'src/renderer.ts'),
+              js: path.join(rootDir, 'src/renderer.tsx'),
               // Main Window
               name: 'main_window',
               // Preload
               preload: {
-                js: path.join(rootDir, 'src/preload.ts'),
+                js: path.join(rootDir, 'src/preload.tsx'),
               },
             },
           ],
