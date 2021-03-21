@@ -1,11 +1,14 @@
-console.log('preload.js says 🎉hoooraay!');
+import { say } from './utils/helpers';
+
+// Say something
+say('Preload execution started');
 
 // Get versions
 window.addEventListener('DOMContentLoaded', () => {
   const replaceText = (selector: string, text: string) => {
-    const element = document.getElementById(selector)
-    if (element) element.innerText = text
-  }
+    const element = document.getElementById(selector);
+    if (element) element.innerText = text;
+  };
 
   // Packages version
   for (const type of ['chrome', 'node', 'electron']) {
