@@ -42,8 +42,8 @@ const Application: React.FC<Props> = (props) => {
         <p className='main-teaser small'>
           Click below button to update the application &quot;counter&quot;
           state. Components will update their states using
-          Hot-Module-Replacement technique, without needing to refersh/reload
-          application.
+          Hot-Module-Replacement technique, without needing to refresh/reload
+          whole application.
         </p>
         <button onClick={() => setCounter(counter + 1)}>
           Counter <span>{counter}</span>
