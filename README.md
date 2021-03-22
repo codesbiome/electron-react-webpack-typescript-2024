@@ -3,6 +3,8 @@
 Minimal boilerplate for writing Desktop Applications using Electron, React, Webpack & TypeScript.
 This project makes use of latest packages like `electron`, `react`, `typescript` & `webpack` to serve the best environment for development.
 
+## Screenshot
+
 <img src="assets/images/screenshot.png" />
 
 <br>
