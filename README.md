@@ -3,19 +3,21 @@
 Minimal boilerplate for writing Desktop Applications using Electron, React, Webpack & TypeScript.
 This project makes use of latest packages like `electron`, `react`, `typescript` & `webpack` to serve the best environment for development.
 
-<img src="assets/images/screenshot.png" width="640" />
+<img src="assets/images/screenshot.png" />
 
 <br>
 
 ## Core Features
 
-- 🌟 ElectronJS
+- 🌟 Electron
 - 🌀 TypeScript
+- ⚛️ React
 - 🛶 LESS Loader
 - 🎨 CSS Loader
 - 📸 Image Loader
+- 🆎 Font Loader
 - 🧹 ESLint
-- 💪 ReactJS
+- 📦 Electron Forge
 - 🔱 Webpack & Configuration
 - 🧩 Aliases for project paths
 - 🔥 Hot Module Replacement (Live Reload)
