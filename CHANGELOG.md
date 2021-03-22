@@ -1,8 +1,30 @@
 # Change Log
 
-All notable changes to the "electron-react-webpack-typescript-2020" boilerplate.
+All notable changes to the project are listed here.
 
-### 2.1.0
+For more information visit:
+https://github.com/codesbiome/electron-react-webpack-typescript-2021
+
+### v3.0.0
+
+- Overhaul for Application component layout and styling.
+- Project Files structure updated.
+- Move static images to `assets` directory.
+- Remove `.prettierignore` file.
+- Use `.tsx` file extension for `preload` and `renderer` incase we need to use components.
+- Introduce new `assets` webpack alias.
+- Modify aliases usage for new project structure.
+- Upgraded outdated dependencies
+    - `electron` upgraded to `12.0.1`
+    - `css-loader` upgraded to `5.1.3`
+    - `eslint` upgraded to `7.22.0`
+    - `less` upgraded to `4.1.1`
+    - `less-loader` upgraded to `7.3.0`
+    - `ts-loader` upgraded to `8.0.18`
+    - `typescript` upgraded to `4.2.3`
+    - `webpack` upgraded to `5.27.1`
+
+### v2.1.0
 
 - New Year 2021 🎉🎊
 - Upgraded outdated dependencies
@@ -16,18 +38,18 @@ All notable changes to the "electron-react-webpack-typescript-2020" boilerplate.
     - `style-loader` version upgraded to `2.0.0`
     - `less` version upgraded to `4.1.0`
 
-### 2.0.2
+### v2.0.2
 
 - Upgraded outdated dependencies
 - `electron` version upgraded to `10.x`
 - `typescript` version upgraded to `4.x`
 - `less-loader` version upgraded to `7.x`
 
-### 2.0.1
+### v2.0.1
 
 - Upgraded outdated dependencies
 
-### 2.0.0
+### v2.0.0
 
 - Added electron window background color
 - Devtools opening on startup is disabled
@@ -38,7 +60,7 @@ All notable changes to the "electron-react-webpack-typescript-2020" boilerplate.
 - `contextIsolation` is enabled by default
 - `nodeIntegration` `enableRemoteModule` `nodeIntegrationInWorker` `nodeIntegrationInSubFrames` are disabled default
 
-### 1.0.0
+### v1.0.0
 
 - Upgrade package dependencies to latest
 - Add hot module replacement (live reload)
