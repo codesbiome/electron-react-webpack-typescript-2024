@@ -16,6 +16,7 @@ const createWindow = (): void => {
     height: 600,
     backgroundColor: '#0d1117',
     show: false,
+    autoHideMenuBar: true,
     webPreferences: {
       nodeIntegration: false,
       enableRemoteModule: false,
