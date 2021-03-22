@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Application from './components/Application';
-import { inDev, say } from './utils/helpers';
+import { inDev } from './utils/helpers';
 
 // Say something
-say('Renderer execution started');
+console.log('[ERWT] : Renderer execution started');
 
 // Application to Render
 const app = <Application title='ERWT Boilerplate' version='3.0.0' />;

@@ -1,7 +1,5 @@
-import { say } from './utils/helpers';
-
 // Say something
-say('Preload execution started');
+console.log('[ERWT] : Preload execution started');
 
 // Get versions
 window.addEventListener('DOMContentLoaded', () => {
