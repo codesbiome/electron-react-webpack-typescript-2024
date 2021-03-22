@@ -1,4 +1,4 @@
-const inDev = process.env.NODE_ENV === 'development';
+const { inDev } = require('./webpack.helpers');
 
 module.exports = [
   {
@@ -44,13 +44,26 @@ module.exports = [
   },
   {
     // Images Loader
-    test: /\.(gif|jpe?g|tiff|png|webp|bmp)$/,
+    test: /\.(gif|jpe?g|tiff|png|webp|bmp|svg)$/,
     use: [
       {
         loader: 'file-loader',
         options: {
           publicPath: 'images',
-          outputPath: inDev ? 'images' : './main_window/images',
+          outputPath: inDev() ? 'assets/images' : './main_window/assets/images',
+        },
+      },
+    ],
+  },
+  {
+    // Font & SVG loader
+    test: /\.(woff(2)?|ttf|otf|eot)$/,
+    use: [
+      {
+        loader: 'file-loader',
+        options: {
+          publicPath: 'fonts',
+          outputPath: inDev() ? 'assets/fonts' : './main_window/assets/fonts',
         },
       },
     ],

@@ -1,18 +1,20 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
 const path = require('path');
 const cwd = process.cwd();
 
-// Creates Webpack Aliases using CWD path
-const createWebpackAliases = (als) => {
+
+function inDev() {
+  return process.env.NODE_ENV == 'development';
+}
+
+function createWebpackAliases (aliases) {
   const result = {};
-  for (const name in als) {
-    result[name] = path.join(cwd, als[name]);
+  for (const name in aliases) {
+    result[name] = path.join(cwd, aliases[name]);
   }
   return result;
-};
+}
 
-// Export webpack helpers
 module.exports = {
+  inDev,
   createWebpackAliases,
 };

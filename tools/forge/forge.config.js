@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 // Forge Configuration
 const path = require('path');
 const rootDir = process.cwd();
