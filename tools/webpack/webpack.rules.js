@@ -49,7 +49,7 @@ module.exports = [
       {
         loader: 'file-loader',
         options: {
-          publicPath: 'images',
+          publicPath: 'assets/images',
           outputPath: inDev() ? 'assets/images' : './main_window/assets/images',
         },
       },
@@ -62,7 +62,7 @@ module.exports = [
       {
         loader: 'file-loader',
         options: {
-          publicPath: 'fonts',
+          publicPath: 'assets/fonts',
           outputPath: inDev() ? 'assets/fonts' : './main_window/assets/fonts',
         },
       },
