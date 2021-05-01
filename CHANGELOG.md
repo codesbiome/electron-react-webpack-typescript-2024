@@ -5,6 +5,20 @@ All notable changes to the project are listed here.
 For more information visit:
 https://github.com/codesbiome/electron-react-webpack-typescript-2021
 
+### v3.0.1
+
+- Upgraded outdated packages
+    - `electron'` upgraded to `^12.0.6`
+    - `react` upgraded to `^17.0.2`
+    - `react-dom` upgraded to `^17.0.2`
+    - `css-loader` upgraded to `^5.2.4`
+    - `eslint` upgraded to `^7.25.0`
+    - `node-loader` upgraded to `2.0.0`
+    - `ts-loader` upgraded to `8.2.0`
+    - `typescript` upgraded to `^4.2.4`
+    - `webpack` upgraded to `^5.36.2`
+
+
 ### v3.0.0
 
 - Overhaul for Application component layout and styling.

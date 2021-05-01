@@ -1,7 +1,7 @@
 {
   "name": "electron-react-typescript-webpack-2021",
   "productName": "ERWT Boilerplate",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Custom boilerplate for writing Desktop Applications using Electron, React, Webpack, TypeScript in 2020",
   "main": ".webpack/main",
   "scripts": {
@@ -48,33 +48,33 @@
     "@electron-forge/maker-zip": "6.0.0-beta.54",
     "@electron-forge/plugin-webpack": "6.0.0-beta.54",
     "@marshallofsound/webpack-asset-relocator-loader": "^0.5.0",
-    "@types/react": "^17.0.3",
-    "@types/react-dom": "^17.0.2",
+    "@types/react": "^17.0.4",
+    "@types/react-dom": "^17.0.3",
     "@types/webpack-env": "^1.16.0",
-    "@typescript-eslint/eslint-plugin": "^4.18.0",
-    "@typescript-eslint/parser": "^4.18.0",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
     "cross-env": "^7.0.3",
-    "css-loader": "^5.1.3",
-    "electron": "^12.0.1",
-    "eslint": "^7.22.0",
+    "css-loader": "^5.2.4",
+    "electron": "^12.0.6",
+    "eslint": "^7.25.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react": "^7.23.2",
     "file-loader": "^6.2.0",
-    "fork-ts-checker-webpack-plugin": "^6.2.0",
+    "fork-ts-checker-webpack-plugin": "^6.2.5",
     "less": "^4.1.1",
     "less-loader": "7.3.0",
-    "node-loader": "^1.0.2",
+    "node-loader": "^2.0.0",
     "react-hot-loader": "^4.13.0",
     "style-loader": "^2.0.0",
-    "ts-loader": "^8.0.18",
-    "typescript": "^4.2.3",
-    "webpack": "^5.27.1"
+    "ts-loader": "8.2.0",
+    "typescript": "^4.2.4",
+    "webpack": "^5.36.2"
   },
   "dependencies": {
     "@hot-loader/react-dom": "^17.0.1",
     "electron-squirrel-startup": "^1.0.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
