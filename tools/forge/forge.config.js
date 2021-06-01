@@ -45,6 +45,9 @@ module.exports = {
       // process and support for multiple renderers.
       '@electron-forge/plugin-webpack',
       {
+        // Ports
+        port: 3000, // Webpack Dev Server port
+        loggerPort: 9000, // Logger port
         // Main process webpack configuration
         mainConfig: path.join(rootDir, 'tools/webpack/webpack.main.js'),
         // Renderer process webpack configuration
