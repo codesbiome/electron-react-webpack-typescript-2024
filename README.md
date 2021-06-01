@@ -1,11 +1,11 @@
-# Electron React Webpack Typescript - Boilerplate (2021)
+# Electron React Webpack Typescript - Boilerplate 2021 (ERWT)
 
 Minimal boilerplate for writing Desktop Applications using Electron, React, Webpack & TypeScript.
-This project makes use of latest packages like `electron`, `react`, `typescript` & `webpack` to serve the best environment for development.
+This project makes use of latest packages like `electron`, `react`, `webpack` & `typescript` to serve the best environment for development.
 
 ## Screenshot
 
-<img src="assets/images/screenshot.png" />
+<img src="assets/images/shot310.png" />
 
 <br>
 
@@ -29,17 +29,17 @@ This project makes use of latest packages like `electron`, `react`, `typescript`
 
 ## Installation
 
-#### To install this boilerplate you need to run following commands
+#### To install the ERWT boilerplate you need to run following commands
 
-Clone the repository on your hard drive :
+Clone the repository :
 
 ```bash
-git clone https://github.com/codesbiome/electron-react-webpack-typescript-2021
-
-cd electron-react-webpack-typescript-2021
+git clone https://github.com/codesbiome/electron-react-webpack-typescript-2021 erwt
+cd erwt
 ```
+<br>
 
-Install dependencies using Yarn or NPM :
+Install dependencies using [Yarn](https://www.npmjs.com/package/yarn) or [NPM](https://www.npmjs.com/) :
 
 ```bash
 yarn install
