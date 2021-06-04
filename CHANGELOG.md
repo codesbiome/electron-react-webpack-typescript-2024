@@ -12,16 +12,13 @@ https://github.com/codesbiome/electron-react-webpack-typescript-2021
 - Expose Webpack Ports settings in forge configuration.
 - Upgraded outdated packages :
     - `electron` upgraded to `^13.0.1`
-    - `@electron-forge` packages upgraded to `6.0.0-beta.57`
     - `@typescript-eslint` packages upgraded to `^4.26.0`
     - `eslint` upgraded to `^7.27.0`
     - `css-loader` upgraded to `^5.2.6`
-    - `less-loader` upgraded to `9.0.0`
-    - `ts-loader` upgraded to `9.2.2`
+    - `ts-loader` upgraded to `8.3.0`
     - `typescript` upgraded to `^4.3.2`
     - `webpack` upgraded to `^5.38.1`
     - `fork-ts-checker-webpack-plugin` upgraded to `^6.2.10`
-
 
 
 ### v3.0.1
