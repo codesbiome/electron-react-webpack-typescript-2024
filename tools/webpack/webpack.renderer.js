@@ -15,5 +15,4 @@ module.exports = {
       ...require('./webpack.aliases'),
     },
   },
-  stats: 'summary',
 };
