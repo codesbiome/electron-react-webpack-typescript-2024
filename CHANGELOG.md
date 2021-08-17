@@ -6,6 +6,25 @@ For more information visit:
 https://github.com/codesbiome/electron-react-webpack-typescript-2021
 
 
+### v4.0.0
+
+- Overhaul for Application default layout and styling.
+- Default window background color updated.
+- Default `minimal` stats output for main & renderer process via webpack.
+- Upgraded outdated deps :
+    - `electron` upgraded to `^13.1.9`
+    - `@electron-forge` packages upgraded to `6.0.0-beta.59`
+    - `@typescript-eslint` packages upgraded to `^4.29.2`
+    - `css-loader` upgraded to `^6.2.0`
+    - `eslint` upgraded to `^7.32.0`
+    - `fork-ts-checker-webpack-plugin` upgraded to `^6.3.2`
+    - `less-loader` upgraded to `10.0.1`
+    - `style-loader` upgraded to `^3.2.1`
+    - `ts-loader` upgraded to `9.2.5`
+    - `typescript` upgraded to `^4.3.5`
+    - `webpack` upgraded to `^5.50.0`
+
+
 ### v3.1.0
 
 - Electron core 🚀 upgraded to version 13.
