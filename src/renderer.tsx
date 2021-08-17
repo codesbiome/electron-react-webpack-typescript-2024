@@ -7,7 +7,7 @@ import { inDev } from './utils/helpers';
 console.log('[ERWT] : Renderer execution started');
 
 // Application to Render
-const app = <Application title='ERWT Boilerplate' version='3.1.0' />;
+const app = <Application title='ERWT Boilerplate' version='4.0.0' />;
 
 // Render application in DOM
 ReactDOM.render(app, document.getElementById('app'));
