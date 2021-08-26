@@ -26,6 +26,15 @@ ERWT is a minimal boilerplate for writing Desktop Applications using [Electron](
 
 <br />
 
+## Similar Useful Projects
+
+| | Similar projects you might be interested in |
+|---|---|
+| Name | [Electron Cauldron React](https://github.com/codesbiome/electron-cauldron-react) &nbsp; <img src="https://github.com/codesbiome/electron-cauldron-react/raw/main/assets/images/cauldron.png" width="24" /> |
+| Description | Electron Cauldron React is a custom boilerplate project for developing Desktop Applications using Electron, React, Webpack & Typescript. |
+
+<br />
+
 ## Installation
 
 #### To install the ERWT boilerplate you need to run following commands
