@@ -1,5 +1,3 @@
-const { inDev } = require('./webpack.helpers');
-
 module.exports = [
   {
     // Add support for native node modules
@@ -49,8 +47,8 @@ module.exports = [
       {
         loader: 'file-loader',
         options: {
-          publicPath: 'assets/images',
-          outputPath: inDev() ? 'assets/images' : './main_window/assets/images',
+          name: 'images/[name].[ext]',
+          publicPath: '../.',
         },
       },
     ],
@@ -62,8 +60,8 @@ module.exports = [
       {
         loader: 'file-loader',
         options: {
-          publicPath: 'assets/fonts',
-          outputPath: inDev() ? 'assets/fonts' : './main_window/assets/fonts',
+          name: 'fonts/[name].[ext]',
+          publicPath: '../.',
         },
       },
     ],
