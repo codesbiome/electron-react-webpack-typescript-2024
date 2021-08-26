@@ -6,6 +6,13 @@ For more information visit:
 https://github.com/codesbiome/electron-react-webpack-typescript-2021
 
 
+### v4.0.1
+
+- Update file-loader configuration for `assets` files
+- Add packager configuration for app executable file details
+- Update `README` with similar useful projects
+
+
 ### v4.0.0
 
 - Overhaul for Application default layout and styling.
