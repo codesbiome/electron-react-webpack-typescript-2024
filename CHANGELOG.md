@@ -6,6 +6,25 @@ For more information visit:
 https://github.com/codesbiome/electron-react-webpack-typescript-2021
 
 
+### v4.1.0
+
+- 🎉 Electron core upgraded  to version `v14`
+- Update application style properties
+- Enable `nativeWindowOpen` for main window
+- Remove `enableRemoteModule` from main window
+- Fix : Hot reloading issue caused by `liveReload` in webpack devServer
+- Added additional Webpack `devServer` configuration in `tools/forge.config.js`
+- Upgraded outdated deps:
+    - `@electron-forge` deps upgraded to `6.0.0-beta.60`
+    - `@typescript-eslint` deps upgraded to `^4.30.0`
+    - `@types/react` upgraded to `^17.0.19`
+    - `electron` upgraded to `^14.0.0`
+    - `eslint-plugin-import` upgraded to `^2.24.2`
+    - `eslint-plugin-react` upgraded to `^7.25.1`
+    - `typescript` upgraded to `^4.4.2`
+    - `webpack` upgraded to `^5.51.1`
+
+
 ### v4.0.1
 
 - Update file-loader configuration for `assets` files
