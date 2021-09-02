@@ -13,7 +13,7 @@ https://github.com/codesbiome/electron-react-webpack-typescript-2021
 - Enable `nativeWindowOpen` for main window
 - Remove `enableRemoteModule` from main window
 - Fix : Hot reloading issue caused by `liveReload` in webpack devServer
-- Added additional Webpack `devServer` configuration in `tools/forge.config.js`
+- Added additional Webpack `devServer` configuration in `tools/forge/forge.config.js`
 - Upgraded outdated deps:
     - `@electron-forge` deps upgraded to `6.0.0-beta.60`
     - `@typescript-eslint` deps upgraded to `^4.30.0`
