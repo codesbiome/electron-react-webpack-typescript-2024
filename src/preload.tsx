@@ -9,10 +9,12 @@ window.addEventListener('DOMContentLoaded', () => {
   };
 
   // Packages version
-  for (const type of ['chrome', 'node', 'electron']) {
-    replaceText(
-      `${type}-version`,
-      process.versions[type as keyof typeof process.versions],
-    );
+  for (const type of ['chrome', 'node', 'electron', 'erwt']) {
+    const version =
+      type == 'erwt'
+        ? process.env['npm_package_version']
+        : process.versions[type];
+
+    replaceText(`${type}-version`, version);
   }
 });

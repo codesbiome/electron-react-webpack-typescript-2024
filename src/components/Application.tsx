@@ -29,7 +29,7 @@ const Application: React.FC<Props> = (props) => {
         </div>
         <div className='versions center'>
           <span>
-            ERWT <span>{props.version}</span>
+            ERWT <span id='erwt-version'></span>
           </span>
           <span>
             Electron <span id='electron-version'></span>
@@ -42,10 +42,9 @@ const Application: React.FC<Props> = (props) => {
           </span>
         </div>
         <p className='main-teaser small center'>
-          Click &quot;Counter&quot; button(s) to update the app
-          &quot;counter&quot; state. Components will update their states using
-          Hot-Module-Replacement (HMR) without needing to refresh/reload whole
-          application.
+          Click below button(s) to update the application &quot;counter&quot;
+          state. For faster development experience, this application will update
+          using Hot Reload without needing to restart/reload after code changes
         </p>
         <div className='center'>
           <button onClick={() => setCounter(counter + 1)}>
