@@ -19,7 +19,7 @@ const createWindow = (): void => {
     autoHideMenuBar: true,
     webPreferences: {
       nodeIntegration: false,
-      enableRemoteModule: false,
+      nativeWindowOpen: true,
       contextIsolation: true,
       nodeIntegrationInWorker: false,
       nodeIntegrationInSubFrames: false,
