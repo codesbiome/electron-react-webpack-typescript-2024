@@ -9,11 +9,9 @@ https://github.com/codesbiome/electron-react-webpack-typescript-2021
 ### v4.2.0
 
 - 🎉 Electron core upgraded to version `v15`
-- Setup Vue environment for project
 - Application colors updated for vue environment
 - Fix eslint script
 - Default window background color updated.
-- Update `tsconfig.json` settings as per vue requirements
 - Upgrade outdated deps:
     - `electron` upgraded to `^15.0.0`
     - `@electron-forge` deps upgraded to `6.0.0-beta.61`
