@@ -49,6 +49,8 @@ module.exports = {
       // process and support for multiple renderers.
       '@electron-forge/plugin-webpack',
       {
+        // fix content-security-policy error when image or video src isn't same origin
+        devContentSecurityPolicy: "",
         // Ports
         port: 3000, // Webpack Dev Server port
         loggerPort: 9000, // Logger port
