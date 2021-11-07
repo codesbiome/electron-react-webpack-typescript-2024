@@ -38,10 +38,10 @@ ERWT is a minimal boilerplate for writing Desktop Applications using [Electron](
 
 #### To install the ERWT boilerplate you need to run following commands
 
-Clone the repository :
+Clone the repository with submodules :
 
 ```bash
-git clone https://github.com/codesbiome/electron-react-webpack-typescript-2021 erwt
+git clone --recurse-submodules https://github.com/codesbiome/electron-react-webpack-typescript-2021 erwt
 cd erwt
 ```
 
