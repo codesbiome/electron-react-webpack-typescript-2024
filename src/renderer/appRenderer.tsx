@@ -9,7 +9,7 @@ console.log('[ERWT] : Renderer execution started');
 
 // Application to Render
 const app = (
-  <WindowFrame title='ERWT Boilerplate' arch='windows'>
+  <WindowFrame title='ERWT Boilerplate' platform='windows'>
     <Application />
   </WindowFrame>
 );
