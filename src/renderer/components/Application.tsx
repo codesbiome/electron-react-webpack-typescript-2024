@@ -15,11 +15,10 @@ const Application: React.FC = () => {
         <div className='main-teaser'>
           <img src={logo} title='Codesbiome' />
           <div>
-            Minimal boilerplate for rapid development of Desktop Applications.
-            <br />
-            This project makes use of Electron, React, Typescript, Webpack to
-            serve the best environment for development with hot-reloading of
-            modules and styles.
+            Minimal boilerplate for rapid development of Desktop Applications
+            using Electron, React, Typescript and Webpack. To serve the best
+            environment for development, it uses hot-reloading of modules,
+            styles and layouts of project
           </div>
         </div>
         <div className='versions'>
@@ -40,9 +39,9 @@ const Application: React.FC = () => {
 
       <div className='footer'>
         <p className='main-teaser small center'>
-          Click below button(s) to update the application &quot;counter&quot;
-          state. For faster development experience, this application will update
-          using Hot Reload without needing to restart/reload after code changes
+          For faster development experience, this application will update using
+          Hot Reload without needing to restart/reload after code changes. Click
+          below buttons to update the application &quot;counter&quot; state
         </p>
         <div className='center'>
           <button onClick={() => setCounter(counter + 1)}>
