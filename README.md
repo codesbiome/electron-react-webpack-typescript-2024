@@ -4,12 +4,20 @@ ERWT is a minimal boilerplate for writing Desktop Applications using [Electron](
 
 ## Screenshot
 
-<img src="assets/images/screen4.png" />
+<img src="assets/images/screen_500.png" />
+
+<br>
+
+<center>
+    <img src="assets/images/titlebar_showcase.png" />
+</center>
 
 <br>
 
 ## Core Features
 
+- 📐 Custom Window & Titlebar (Thanks to [@guasam](https://github.com/guasam))
+- 🍕 Titlebar Custom Menus
 - 🌟 Electron
 - 🌀 TypeScript
 - ⚛️ React
@@ -36,6 +44,7 @@ Clone the repository :
 git clone https://github.com/codesbiome/electron-react-webpack-typescript-2021 erwt
 cd erwt
 ```
+
 <br>
 
 Install dependencies using [Yarn](https://www.npmjs.com/package/yarn) or [NPM](https://www.npmjs.com/) :
