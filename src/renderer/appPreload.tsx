@@ -21,6 +21,3 @@ window.addEventListener('DOMContentLoaded', () => {
     replaceText(`${type}-version`, version);
   }
 });
-
-contextBridge.exposeInMainWorld('titlebar', {});
-contextBridge.exposeInMainWorld('app', {});
