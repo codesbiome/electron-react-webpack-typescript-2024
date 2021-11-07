@@ -6,7 +6,10 @@ ERWT is a minimal boilerplate for writing Desktop Applications using [Electron](
 
 <img src="assets/images/screen_500.png" />
 
+
 <br>
+
+## Custom Window Titlebar & Menu
 
 <center>
     <img src="assets/images/titlebar_showcase.png" />
