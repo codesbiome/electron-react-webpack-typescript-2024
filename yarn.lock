@@ -1380,6 +1380,11 @@ chromium-pickle-js@^0.2.0:
   resolved "https://registry.yarnpkg.com/chromium-pickle-js/-/chromium-pickle-js-0.2.0.tgz#04a106672c18b085ab774d983dfa3ea138f22205"
   integrity sha1-BKEGZywYsIWrd02YPfo+oTjyIgU=
 
+classnames@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
+  integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
+
 clean-css@^5.1.5:
   version "5.2.2"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-5.2.2.tgz#d3a7c6ee2511011e051719838bdcf8314dc4548d"

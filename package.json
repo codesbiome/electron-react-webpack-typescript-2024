@@ -54,6 +54,7 @@
     "@types/webpack-env": "^1.16.3",
     "@typescript-eslint/eslint-plugin": "^5.1.0",
     "@typescript-eslint/parser": "^5.1.0",
+    "classnames": "^2.3.1",
     "cross-env": "^7.0.3",
     "css-loader": "^6.4.0",
     "electron": "^15.3.0",
