@@ -19,7 +19,8 @@
       "@common/*": ["./src/common/*"],
       "@main/*": ["./src/main/*"],
       "@renderer/*": ["./src/renderer/*"],
-      "@src/*": ["./src/*"]
+      "@src/*": ["./src/*"],
+      "@misc/*": ["./misc/*"],
     }
   },
   "include": ["src/**/*", "tools/**/*"]

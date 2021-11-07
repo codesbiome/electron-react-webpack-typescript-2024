@@ -25,6 +25,7 @@
           ["@common", "./src/common"],
           ["@main", "./src/main"],
           ["@src", "./src"],
+          ["@misc", "./misc"],
           ["@assets", "./assets"]
         ],
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
