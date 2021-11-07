@@ -20,6 +20,10 @@
       },
       "alias": {
         "map": [
+          ["@renderer", "./src/renderer"],
+          ["@components", "./src/renderer/commponents"],
+          ["@common", "./src/common"],
+          ["@main", "./src/main"],
           ["@src", "./src"],
           ["@assets", "./assets"]
         ],
