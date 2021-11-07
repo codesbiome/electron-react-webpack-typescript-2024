@@ -3,19 +3,14 @@ import { hot } from 'react-hot-loader';
 import logo from '@assets/images/logo.png';
 import './Application.less';
 
-type Props = {
-  title: string;
-  version: string;
-};
-
-const Application: React.FC<Props> = (props) => {
+const Application: React.FC = () => {
   const [counter, setCounter] = useState(0);
 
   return (
     <React.Fragment>
       <main>
         <div className='main-heading'>
-          <h1>{props.title}</h1>
+          <h1>ERWT Boilerplate</h1>
         </div>
         <div className='main-teaser'>
           <img src={logo} title='Codesbiome' />

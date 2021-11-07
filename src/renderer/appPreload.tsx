@@ -1,3 +1,6 @@
+import { contextBridge } from 'electron';
+import '@misc/window/windowPreload';
+
 // Say something
 console.log('[ERWT] : Preload execution started');
 
@@ -18,3 +21,6 @@ window.addEventListener('DOMContentLoaded', () => {
     replaceText(`${type}-version`, version);
   }
 });
+
+contextBridge.exposeInMainWorld('titlebar', {});
+contextBridge.exposeInMainWorld('app', {});
