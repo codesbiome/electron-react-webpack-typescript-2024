@@ -2,10 +2,10 @@
 // Variables
 //-----------------------------------------
 
-@base-bg-color: #171b21;
+@base-bg-color: #1f252c;
 @base-text-color: #d8d8d8;
 @base-font-size: 16px;
-@base-line-height: 1.15;
+@base-line-height: 1.25;
 @base-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu,
   Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 @cont-bg-color: #1f252d;
@@ -83,10 +83,22 @@ h1 {
   }
 }
 
-main {
-  position: relative;
-  overflow: auto;
-  flex: 1;
+#erwt {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+
+  .header {
+    padding: 3rem 2rem 0rem 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .footer {
+    background: #1c2127;
+    padding: 2rem;
+  }
 }
 
 button {
@@ -131,7 +143,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 
     img {
       margin-right: 1rem;
@@ -147,10 +159,10 @@ button {
   }
 
   &-teaser {
-    color: #8e96a2;
-    background-color: #1f252d;
+    color: #898e97;
+    background-color: #1b2026;
     padding: 1em;
-    border-radius: 4px;
+    border-radius: 10px;
     line-height: 1.6;
     font-size: 1em;
     display: flex;
@@ -159,7 +171,7 @@ button {
     &.small {
       font-size: 0.9375em;
       color: #8c919c;
-      background: #21252d;
+      background: #1f252c;
     }
 
     img {
@@ -170,9 +182,12 @@ button {
 }
 
 .versions {
+  display: flex;
+  justify-content: space-evenly;
+
   & > span {
     padding: 8px 10px;
-    background: @cont-bg-color;
+    background: #1c2127;
     display: inline-block;
     border-radius: 4px;
     font-size: 14px;

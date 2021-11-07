@@ -7,8 +7,8 @@ const Application: React.FC = () => {
   const [counter, setCounter] = useState(0);
 
   return (
-    <React.Fragment>
-      <main>
+    <div id='erwt'>
+      <div className='header'>
         <div className='main-heading'>
           <h1>ERWT Boilerplate</h1>
         </div>
@@ -22,7 +22,7 @@ const Application: React.FC = () => {
             modules and styles.
           </div>
         </div>
-        <div className='versions center'>
+        <div className='versions'>
           <span>
             ERWT <span id='erwt-version'></span>
           </span>
@@ -36,6 +36,9 @@ const Application: React.FC = () => {
             Node <span id='node-version'></span>
           </span>
         </div>
+      </div>
+
+      <div className='footer'>
         <p className='main-teaser small center'>
           Click below button(s) to update the application &quot;counter&quot;
           state. For faster development experience, this application will update
@@ -50,8 +53,8 @@ const Application: React.FC = () => {
             Decrement Counter <span>{counter}</span>
           </button>
         </div>
-      </main>
-    </React.Fragment>
+      </div>
+    </div>
   );
 };
 
