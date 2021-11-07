@@ -11,6 +11,10 @@ ERWT is a minimal boilerplate for writing Desktop Applications using [Electron](
 
 ## Custom Window Titlebar & Menu
 
+This project now includes custom [Electron Window](https://github.com/guasam/electron-window),  Titlebar, Menu Items, Window Controls & application icon etc by default.
+
+Menu items and windows controls layout or colors can be customized easily by modifying the `misc/window` modules. The `windows` platform buttons are being used by default in the application titlebar.
+
 <center>
     <img src="assets/images/titlebar_showcase.png" />
 </center>
