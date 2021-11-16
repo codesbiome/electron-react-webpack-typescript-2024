@@ -41,29 +41,12 @@ module.exports = [
     ],
   },
   {
-    // Images Loader
-    test: /\.(gif|jpe?g|tiff|png|webp|bmp|svg)$/,
-    use: [
-      {
-        loader: 'file-loader',
-        options: {
-          name: 'images/[name].[ext]',
-          publicPath: '../.',
-        },
-      },
-    ],
-  },
-  {
-    // Font & SVG loader
-    test: /\.(woff(2)?|ttf|otf|eot)$/,
-    use: [
-      {
-        loader: 'file-loader',
-        options: {
-          name: 'fonts/[name].[ext]',
-          publicPath: '../.',
-        },
-      },
-    ],
+    // Assets loader
+    // More information here https://webpack.js.org/guides/asset-modules/
+    test: /\.(gif|jpe?g|tiff|png|webp|bmp|svg|eot|ttf|woff|woff2)$/i,
+    type: 'asset',
+    generator: {
+      filename: 'assets/[hash][ext][query]',
+    },
   },
 ];

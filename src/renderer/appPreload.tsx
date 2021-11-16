@@ -1,4 +1,3 @@
-import { contextBridge } from 'electron';
 import '@misc/window/windowPreload';
 
 // Say something

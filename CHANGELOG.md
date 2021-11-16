@@ -5,6 +5,16 @@ All notable changes to the project are listed here.
 For more information visit:
 https://github.com/codesbiome/electron-react-webpack-typescript-2021
 
+### v5.1.0
+
+- Fix: CSS/LESS `background-image` corrupted image file output.
+- Updated: Webpack Rules to load assets using [Webpack v5 Asset Modules](https://webpack.js.org/guides/asset-modules/) instead of `file-loader`
+- Fix: Typo in eslint alias map for `@components`
+- Updated: Window (submodule) to latest version.
+- Removed: Unused contextBridge api declaration.
+
+<br>
+
 ### v5.0.0
 
 - Overhauled: Application default layout and styling.
