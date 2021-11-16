@@ -21,7 +21,7 @@
       "alias": {
         "map": [
           ["@renderer", "./src/renderer"],
-          ["@components", "./src/renderer/commponents"],
+          ["@components", "./src/renderer/components"],
           ["@common", "./src/common"],
           ["@main", "./src/main"],
           ["@src", "./src"],
