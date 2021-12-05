@@ -5,6 +5,18 @@ All notable changes to the project are listed here.
 For more information visit:
 https://github.com/codesbiome/electron-react-webpack-typescript-2021
 
+### v5.2.0
+
+- 🎉 Electron core upgraded `v16`
+- Upgraded outdated deps:
+  - `@typescript-eslint` deps upgraded to `^5.5.0`
+  - `eslint` upgraded to `^8.4.0`
+  - `fork-ts-checker-webpack-plugin` upgraded to `^6.5.0`
+  - `typescript` upgraded to `^4.5.2`
+  - `webpack` upgraded to `^5.64.4`
+
+<br>
+
 ### v5.1.0
 
 - Fix: CSS/LESS `background-image` corrupted image file output.

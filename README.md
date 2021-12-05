@@ -4,16 +4,13 @@ ERWT is a minimal boilerplate for writing Desktop Applications using [Electron](
 
 ## Screenshot
 
-<img src="assets/images/screen_500.png" />
-
+<img src="assets/images/screen_520.png" />
 
 <br>
 
 ## Custom Window Titlebar & Menu
 
-This project now includes custom [Electron Window](https://github.com/guasam/electron-window),  Titlebar, Menu Items, Window Controls & application icon etc by default.
-
-Menu items and windows controls layout or colors can be customized easily by modifying the `misc/window` modules. The `windows` platform buttons are being used by default in the application titlebar.
+This project now includes custom [Electron Window](https://github.com/guasam/electron-window),  Titlebar, Menu Items, Window Controls & application icon etc by default. Menu items and windows controls layout or colors can be customized easily by modifying the `misc/window` modules. The `windows` platform buttons are being used by default in the Titlebar.
 
 <center>
     <img src="assets/images/titlebar_showcase.png" />
@@ -23,8 +20,7 @@ Menu items and windows controls layout or colors can be customized easily by mod
 
 ## Core Features
 
-- 📐 Custom Window & Titlebar (Thanks to [@guasam](https://github.com/guasam))
-- 🍕 Titlebar Custom Menus
+- 📐 Custom Window & Titlebar with Menus
 - 🌟 Electron
 - 🌀 TypeScript
 - ⚛️ React
@@ -43,13 +39,24 @@ Menu items and windows controls layout or colors can be customized easily by mod
 
 ## Installation
 
-#### To install the ERWT boilerplate you need to run following commands
+To clone the ERWT boilerplate, you need to run following commands:
 
-Clone the repository with submodules :
+#### Master Version
+
+Master version of ERWT contains project files in separate context for main and renderer process, uses custom window, custom titlebar & menus.
 
 ```bash
-git clone --recurse-submodules https://github.com/codesbiome/electron-react-webpack-typescript-2021 erwt
-cd erwt
+git clone --recurse-submodules https://github.com/codesbiome/electron-react-webpack-typescript-2021
+```
+
+<div>OR</div>
+
+#### Minimal Version
+
+Minimal version of ERWT contains very simple project files structure, no custom window, no custom titlebar & menus.
+
+```bash
+git clone -b minimal https://github.com/codesbiome/electron-react-webpack-typescript-2021
 ```
 
 <br>
@@ -120,7 +127,7 @@ This provides an easy way of configuring your packaged application and making pl
 
 This configurations file is available in :
 
-```
+```bash
 tools/forge/forge.config.js
 ```
 
