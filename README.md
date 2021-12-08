@@ -49,7 +49,7 @@ Master version of ERWT contains project files in separate context for main and r
 git clone --recurse-submodules https://github.com/codesbiome/electron-react-webpack-typescript-2021
 ```
 
-<div>OR</div>
+<center>OR</center>
 
 #### Minimal Version
 
