@@ -41,7 +41,7 @@ This project now includes custom [Electron Window](https://github.com/guasam/ele
 
 To clone the ERWT boilerplate, you need to run following commands:
 
-#### Master Version
+![status](https://img.shields.io/badge/ERWT-Master-blue.svg)
 
 Master version of ERWT contains project files in separate context for main and renderer process, uses custom window, custom titlebar & menus.
 
@@ -53,7 +53,7 @@ git clone --recurse-submodules https://github.com/codesbiome/electron-react-webp
     OR
 </div>
 
-#### Minimal Version
+![status](https://img.shields.io/badge/ERWT-Minimal-0a922a.svg)
 
 Minimal version of ERWT contains very simple project files structure, no custom window, no custom titlebar & menus.
 
