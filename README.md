@@ -1,4 +1,4 @@
-# Electron React Webpack Typescript - Boilerplate 2021
+# Electron React Webpack Typescript - Boilerplate 2022
 
 ERWT is a minimal boilerplate for writing Desktop Applications using [Electron](https://www.electronjs.org/), [React](https://reactjs.org/), [Webpack](https://webpack.js.org/) & [TypeScript](https://www.typescriptlang.org/). <br /> This project makes use of latest packages and configurations to serve the best environment for development.
 
