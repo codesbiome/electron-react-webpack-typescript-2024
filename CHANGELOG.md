@@ -5,6 +5,21 @@ All notable changes to the project are listed here.
 For more information visit:
 https://github.com/codesbiome/electron-react-webpack-typescript-2021
 
+
+### v5.4.0
+
+- 🎉 Electron core upgraded `v17.0.1`
+- Upgraded outdated deps:
+  - `@hot-loader/react-dom` upgraded to `v17.0.2`
+  - `webpack` upgraded to `v5.69.1`
+  - `typescript` upgraded to `v4.5.5`
+  - `fork-ts-checker-webpack-plugin` upgraded to `v7.2.1`
+  - `eslint` upgraded to `v8.9.0`
+  - `css-loader` upgraded to `v6.6.0`
+  - `@typescript-eslint` deps upgraded to `v5.12.1`
+
+<br>
+
 ### v5.3.0
 
 - Electron Window : File menu visible by default
