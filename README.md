@@ -4,7 +4,7 @@ ERWT is a minimal boilerplate for writing Desktop Applications using [Electron](
 
 ## Screenshot
 
-<img src="assets/images/screen4.png" />
+<img src="assets/images/screen_540.png" />
 
 <br>
 
