@@ -48,7 +48,7 @@ To clone the ERWT boilerplate, you need to run following commands:
 Master version of ERWT contains project files in separate context for main and renderer process, uses custom window, custom titlebar & menus.
 
 ```bash
-git clone --recurse-submodules https://github.com/codesbiome/electron-react-webpack-typescript-2021
+git clone --recurse-submodules https://github.com/codesbiome/electron-react-webpack-typescript-2022
 ```
 
 <div align="center">
@@ -60,7 +60,7 @@ git clone --recurse-submodules https://github.com/codesbiome/electron-react-webp
 Minimal version of ERWT contains very simple project files structure, no custom window, no custom titlebar & menus.
 
 ```bash
-git clone -b minimal https://github.com/codesbiome/electron-react-webpack-typescript-2021
+git clone -b minimal https://github.com/codesbiome/electron-react-webpack-typescript-2022
 ```
 
 <br>
