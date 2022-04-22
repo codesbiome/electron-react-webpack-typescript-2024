@@ -97,7 +97,7 @@ const Application: React.FC = () => {
           <button onClick={toggleTheme}>
             {darkTheme ? 'Light Mode' : 'Dark Mode'}
             <span>
-              <img src={darkTheme ? lightModeIcon : darkModeIcon} />
+              <img className='rotate' src={darkTheme ? lightModeIcon : darkModeIcon} />
             </span>
           </button>
         </div>

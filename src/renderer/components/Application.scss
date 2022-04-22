@@ -110,6 +110,16 @@ button {
   }
 }
 
+.rotate {
+  animation: rotate 2.5s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .main-heading {
   display: flex;
   align-items: center;
