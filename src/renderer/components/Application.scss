@@ -212,8 +212,15 @@ button {
   height: auto;
   overflow: hidden;
 
-  &-icon img {
-    border-radius: 50%;
+  &-icon {
+    min-height: 33px;
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .window-title {
+    color: var(--titlebar-title-color);
   }
 
   .menu-item {

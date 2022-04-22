@@ -49,6 +49,7 @@ body {
 
   --titlebar-bgcolor: #e2e8f0;
   --titlebar-color: #54677e;
+  --titlebar-title-color: #545e6a;
   --titlebar-menu-title-hover-bgColor: rgba(255, 255, 255, 0.6);
   --titlebar-menu-title-active-bgColor: #f6f9fa;
   --titlebar-menu-title-active-borderColor: #e2e8f0;
@@ -87,12 +88,12 @@ body.dark-mode {
   //-----------------------------------------
 
   --app-border: 1px solid #363839;
-  --app-footer-bgColor: #191a1b;
+  --app-footer-bgColor: #181818;
   --app-heading-color: #bababa;
   --main-teaser-color: #828282;
-  --main-teaser-bgColor: #161616;
+  --main-teaser-bgColor: #191919;
   --version-color: #86807b;
-  --version-bgColor: rgba(0, 0, 0, 0.25);
+  --version-bgColor: rgb(0 0 0 / 20%);
   --version-number-color: #659cb6;
   --erwt-gradient: linear-gradient(180deg, #111111, #131313);
 
@@ -102,6 +103,7 @@ body.dark-mode {
 
   --titlebar-bgcolor: #222425;
   --titlebar-color: #bec0c2;
+  --titlebar-title-color: #9fa2a5;
   --titlebar-menu-title-hover-bgColor: #111111;
   --titlebar-menu-title-active-bgColor: #111111;
   --titlebar-menu-title-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
