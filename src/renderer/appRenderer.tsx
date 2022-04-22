@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import WindowFrame from '@misc/window/components/WindowFrame';
 import Application from './components/Application';
 
@@ -14,5 +14,4 @@ const app = (
 );
 
 // Render application in DOM
-ReactDOM.render(app, document.getElementById('app'));
-
+createRoot(document.getElementById('app')).render(app);

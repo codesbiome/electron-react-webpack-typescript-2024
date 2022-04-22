@@ -7,6 +7,7 @@ import './Application.scss';
 const Application: React.FC = () => {
   const [counter, setCounter] = useState(0);
   const [darkTheme, setDarkTheme] = useState(true);
+  const [versions, setVersions] = useState<Record<string, string>>({});
 
   /**
    * On component mount
@@ -20,6 +21,11 @@ const Application: React.FC = () => {
     } else if (useDarkTheme == 0) {
       setDarkTheme(false);
     }
+
+    // Apply verisons
+    const app = document.getElementById('app');
+    const versions = JSON.parse(app.getAttribute('data-versions'));
+    setVersions(versions);
   }, []);
 
   /**
@@ -59,16 +65,28 @@ const Application: React.FC = () => {
         </div>
         <div className='versions'>
           <span>
-            ERWT <span id='erwt-version'></span>
+            ERWT <span>{versions.erwt}</span>
           </span>
           <span>
-            Electron <span id='electron-version'></span>
+            Electron <span>{versions.electron}</span>
           </span>
           <span>
-            Chrome <span id='chrome-version'></span>
+            Chrome <span>{versions.chrome}</span>
           </span>
           <span>
-            Node <span id='node-version'></span>
+            Node <span>{versions.node}</span>
+          </span>
+          <span>
+            React <span>{versions.react}</span>
+          </span>
+          <span>
+            Webpack <span>{versions.webpack}</span>
+          </span>
+          <span>
+            Typescript <span>{versions.typescript}</span>
+          </span>
+          <span>
+            License <span>{versions.license}</span>
           </span>
         </div>
       </div>
@@ -96,7 +114,10 @@ const Application: React.FC = () => {
           <button onClick={toggleTheme}>
             {darkTheme ? 'Light Mode' : 'Dark Mode'}
             <span>
-              <img className='rotate' src={darkTheme ? lightModeIcon : darkModeIcon} />
+              <img
+                className='rotate'
+                src={darkTheme ? lightModeIcon : darkModeIcon}
+              />
             </span>
           </button>
         </div>
