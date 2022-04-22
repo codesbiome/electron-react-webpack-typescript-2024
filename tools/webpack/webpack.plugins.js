@@ -6,10 +6,5 @@ const { inDev } = require('./webpack.helpers');
 module.exports = [
   new ForkTsCheckerWebpackPlugin(),
   inDev() && new webpack.HotModuleReplacementPlugin(),
-  inDev() &&
-    new ReactRefreshWebpackPlugin({
-      overlay: {
-        sockIntegration: 'whm',
-      },
-    }),
+  inDev() && new ReactRefreshWebpackPlugin(),
 ].filter(Boolean);
