@@ -1,0 +1,299 @@
+/**
+ *==========================================================================
+ * ERWT Application Stylesheet
+ *==========================================================================
+ *
+ * Here we apply the SCSS stylesheet for Application colors, font size
+ * Text colors etc can be assigned in this file.
+ */
+
+@import './Theme.scss';
+
+/**
+ *==========================================================================
+ * Application Specific Stylesheet
+ *==========================================================================
+ *
+ * Here we use the codes to apply application specific style
+ */
+
+::selection {
+  background: var(--selection-bgColor);
+  color: var(--selection-color);
+}
+
+::-webkit-scrollbar {
+  width: var(--scroll-width);
+
+  // Scrollbar track
+  &-track {
+    background: var(--scroll-track-bgColor);
+  }
+
+  // Scroll thumb
+  &-thumb {
+    background: var(--scroll-thumb-bgColor);
+
+    &:hover {
+      background: var(--scroll-thumb-hover-bgColor);
+    }
+  }
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: var(--base-font-size);
+  font-family: var(--base-font);
+  color: var(--base-color);
+  background: var(--base-bgcolor);
+  line-height: 1.5;
+}
+
+h1 {
+  margin: 0;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  &.has-border {
+    border: var(--app-border);
+  }
+}
+
+button {
+  font-family: var(--base-font);
+  background-color: var(--button-bgColor);
+  color: var(--button-color);
+  border: var(--button-border);
+  background: var(--button-gradient);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  outline: none;
+  min-width: 160px;
+
+  &:hover {
+    background: var(--button-hover-bgColor);
+  }
+  &:active {
+    background: var(--button-active-bgColor);
+  }
+  & > span {
+    color: var(--button-badge-color);
+    background-color: var(--button-badge-bgColor);
+    font-size: 12px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    width: 22px;
+    opacity: 0.8;
+  }
+}
+
+.main-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+
+  img {
+    margin-right: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--app-heading-color);
+    line-height: 1;
+    text-transform: uppercase;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.center {
+  text-align: center;
+}
+
+.main-teaser {
+  padding: 1em;
+  border-radius: 10px;
+  line-height: 1.6;
+  font-size: 1em;
+  display: flex;
+  margin-bottom: 2em;
+  color: var(--main-teaser-color);
+  font-weight: 300;
+  background: var(--main-teaser-bgColor);
+
+  img {
+    object-fit: contain;
+    margin: 0 2em 0 1em;
+  }
+}
+
+.versions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.versions > span {
+  background: var(--version-bgColor);
+  color: var(--version-color);
+  width: 20%;
+  padding: 4px 8px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 0;
+
+  & > span {
+    color: var(--version-number-color);
+    margin-left: 0.375rem;
+    max-width: 65px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: right;
+  }
+}
+
+#erwt {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  background: var(--erwt-gradient);
+
+  .header {
+    padding: 3rem 2rem 0rem 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .footer {
+    padding: 2rem;
+    background: var(--app-footer-bgColor);
+  }
+}
+
+/**
+ *==========================================================================
+ * Titlebar Overrides
+ *==========================================================================
+ *
+ * Here we override color, style, layout sizes for custom electron window
+ */
+
+.window-titlebar {
+  background: var(--titlebar-bgcolor);
+  height: auto;
+  overflow: hidden;
+
+  &-icon img {
+    border-radius: 50%;
+  }
+
+  .menu-item {
+    &.active .menu-title {
+      background: var(--titlebar-menu-title-active-bgColor);
+      box-shadow: var(--titlebar-menu-title-shadow);
+      color: var(--titlebar-color);
+      border-color: var(--titlebar-menu-title-active-borderColor);
+    }
+  }
+
+  .menu-title {
+    font-weight: 500;
+    text-shadow: none;
+    color: var(--titlebar-color);
+    margin-top: 4px;
+    padding: 4px 10px 4px 10px;
+    border-radius: 6px 6px 0 0;
+    transition: 0.2s all ease-in-out;
+    border-color: transparent;
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+
+    &:hover {
+      background-color: var(--titlebar-menu-title-hover-bgColor);
+      box-shadow: var(--titlebar-menu-title-shadow);
+    }
+  }
+
+  .menu-popup {
+    display: none;
+    position: fixed;
+    background-color: var(--titlebar-popup-bgColor);
+    min-width: 70px;
+    border: var(--titlebar-popup-border);
+    border-top: 0;
+    padding: 0.25rem 0;
+    box-shadow: 4px 10px 10px #0000002e;
+    z-index: 10000;
+    border-radius: 0 6px 6px 6px;
+
+    &-item {
+      transition: 0.1s all ease-in-out;
+
+      &:hover {
+        background: var(--titlebar-popup-item-hover-bgColor);
+
+        .popup-item-shortcut {
+          color: var(--titlebar-popup-item-hover-shortcut-color);
+        }
+      }
+    }
+  }
+
+  .popup-item-separator {
+    background: var(--titlebar-menu-separator-bgColor);
+  }
+
+  .popup-item-name {
+    padding-right: 2rem;
+    color: var(--titlebar-popup-item-name-color);
+    text-shadow: none;
+  }
+
+  .popup-item-shortcut {
+    color: var(--titlebar-popup-item-shortcut-color);
+    text-shadow: none;
+  }
+
+  &-controls.type-windows .control {
+    color: var(--titlebar-color);
+    font-family: Arial, Helvetica, sans-serif;
+
+    &:hover {
+      color: var(--titlebar-color);
+      background: var(--titlebar-popup-item-hover-bgColor);
+    }
+
+    &.close:hover {
+      color: #fff;
+    }
+  }
+}
