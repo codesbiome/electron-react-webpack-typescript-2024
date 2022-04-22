@@ -25,7 +25,6 @@ export function createAppWindow(): BrowserWindow {
     icon: path.resolve('assets/images/appIcon.ico'),
     webPreferences: {
       nodeIntegration: false,
-      nativeWindowOpen: true,
       contextIsolation: true,
       nodeIntegrationInWorker: false,
       nodeIntegrationInSubFrames: false,
