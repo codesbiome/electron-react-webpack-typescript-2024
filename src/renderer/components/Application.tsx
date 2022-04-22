@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { hot } from 'react-hot-loader';
 import logo from '@assets/images/logo.png';
 import darkModeIcon from '@assets/images/darkmode.png';
 import lightModeIcon from '@assets/images/lightmode.png';
@@ -106,4 +105,4 @@ const Application: React.FC = () => {
   );
 };
 
-export default hot(module)(Application);
+export default Application;
