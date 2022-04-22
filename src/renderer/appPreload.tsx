@@ -7,7 +7,6 @@ console.log('[ERWT] : Preload execution started');
 window.addEventListener('DOMContentLoaded', () => {
   const app = document.getElementById('app');
   const { env } = process;
-  console.log(process.resourcesPath);
   const versions: Record<string, unknown> = {};
 
   // ERWT Package version
