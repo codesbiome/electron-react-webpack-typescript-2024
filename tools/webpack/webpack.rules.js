@@ -32,6 +32,15 @@ module.exports = [
     use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
   },
   {
+    // SCSS (SASS) Loader
+    test: /\.s[ac]ss$/i,
+    use: [
+      { loader: 'style-loader' },
+      { loader: 'css-loader' },
+      { loader: 'sass-loader' },
+    ],
+  },
+  {
     // Less loader
     test: /\.less$/,
     use: [
