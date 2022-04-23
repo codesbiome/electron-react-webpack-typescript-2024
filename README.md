@@ -1,61 +1,75 @@
-# Electron React Webpack Typescript - Boilerplate 2022
+# ERWT - Electron React Webpack Typescript (Secure Boilerplate)
 
-ERWT is a minimal boilerplate for writing Desktop Applications using [Electron](https://www.electronjs.org/), [React](https://reactjs.org/), [Webpack](https://webpack.js.org/) & [TypeScript](https://www.typescriptlang.org/). <br /> This project makes use of latest packages and configurations to serve the best environment for development.
-
-## Screenshot
-
-<img src="assets/images/screen_550.jpg" />
+ERWT is a minimal secure boilerplate for writing Desktop Applications using [Electron](https://www.electronjs.org/), [React](https://reactjs.org/), [Webpack](https://webpack.js.org/) & [TypeScript](https://www.typescriptlang.org/). <br /> This project makes use of latest packages and configurations to serve the best environment for development.
 
 <br>
-
-## Custom Window Titlebar & Menu
-
-This project now includes custom [Electron Window](https://github.com/guasam/electron-window), Titlebar, Menu Items, Window Controls & application icon etc by default. Menu items and windows controls layout or colors can be customized easily by modifying the `misc/window` modules. The `windows` platform buttons are being used by default in the Titlebar.
-
-Menubar can be toggled by pressing `ALT` key
-
 <center>
-    <img src="assets/images/titlebar_showcase.png" />
+    <img src="assets/images/podium.png" />
 </center>
 
 <br>
 
-## Core Features
+# Custom Electron Window Titlebar, Frame & Menus
 
-- 📐 Custom Window & Titlebar with Menus
+Yes!, this project now includes [Electron Window](https://github.com/guasam/electron-window) submodule for Custom Window Frame, Titlebar, Menu Items, Window Controls & Application Icon etc by default. Following are some tips regarding to this submodule :
+
+<br>
+
+- Menu items and windows controls layout or colors can be customized easily by modifying the `misc/window` modules.
+- The `windows` platform controls style is being used by default in the titlebar.
+- Menubar can be toggled by pressing `[alt]` or `[option]` key
+- When menubar is toggled `off`, application title will be displayed in center of titlebar.
+- Menu entries can be assigned/modified in `misc/window/titlebarMenus.ts` file.
+
+<br>
+
+<center>
+    <img src="assets/images/menu.jpg" />
+</center>
+
+<br><br>
+
+# Core Features
+
 - 🌟 Electron
 - 🌀 TypeScript
 - ⚛️ React
-- 🛶 LESS Loader
+- 🥗 SASS/SCSS Loader
+- 🛶 LESS Loader (optional)
 - 🎨 CSS Loader
 - 📸 Image Loader
 - 🆎 Font Loader
 - 🧹 ESLint
 - 📦 Electron Forge
+- 📐 Custom Window Frame
+- 📐 Custom Window Titlebar
+- 📐 Custom Window Menubar
 - 🔱 Webpack & Configuration
-- 🧩 Aliases for project paths
-- 🔥 Hot Module Replacement (Live Reload)
+- 🧩 Aliases for Project Paths
+- 🔥 React Fast Refresh + Webpack HMR
+- 🌞 Light Mode, 🌜 Dark Mode Switch
 - 🎁 Package Bundling (Distribution / Release)
 
-<br />
+<br><br>
 
-## Installation
+Installation
+=============
 
-To clone the ERWT boilerplate, you need to run following commands:
+![status](https://img.shields.io/badge/ERWT-Main%20Version-blue.svg)
 
-![status](https://img.shields.io/badge/ERWT-Master-blue.svg)
-
-Master version of ERWT contains project files in separate context for main and renderer process, uses custom window, custom titlebar & menus.
+Main version of this project contains files structure in separate context for `main` and `renderer`, with custom electron window, titlebar etc.
 
 ```bash
 git clone --recurse-submodules https://github.com/codesbiome/electron-react-webpack-typescript-2022
 ```
 
+<br>
 <div align="center">
-    OR
+    <b>OR</b>
 </div>
+<br>
 
-![status](https://img.shields.io/badge/ERWT-Minimal-0a922a.svg)
+![status](https://img.shields.io/badge/ERWT-Minimal%20Version-0a922a.svg)
 
 Minimal version of ERWT contains very simple project files structure, no custom window, no custom titlebar & menus.
 
@@ -65,10 +79,17 @@ git clone -b minimal https://github.com/codesbiome/electron-react-webpack-typesc
 
 <br>
 
-Install dependencies using [Yarn](https://www.npmjs.com/package/yarn) or [NPM](https://www.npmjs.com/) :
+Install dependencies using [pnpm](https://pnpm.io/) or [yarn](https://www.npmjs.com/package/yarn) or [npm](https://www.npmjs.com/) :
 
 ```bash
+# using pnpm
+pnpm install
+
+# or using yarn
 yarn install
+
+# or using npm
+npm install
 ```
 
 <br />

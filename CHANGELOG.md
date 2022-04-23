@@ -5,6 +5,26 @@ All notable changes to the project are listed here.
 For more information visit:
 https://github.com/codesbiome/electron-react-webpack-typescript-2022
 
+### v6.0.0
+
+- 🙌🏻 New Layout for default application.
+- 🌑 Dark mode & 💡 Light Mode colors.
+- 🎉 Electron version upgraded to `v18.1.0`
+- Using `sass/scss` stylesheets by default for project (previously `less` was used).
+- Using `React Fast Refresh` for hot reloading, removed old `hot-loader`.
+- Titlebar Menus style overrides for improvements with rounded corners.
+- Created a new `Theme.scss` file for adjusting light/dark mode color schemes.
+- Persist theme state in `localStorage` by default.
+- Using `pnpm` instead of `yarn` as package manager for project.
+- Upgraded outdated deps:
+  - `electron` upgraded to `v18.1.0`
+  - `eslint` upgraded to `v8.13.0`
+  - `typescript` upgraded to `v4.6.3`
+  - `webpack` upgraded to `v5.72.0`
+  - `react` deps upgraded to `v18.0.0`
+
+<br>
+
 ### v5.5.0
 
 - Upgraded outdated deps:

@@ -1,7 +1,7 @@
 {
   "name": "electron-react-typescript-webpack-2022",
   "productName": "ERWT Boilerplate",
-  "version": "5.5.0",
+  "version": "6.0.0",
   "description": "Custom boilerplate for writing Desktop Applications using Electron, React, Webpack, TypeScript in 2022",
   "main": ".webpack/main",
   "scripts": {
