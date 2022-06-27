@@ -11,7 +11,7 @@ ERWT is a minimal secure boilerplate for writing Desktop Applications using [Ele
 
 # Custom Electron Window Titlebar, Frame & Menus
 
-Yes!, this project now includes [Electron Window](https://github.com/guasam/electron-window) submodule for Custom Window Frame, Titlebar, Menu Items, Window Controls & Application Icon etc by default. Following are some tips regarding to this submodule :
+This project includes [Electron Window](https://github.com/guasam/electron-window) submodule for Custom Window Frame, Titlebar, Menu Items, Window Controls & Application Icon etc by default. Following are some tips regarding to this submodule :
 
 <br>
 
