@@ -30,7 +30,7 @@ This project includes [Electron Window](https://github.com/guasam/electron-windo
 <br>
 
 <center>
-    <img src="assets/images/app-menu.png" />
+    <img src="assets/images/app-menu.png" width="600" />
 </center>
 
 <br><br>
