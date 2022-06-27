@@ -4,7 +4,7 @@ ERWT is a minimal secure boilerplate for writing Desktop Applications using [Ele
 
 <br>
 <center>
-    <img src="assets/images/app-dark.png" />
+    <img src="assets/images/app-dark.png" width="600" />
 </center>
 
 <br>
