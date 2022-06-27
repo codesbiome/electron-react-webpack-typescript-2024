@@ -4,8 +4,14 @@ ERWT is a minimal secure boilerplate for writing Desktop Applications using [Ele
 
 <br>
 <center>
-    <img src="assets/images/podium.png" />
+    <img src="assets/images/app-dark.png" />
 </center>
+
+<br>
+
+### Light Mode
+
+<img src="assets/images/app-light.png" width="200" />
 
 <br>
 
@@ -24,7 +30,7 @@ This project includes [Electron Window](https://github.com/guasam/electron-windo
 <br>
 
 <center>
-    <img src="assets/images/menu.jpg" />
+    <img src="assets/images/app-menu.png" />
 </center>
 
 <br><br>
@@ -47,20 +53,19 @@ This project includes [Electron Window](https://github.com/guasam/electron-windo
 - 🔱 Webpack & Configuration
 - 🧩 Aliases for Project Paths
 - 🔥 React Fast Refresh + Webpack HMR
-- 🌞 Light Mode, 🌜 Dark Mode Switch
+- 🌞 Dark Mode + Light Mode (Theme)
 - 🎁 Package Bundling (Distribution / Release)
 
 <br><br>
 
-Installation
-=============
+# Installation
 
 ![status](https://img.shields.io/badge/ERWT-Main%20Version-blue.svg)
 
 Main version of this project contains files structure in separate context for `main` and `renderer`, with custom electron window, titlebar etc.
 
 ```bash
-git clone --recurse-submodules https://github.com/codesbiome/electron-react-webpack-typescript-2022
+git clone https://github.com/codesbiome/electron-react-webpack-typescript-2022
 ```
 
 <br>

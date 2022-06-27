@@ -5,6 +5,32 @@ All notable changes to the project are listed here.
 For more information visit:
 https://github.com/codesbiome/electron-react-webpack-typescript-2022
 
+<br>
+
+### v6.1.0
+
+- 🎉 Electron version upgraded to `v19.0.6`
+- Using `misc/window` for custom window without git submodule.
+- Upgraded outdated deps:
+  - `electron` upgraded to `v19.0.6`
+  - `@electron-forge` deps upgraded to `v6.0.0-beta.64`
+  - `@pmmmwh/react-refresh-webpack-plugin` upgraded to `v0.5.7`
+  - `@types` deps upgraded to latest version
+  - `@typescript-eslint` deps upgraded to `v5.29.0`
+  - `eslint` upgraded to `v8.18.0`
+  - `eslint-plugin-react` upgraded to `v7.30.1`
+  - `fork-ts-checker-webpack-plugin` upgraded to `v7.2.11`
+  - `less` upgraded to `v4.1.3`
+  - `less-loader` upgraded to `v11.0.0`
+  - `react-refresh` upgraded to `v0.14.0`
+  - `sass` upgraded to `v1.53.0`
+  - `sass-loader` upgraded to `v13.0.1`
+  - `ts-loader` upgraded to `v9.3.1`
+  - `typescript` upgraded to `v4.7.4`
+  - `webpack` upgraded to `5.73.0`
+
+<br>
+
 ### v6.0.0
 
 - 🙌🏻 New Layout for default application.
