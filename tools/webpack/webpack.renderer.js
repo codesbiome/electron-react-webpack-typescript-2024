@@ -9,8 +9,6 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.ts', '.jsx', '.tsx', '.css'],
     alias: {
-      // React Hot Loader Patch
-      'react-dom': '@hot-loader/react-dom',
       // Custom Aliases
       ...require('./webpack.aliases'),
     },

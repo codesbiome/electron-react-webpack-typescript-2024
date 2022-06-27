@@ -1,0 +1,91 @@
+/**
+ * Licensed under the MIT License. See LICENSE file in the project root for license information.
+ * Copyright (c) 2022 Codesbiome, guasam
+ *
+ * @author  : guasam
+ * @project : ERWT Boilerplate
+ * @package : Application Theme Colors Stylesheet
+*/
+
+// Exo 2 Font Family
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap');
+
+/**
+ *==========================================================================
+ * ERWT Light Theme
+ *==========================================================================
+ *
+ * Here we apply the stylesheet codes for Light theme in application.
+ */
+
+body {
+  --base-font-size: 16px;
+  --base-font: 'Exo 2', 'Segoe UI', sans-serif;
+  --base-bgcolor: #f7fafb;
+  --selection-color: #fff;
+  --selection-bgColor: #677687;
+  --scroll-width: 10px;
+  --scroll-track-bgColor: #2f2f2f52;
+  --scroll-thumb-bgColor: rgba(59, 59, 59, 0.5);
+  --scroll-thumb-hover-bgColor: #555;
+  --button-color: #778ca9;
+  --button-bgColor: #ffffff;
+  --button-gradient: linear-gradient(0deg, #f1f3f5, white);
+  --button-border: 1px solid #d6e0ec;
+  --button-hover-bgColor: #f4f5f7;
+  --button-active-bgColor: #f1f1f1;
+  --button-badge-color: #778ca9;
+  --button-badge-bgColor: #e2e8f0;
+
+  //-----------------------------------------
+  // Application
+  //-----------------------------------------
+
+  --app-border: 1px solid #f5f8f9;
+  --app-footer-bgColor: #e0e5eb;
+  --app-heading-color: #728296;
+  --main-teaser-color: #708298;
+  --main-teaser-bgColor: #fff;
+  --version-color: #90847c;
+  --version-bgColor: rgba(255, 255, 255, 0.85);
+  --version-number-color: #3aa2d5;
+  --erwt-gradient: linear-gradient(
+    180deg,
+    transparent,
+    var(--titlebar-bgcolor)
+  );
+}
+
+/**
+ *==========================================================================
+ * ERWT Dark Theme
+ *==========================================================================
+ *
+ * Here we apply the stylesheet codes for Dark theme in application.
+ */
+
+body.dark-mode {
+  --base-bgcolor: #363839;
+  --button-color: #9b9b9b;
+  --button-bgColor: #3b3e3f;
+  --button-gradient: linear-gradient(0deg, #3a3d3e, #3b3e3f);
+  --button-border: 1px solid #222424;
+  --button-hover-bgColor: #3f4344;
+  --button-active-bgColor: #3c4041;
+  --button-badge-color: #93857b;
+  --button-badge-bgColor: #1f1f1fc9;
+
+  //-----------------------------------------
+  // Application
+  //-----------------------------------------
+
+  --app-border: 1px solid #363839;
+  --app-footer-bgColor: #181818;
+  --app-heading-color: #bababa;
+  --main-teaser-color: #828282;
+  --main-teaser-bgColor: #191919;
+  --version-color: #86807b;
+  --version-bgColor: rgb(0 0 0 / 20%);
+  --version-number-color: #659cb6;
+  --erwt-gradient: linear-gradient(180deg, #111111, #131313);
+}

@@ -50,7 +50,7 @@ module.exports = {
       '@electron-forge/plugin-webpack',
       {
         // fix content-security-policy error when image or video src isn't same origin
-        devContentSecurityPolicy: "",
+        devContentSecurityPolicy: '',
         // Ports
         port: 3000, // Webpack Dev Server port
         loggerPort: 9000, // Logger port
@@ -63,17 +63,18 @@ module.exports = {
           // Entrypoints of the application
           entryPoints: [
             {
+              // Window process name
+              name: 'app_window',
               // React Hot Module Replacement (HMR)
               rhmr: 'react-hot-loader/patch',
               // HTML index file template
-              html: path.join(rootDir, 'src/index.html'),
+              html: path.join(rootDir, 'src/renderer/app.html'),
               // Renderer
-              js: path.join(rootDir, 'src/renderer.tsx'),
+              js: path.join(rootDir, 'src/renderer/appRenderer.tsx'),
               // Main Window
-              name: 'main_window',
               // Preload
               preload: {
-                js: path.join(rootDir, 'src/preload.tsx'),
+                js: path.join(rootDir, 'src/renderer/appPreload.tsx'),
               },
             },
           ],
