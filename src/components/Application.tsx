@@ -1,63 +1,129 @@
-import React, { useState } from 'react';
-import { hot } from 'react-hot-loader';
+import React, { useEffect, useState } from 'react';
 import logo from '@assets/images/logo.png';
-import './Application.less';
+import darkModeIcon from '@assets/images/darkmode.png';
+import lightModeIcon from '@assets/images/lightmode.png';
+import './Application.scss';
 
-type Props = {
-  title: string;
-  version: string;
-};
-
-const Application: React.FC<Props> = (props) => {
+const Application: React.FC = () => {
   const [counter, setCounter] = useState(0);
+  const [darkTheme, setDarkTheme] = useState(true);
+  const [versions, setVersions] = useState<Record<string, string>>({});
+
+  /**
+   * On component mount
+   */
+  useEffect(() => {
+    const useDarkTheme = parseInt(localStorage.getItem('dark-mode'));
+    if (isNaN(useDarkTheme)) {
+      setDarkTheme(true);
+    } else if (useDarkTheme == 1) {
+      setDarkTheme(true);
+    } else if (useDarkTheme == 0) {
+      setDarkTheme(false);
+    }
+
+    // Apply verisons
+    const app = document.getElementById('app');
+    const versions = JSON.parse(app.getAttribute('data-versions'));
+    setVersions(versions);
+  }, []);
+
+  /**
+   * On Dark theme change
+   */
+  useEffect(() => {
+    if (darkTheme) {
+      localStorage.setItem('dark-mode', '1');
+      document.body.classList.add('dark-mode');
+    } else {
+      localStorage.setItem('dark-mode', '0');
+      document.body.classList.remove('dark-mode');
+    }
+  }, [darkTheme]);
+
+  /**
+   * Toggle Theme
+   */
+  function toggleTheme() {
+    setDarkTheme(!darkTheme);
+  }
 
   return (
-    <React.Fragment>
-      <main>
+    <div id='erwt'>
+      <div className='header'>
         <div className='main-heading'>
-          <h1>{props.title}</h1>
+          <h1 className='themed'>ERWT - Electron Boilerplate</h1>
         </div>
         <div className='main-teaser'>
           <img src={logo} title='Codesbiome' />
           <div>
-            Minimal boilerplate for rapid development of Desktop Applications.
-            <br />
-            This project makes use of Electron, React, Typescript, Webpack to
-            serve the best environment for development with hot-reloading of
-            modules and styles.
+            Minimal boilerplate for rapid development of Desktop Applications
+            using Electron, React, Typescript and Webpack. For faster
+            development experience, this application will update using Hot
+            Reload without needing to restart.
           </div>
         </div>
-        <div className='versions center'>
+        <div className='versions'>
           <span>
-            ERWT <span id='erwt-version'></span>
+            ERWT <span>{versions.erwt}</span>
           </span>
           <span>
-            Electron <span id='electron-version'></span>
+            Electron <span>{versions.electron}</span>
           </span>
           <span>
-            Chrome <span id='chrome-version'></span>
+            Chrome <span>{versions.chrome}</span>
           </span>
           <span>
-            Node <span id='node-version'></span>
+            Node <span>{versions.node}</span>
+          </span>
+          <span>
+            React <span>{versions.react}</span>
+          </span>
+          <span>
+            Webpack <span>{versions.webpack}</span>
+          </span>
+          <span>
+            Typescript <span>{versions.typescript}</span>
+          </span>
+          <span>
+            License <span>{versions.license}</span>
           </span>
         </div>
-        <p className='main-teaser small center'>
-          Click below button(s) to update the application &quot;counter&quot;
-          state. For faster development experience, this application will update
-          using Hot Reload without needing to restart/reload after code changes
-        </p>
+      </div>
+
+      <div className='footer'>
         <div className='center'>
-          <button onClick={() => setCounter(counter + 1)}>
-            Increment Counter <span>{counter}</span>
+          <button
+            onClick={() => {
+              if (counter > 99) return alert('Going too high!!');
+              setCounter(counter + 1);
+            }}
+          >
+            Increment <span>{counter}</span>
           </button>
           &nbsp;&nbsp; &nbsp;&nbsp;
-          <button onClick={() => setCounter(counter > 0 ? counter - 1 : 0)}>
-            Decrement Counter <span>{counter}</span>
+          <button
+            onClick={() => {
+              if (counter == 0) return alert('Oops.. thats not possible!');
+              setCounter(counter > 0 ? counter - 1 : 0);
+            }}
+          >
+            Decrement <span>{counter}</span>
+          </button>
+          &nbsp;&nbsp; &nbsp;&nbsp;
+          <button onClick={toggleTheme}>
+            {darkTheme ? 'Light Mode' : 'Dark Mode'}
+            <span>
+              <img
+                className='rotate'
+                src={darkTheme ? lightModeIcon : darkModeIcon}
+              />
+            </span>
           </button>
         </div>
-      </main>
-    </React.Fragment>
+      </div>
+    </div>
   );
 };
 
-export default hot(module)(Application);
+export default Application;

@@ -19,7 +19,6 @@ const createWindow = (): void => {
     autoHideMenuBar: true,
     webPreferences: {
       nodeIntegration: false,
-      nativeWindowOpen: true,
       contextIsolation: true,
       nodeIntegrationInWorker: false,
       nodeIntegrationInSubFrames: false,
