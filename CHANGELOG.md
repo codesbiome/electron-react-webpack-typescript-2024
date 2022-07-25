@@ -5,6 +5,20 @@ All notable changes to the project are listed here.
 For more information visit:
 https://github.com/codesbiome/electron-react-webpack-typescript-2021
 
+<br>
+
+### v6.2.0
+
+- Upgraded outdated deps:
+  - `electron` upgraded to `^19.0.9`.
+  - `@typescript-eslint` deps upgraded to `v5.30.7`.
+  - `eslint` upgraded to `v8.20.0"`.
+  - `fork-ts-checker-webpack-plugin` upgraded to `v7.2.13`.
+  - `sass` upgraded to `v1.54.0`.
+  - `sass-loader` upgraded to `v13.0.2`.
+  - `webpack` upgraded to `v5.74.0`.
+
+<br>
 
 ### v5.4.0
 
