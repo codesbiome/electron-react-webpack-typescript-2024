@@ -1,6 +1,8 @@
-# ERWT - Electron React Webpack Typescript (Secure Boilerplate)
+# Electron React Webpack Typescript (ERWT)
 
-ERWT is a minimal secure boilerplate for writing Desktop Applications using [Electron](https://www.electronjs.org/), [React](https://reactjs.org/), [Webpack](https://webpack.js.org/) & [TypeScript](https://www.typescriptlang.org/). <br /> This project makes use of latest packages and configurations to serve the best environment for development.
+Electron React Webpack Typescript Boilerplate with Custom Window and Titlebar Menus.
+
+A minimal secure boilerplate for writing Desktop Applications using [Electron](https://www.electronjs.org/), [React](https://reactjs.org/), [Webpack](https://webpack.js.org/) & [TypeScript](https://www.typescriptlang.org/). <br /> This project makes use of latest packages and configurations to serve the best environment for development.
 
 <br>
 <center>
