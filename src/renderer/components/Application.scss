@@ -18,25 +18,23 @@
  */
 
 ::selection {
-  background: var(--selection-bgColor);
+  background: var(--selection-bgcolor);
   color: var(--selection-color);
 }
 
 ::-webkit-scrollbar {
   width: var(--scroll-width);
 
-  // Scrollbar track
   &-track {
-    background: var(--scroll-track-bgColor);
+    background: var(--scroll-track-bgcolor);
   }
 
-  // Scroll thumb
   &-thumb {
-    background: var(--scroll-thumb-bgColor);
+    background: var(--scroll-thumb-bgcolor);
+  }
 
-    &:hover {
-      background: var(--scroll-thumb-hover-bgColor);
-    }
+  &-thumb:hover {
+    background: var(--scroll-thumb-hover-bgcolor);
   }
 }
 
@@ -48,10 +46,10 @@ body,
 
 body {
   margin: 0;
-  font-size: var(--base-font-size);
-  font-family: var(--base-font);
-  color: var(--base-color);
-  background: var(--base-bgcolor);
+  font-size: var(--app-font-size);
+  font-family: var(--app-font-family);
+  color: var(--app-color);
+  background: var(--app-bgcolor);
   line-height: 1.5;
 }
 
@@ -70,31 +68,31 @@ h1 {
 }
 
 button {
-  font-family: var(--base-font);
-  background-color: var(--button-bgColor);
-  color: var(--button-color);
+  background: var(--button-bgcolor);
+  color: #fff;
+  font-weight: normal;
+  text-shadow: 0px 1px #00000078;
+  font-family: var(--app-font-family);
   border: var(--button-border);
-  background: var(--button-gradient);
   padding: 0.5rem 1rem;
   border-radius: 6px;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 0.875rem;
   cursor: pointer;
   display: inline-flex;
   justify-content: space-around;
   align-items: center;
   outline: none;
-  min-width: 160px;
+  min-width: 140px;
 
   &:hover {
-    background: var(--button-hover-bgColor);
+    background: var(--button-hover-bgcolor);
   }
   &:active {
-    background: var(--button-active-bgColor);
+    background: var(--button-active-bgcolor);
   }
   & > span {
     color: var(--button-badge-color);
-    background-color: var(--button-badge-bgColor);
+    background-color: var(--button-badge-bgcolor);
     font-size: 12px;
     width: 24px;
     height: 24px;
@@ -102,6 +100,7 @@ button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    display: none;
   }
 
   img {
@@ -133,7 +132,7 @@ button {
   h1 {
     font-size: 1.5rem;
     font-weight: 300;
-    color: var(--app-heading-color);
+    color: #dddddd;
     line-height: 1;
     text-transform: uppercase;
   }
@@ -148,20 +147,34 @@ button {
 }
 
 .main-teaser {
-  padding: 1em;
-  border-radius: 10px;
-  line-height: 1.6;
-  font-size: 1em;
+  position: relative;
   display: flex;
+  line-height: 1.6;
+  font-size: 14px;
   margin-bottom: 2em;
-  color: var(--main-teaser-color);
-  font-weight: 300;
-  background: var(--main-teaser-bgColor);
+  color: gray;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  text-align: left;
+  padding-left: 1rem;
+  background: #191919;
+  padding-top: 1rem;
+  padding-bottom: 10px;
+  padding-right: 6px;
+  border-radius: 0 0 8px 8px;
+}
 
-  img {
-    object-fit: contain;
-    margin: 0 2em 0 1em;
-  }
+.main-teaser:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: calc(100% + 40px);
+  height: 2px;
+  background: var(--app-accent-color);
+  left: -20px;
+  box-shadow: 0 10px 20px #000000e3;
+  border-radius: 8px;
 }
 
 .versions {
@@ -169,30 +182,43 @@ button {
   justify-content: space-between;
   gap: 1rem;
   flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: 0 0 20px inset rgb(0 0 0 / 3%);
+  width: 80%;
+  margin: 0 auto;
 }
-.versions > span {
-  background: var(--version-bgColor);
-  color: var(--version-color);
-  width: 20%;
-  padding: 4px 8px;
+
+.versions .item {
+  background: #191919;
+  color: #d1d1d1;
+  width: calc(50% - 1rem);
+  padding: 4px 12px;
   display: flex;
   justify-content: space-between;
-  border-radius: 4px;
   font-size: 14px;
   margin: 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  & > * {
+    display: flex;
+  }
+
+  &-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    opacity: 0.8;
+  }
 
   & > span {
-    color: var(--version-number-color);
-    margin-left: 0.375rem;
-    max-width: 65px;
-    text-overflow: ellipsis;
-    overflow: hidden;
+    color: gray;
     text-align: right;
   }
 }
 
 #erwt {
-  user-select: none;
+  // user-select: none;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -236,35 +262,35 @@ button {
 
   .menu-item {
     &.active .menu-title {
-      background: var(--titlebar-menu-title-active-bgColor);
+      background: var(--titlebar-menu-title-active-bgcolor);
       box-shadow: var(--titlebar-menu-title-shadow);
       color: var(--titlebar-color);
-      border-color: var(--titlebar-menu-title-active-borderColor);
+      border-color: var(--titlebar-menu-title-active-border-color);
+      border-radius: 4px 4px 0 0;
+      border-top-color: var(--app-accent-color);
     }
   }
 
   .menu-title {
-    font-weight: 500;
+    font-weight: normal;
     text-shadow: none;
     color: var(--titlebar-color);
-    margin-top: 4px;
-    padding: 4px 10px 4px 10px;
-    border-radius: 6px 6px 0 0;
-    transition: 0.2s all ease-in-out;
     border-color: transparent;
     border-width: 1px 1px 0 1px;
     border-style: solid;
+    padding: 2px 8px;
+    margin-right: 2px;
+    border-radius: 4px;
 
     &:hover {
-      background-color: var(--titlebar-menu-title-hover-bgColor);
-      box-shadow: var(--titlebar-menu-title-shadow);
+      background-color: var(--titlebar-menu-title-hover-bgcolor);
     }
   }
 
   .menu-popup {
     display: none;
     position: fixed;
-    background-color: var(--titlebar-popup-bgColor);
+    background-color: var(--titlebar-popup-bgcolor);
     min-width: 70px;
     border: var(--titlebar-popup-border);
     border-top: 0;
@@ -274,31 +300,34 @@ button {
     border-radius: 0 6px 6px 6px;
 
     &-item {
-      transition: 0.1s all ease-in-out;
-
       &:hover {
-        background: var(--titlebar-popup-item-hover-bgColor);
+        background: var(--titlebar-popup-item-hover-bgcolor);
 
         .popup-item-shortcut {
           color: var(--titlebar-popup-item-hover-shortcut-color);
+        }
+
+        .popup-item-name {
+          color: var(--titlebar-popup-item-hover-color);
         }
       }
     }
   }
 
   .popup-item-separator {
-    background: var(--titlebar-menu-separator-bgColor);
+    background: var(--titlebar-menu-separator-bgcolor);
   }
 
   .popup-item-name {
     padding-right: 2rem;
     color: var(--titlebar-popup-item-name-color);
-    text-shadow: none;
+    text-shadow: 0px 1px #151515;
   }
 
   .popup-item-shortcut {
     color: var(--titlebar-popup-item-shortcut-color);
     text-shadow: none;
+    letter-spacing: 0.5px;
   }
 
   &-controls.type-windows .control {
@@ -307,7 +336,7 @@ button {
 
     &:hover {
       color: var(--titlebar-color);
-      background: var(--titlebar-popup-item-hover-bgColor);
+      background: var(--titlebar-popup-item-hover-bgcolor);
     }
 
     &.close:hover {
