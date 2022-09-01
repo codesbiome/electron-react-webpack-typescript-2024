@@ -120,7 +120,7 @@ const Application: React.FC = () => {
               setCounter(counter + 1);
             }}
           >
-            Increment <span>{counter}</span>
+            Increment {counter != 0 ? counter : ''} <span>{counter}</span>
           </button>
           &nbsp;&nbsp; &nbsp;&nbsp;
           <button
