@@ -54,10 +54,13 @@ const Application: React.FC = () => {
         </div>
         <div className='main-teaser'>
           <div>
-            Minimal boilerplate for rapid development of Desktop Applications
-            using Electron, React, Typescript and Webpack. For faster
-            development experience, this application will update using Hot
-            Reload without needing to restart.
+            Robust boilerplate for Desktop Applications with Electron and
+            ReactJS.
+            <br />
+            Hot Reloading is used in this project for fast development
+            experience.
+            <br />
+            If you think the project is useful enough, just spread the word around!
           </div>
         </div>
         <div className='versions'>
