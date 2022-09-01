@@ -17,7 +17,7 @@ export function createAppWindow(): BrowserWindow {
   appWindow = new BrowserWindow({
     width: 800,
     height: 600,
-    backgroundColor: '#1f252c',
+    backgroundColor: '#202020',
     show: false,
     autoHideMenuBar: true,
     frame: false,
