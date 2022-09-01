@@ -11,6 +11,8 @@ module.exports = {
     executableName: 'ERWT Boilerplate',
     // Set application copyright
     appCopyright: 'Copyright (C) 2021 Codesbiome, Guasam',
+    // Set application icon
+    icon: path.resolve('assets/images/appIcon.ico')
   },
   // Forge Makers
   makers: [
