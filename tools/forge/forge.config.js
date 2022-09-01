@@ -50,7 +50,7 @@ module.exports = {
       '@electron-forge/plugin-webpack',
       {
         // fix content-security-policy error when image or video src isn't same origin
-        devContentSecurityPolicy: '',
+        devContentSecurityPolicy: `default-src 'self' 'unsafe-inline' data:; script-src 'self' 'unsafe-eval' 'unsafe-inline' data:`,
         // Ports
         port: 3000, // Webpack Dev Server port
         loggerPort: 9000, // Logger port
