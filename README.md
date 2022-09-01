@@ -47,6 +47,23 @@ This project includes [electron-window](https://github.com/guasam/electron-windo
 - 🌞 Dark Mode + Light Mode (Theme)
 - 🎁 Package Bundling (Distribution / Release)
 
+<br>
+
+## Custom Aliases for Paths
+
+We can use predefined aliases for `import` paths already used in this project. Following are the details:
+
+| Alias         | Target Path                |
+| ------------- | -------------------------- |
+| `@assets`     | `/assets`                  |
+| `@main`       | `/src/main`                |
+| `@renderer`   | `/src/renderer`            |
+| `@common`     | `/src/common`              |
+| `@common`     | `/src/common`              |
+| `@misc`       | `/misc`                    |
+| `@src`        | `/src`                     |
+| `@components` | `/src/renderer/components` |
+
 <br><br>
 
 # Installation
