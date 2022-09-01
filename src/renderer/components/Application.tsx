@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import darkModeIcon from '@assets/images/darkmode.png';
-import lightModeIcon from '@assets/images/lightmode.png';
 import './Application.scss';
 import { icons } from './Icons';
 
@@ -71,6 +69,12 @@ const Application: React.FC = () => {
           </div>
           <div className='item'>
             <div>
+              <img className='item-icon' src={icons.erwt} /> ERWT
+            </div>
+            <span>{versions?.erwt}</span>
+          </div>
+          <div className='item'>
+            <div>
               <img className='item-icon' src={icons.typescript} /> Typescript
             </div>
             <span>{versions?.typescript}</span>
@@ -105,12 +109,6 @@ const Application: React.FC = () => {
             </div>
             <span>{versions?.license}</span>
           </div>
-          <div className='item'>
-            <div>
-              <img className='item-icon' src={icons.erwt} /> ERWT
-            </div>
-            <span>{versions?.erwt}</span>
-          </div>
         </div>
       </div>
 
@@ -135,13 +133,7 @@ const Application: React.FC = () => {
           </button>
           &nbsp;&nbsp; &nbsp;&nbsp;
           <button onClick={toggleTheme}>
-            Toggle Theme
-            <span>
-              <img
-                className='rotate'
-                src={darkTheme ? lightModeIcon : darkModeIcon}
-              />
-            </span>
+            {darkTheme ? 'Light Theme' : 'Dark Theme'}
           </button>
         </div>
       </div>
