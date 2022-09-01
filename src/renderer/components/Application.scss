@@ -63,15 +63,15 @@ h1 {
   box-sizing: border-box;
 
   &.has-border {
-    border: var(--app-border);
+    border: var(--app-border-color);
   }
 }
 
 button {
   background: var(--button-bgcolor);
-  color: #fff;
+  color: var(--button-color);
   font-weight: normal;
-  text-shadow: 0px 1px #00000078;
+  text-shadow: 0px 1px var(--button-shadow-color);
   font-family: var(--app-font-family);
   border: var(--button-border);
   padding: 0.5rem 1rem;
@@ -132,7 +132,7 @@ button {
   h1 {
     font-size: 1.5rem;
     font-weight: 300;
-    color: #dddddd;
+    color: var(--erwt-heading-color);
     line-height: 1;
     text-transform: uppercase;
   }
@@ -149,7 +149,7 @@ button {
 .main-teaser {
   position: relative;
   display: flex;
-  line-height: 1.6;
+  line-height: 25px;
   font-size: 14px;
   margin-bottom: 2em;
   color: gray;
@@ -163,6 +163,7 @@ button {
   padding-bottom: 10px;
   padding-right: 6px;
   border-radius: 0 0 8px 8px;
+  box-shadow: 0 8px 10px 0px #00000003;
 }
 
 .main-teaser:after {
@@ -300,6 +301,8 @@ button {
     border-radius: 0 6px 6px 6px;
 
     &-item {
+      padding: 0.3125rem 1rem;
+
       &:hover {
         background: var(--titlebar-popup-item-hover-bgcolor);
 
@@ -321,7 +324,7 @@ button {
   .popup-item-name {
     padding-right: 2rem;
     color: var(--titlebar-popup-item-name-color);
-    text-shadow: 0px 1px #151515;
+    text-shadow: 0px 1px var(--titlebar-popup-item-name-shadow-color);
   }
 
   .popup-item-shortcut {
