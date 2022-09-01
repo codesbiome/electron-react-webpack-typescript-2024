@@ -7,6 +7,24 @@ https://github.com/codesbiome/electron-react-webpack-typescript-2022
 
 <br>
 
+### v7.0.0
+
+- 🥳 New layout for default application.
+- 🤖 Overhaul for dark/light themes with new colors.
+- Improved transition timing of title menus list.
+- Fixed native modules compiling issue with update to related webpack loader.
+- Updated forge `devContentSecurityPolicy` config for electron window.
+- Upgraded outdated deps:
+  - `electron` upgraded to `v19.0.14`
+  - `@electron-forge` deps upgraded to `v6.0.0-beta.65`
+  - `@typescript-eslint` deps upgraded to `v5.36.1`
+  - `eslint` upgraded to `v8.23.0`
+  - `eslint-plugin-react` upgraded to `v7.30.1`
+  - `sass` upgrded to `v1.54.0`
+  - `typescript` upgraded to `v4.7.4`
+
+<br>
+
 ### v6.2.0
 
 - Upgraded outdated deps:
