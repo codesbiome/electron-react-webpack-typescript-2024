@@ -20,7 +20,7 @@ specifiers:
   classnames: ^2.3.1
   cross-env: ^7.0.3
   css-loader: ^6.7.1
-  electron: ^20.1.1
+  electron: ^19.0.14
   electron-squirrel-startup: ^1.0.0
   eslint: ^8.23.0
   eslint-import-resolver-alias: ^1.1.2
@@ -68,7 +68,7 @@ devDependencies:
   classnames: 2.3.1
   cross-env: 7.0.3
   css-loader: 6.7.1_webpack@5.74.0
-  electron: 20.1.1
+  electron: 19.0.15
   eslint: 8.23.0
   eslint-import-resolver-alias: 1.1.2_fkfqfehjtk7sk2efaqbgxsuasa
   eslint-plugin-import: 2.26.0_wyxuyzvlfep3lsyoibc4fosfq4
@@ -1887,6 +1887,16 @@ packages:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
     dev: true
 
+  /concat-stream/1.6.2:
+    resolution: {integrity: sha512-27HBghJxjiZtIk3Ycvn/4kbJk/1uZuJFfuPEns6LaEvpvG1f0hTea8lilrouyo9mVc2GWdcEZ8OLoGmSADlrCw==}
+    engines: {'0': node >= 0.8}
+    dependencies:
+      buffer-from: 1.1.2
+      inherits: 2.0.4
+      readable-stream: 2.3.7
+      typedarray: 0.0.6
+    dev: true
+
   /config-chain/1.1.13:
     resolution: {integrity: sha512-qj+f8APARXHrM0hraqXYb2/bOVSV4PvJQlNZ/DVj0QrmNM2q2euizkeuVckQ57J+W0mRH6Hvi+k50M4Jul2VRQ==}
     dependencies:
@@ -2425,15 +2435,15 @@ packages:
     dev: true
     optional: true
 
-  /electron/20.1.1:
-    resolution: {integrity: sha512-cFTfP4R2O5onaXiu+S20xK7eLpyX/H7PYk7lj9mlHS0ui1+w1jDDWD3RhvjmPgeksPfMAZiRLK8lAQvzSBAKdg==}
-    engines: {node: '>= 10.17.0'}
+  /electron/19.0.15:
+    resolution: {integrity: sha512-VB9cT/6VLg1GOSmEST3mGLN2VCrQMv75dcnEsHjXq6DjltStR/miiXKqujOTVFNzT4fxTRcDDGX5iFF51H+Jhw==}
+    engines: {node: '>= 8.6'}
     hasBin: true
     requiresBuild: true
     dependencies:
       '@electron/get': 1.14.1
       '@types/node': 16.11.56
-      extract-zip: 2.0.1
+      extract-zip: 1.7.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2911,6 +2921,18 @@ packages:
       chardet: 0.7.0
       iconv-lite: 0.4.24
       tmp: 0.0.33
+    dev: true
+
+  /extract-zip/1.7.0:
+    resolution: {integrity: sha512-xoh5G1W/PB0/27lXgMQyIhP5DSY/LhoCsOyZgb+6iMmRtCwVBo55uKaMoEYrDCKQhWvqEip5ZPKAc6eFNyf/MA==}
+    hasBin: true
+    dependencies:
+      concat-stream: 1.6.2
+      debug: 2.6.9
+      mkdirp: 0.5.6
+      yauzl: 2.10.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /extract-zip/2.0.1:
@@ -4530,7 +4552,6 @@ packages:
     dependencies:
       minimist: 1.2.6
     dev: true
-    optional: true
 
   /mkdirp/1.0.4:
     resolution: {integrity: sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==}
@@ -6301,6 +6322,10 @@ packages:
     dependencies:
       media-typer: 0.3.0
       mime-types: 2.1.35
+    dev: true
+
+  /typedarray/0.0.6:
+    resolution: {integrity: sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==}
     dev: true
 
   /typescript/4.8.2:
