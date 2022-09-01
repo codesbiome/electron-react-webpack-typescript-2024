@@ -5,35 +5,24 @@ Electron React Webpack Typescript Boilerplate with Custom Window and Titlebar Me
 A minimal secure boilerplate for writing Desktop Applications using [Electron](https://www.electronjs.org/), [React](https://reactjs.org/), [Webpack](https://webpack.js.org/) & [TypeScript](https://www.typescriptlang.org/). <br /> This project makes use of latest packages and configurations to serve the best environment for development.
 
 <br>
-<center>
-    <img src="assets/images/app-dark.png" width="600" />
-</center>
+<img src="assets/images/animation.gif" />
+
+Special thanks to [@guasam](https://github.com/guasam) for their contirubtion regarding custom window titlebar, menus & themes.
 
 <br>
 
-### Light Mode
+# Custom Electron Window Titlebar & Menus etc.
 
-<img src="assets/images/app-light.png" width="200" />
+This project includes [electron-window](https://github.com/guasam/electron-window) for creating custom window components.
 
-<br>
+**Following are the list of features it provides :**
 
-# Custom Electron Window Titlebar, Frame & Menus
-
-This project includes [Electron Window](https://github.com/guasam/electron-window) submodule for Custom Window Frame, Titlebar, Menu Items, Window Controls & Application Icon etc by default. Following are some tips regarding to this submodule :
-
-<br>
-
+- Custom Titlebar for Electron Window.
+- Easily changable platform specific controls for max/min/close buttons using `windows` or `mac` value for `platform` property with `<WindowFrame>` in renderer.
+- Titlebar menus can show/hide by pressing `alt` or `option` key.
+- Window frame `title` prop displays in titlebar center when menus are toggeled off.
+- Menu entries can be customized in `misc/window/titlebarMenus.ts` file.
 - Menu items and windows controls layout or colors can be customized easily by modifying the `misc/window` modules.
-- The `windows` platform controls style is being used by default in the titlebar.
-- Menubar can be toggled by pressing `[alt]` or `[option]` key
-- When menubar is toggled `off`, application title will be displayed in center of titlebar.
-- Menu entries can be assigned/modified in `misc/window/titlebarMenus.ts` file.
-
-<br>
-
-<center>
-    <img src="assets/images/app-menu.png" width="600" />
-</center>
 
 <br><br>
 
