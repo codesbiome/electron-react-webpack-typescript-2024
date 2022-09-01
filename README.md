@@ -59,7 +59,6 @@ We can use predefined aliases for `import` paths already used in this project. F
 | `@main`       | `/src/main`                |
 | `@renderer`   | `/src/renderer`            |
 | `@common`     | `/src/common`              |
-| `@common`     | `/src/common`              |
 | `@misc`       | `/misc`                    |
 | `@src`        | `/src`                     |
 | `@components` | `/src/renderer/components` |
