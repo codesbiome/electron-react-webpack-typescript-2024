@@ -10,7 +10,7 @@
  * @package : Window Titlebar (Component)
  */
 
-import React, { useEffect, createRef, useState, useContext } from 'react';
+import React, { createRef, useContext, useEffect, useRef, useState } from 'react';
 import titlebarMenus from '../titlebarMenus';
 import classNames from 'classnames';
 import WindowControls from './WindowControls';
@@ -25,9 +25,8 @@ type Props = {
 };
 
 const Titlebar: React.FC<Props> = (props) => {
-  const [activeMenuIndex, setActiveMenuIndex] = useState(null);
+  const activeMenuIndex = useRef<number | null>(null);
   const menusRef = titlebarMenus.map(() => createRef<HTMLDivElement>());
-  const [outsider, setOutsider] = useState(false);
   const [menusVisible, setMenusVisible] = useState(true);
   const windowContext = useContext(WindowContext);
 
@@ -52,13 +51,14 @@ const Titlebar: React.FC<Props> = (props) => {
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (
-        menusRef[activeMenuIndex].current &&
-        !menusRef[activeMenuIndex].current.contains(event.target as Node)
-      ) {
-        // console.log('You clicked outside of me!');
-        closeActiveMenu();
-        setOutsider(true);
+      if (activeMenuIndex.current != null) {
+        if (
+          menusRef[activeMenuIndex.current].current &&
+          !menusRef[activeMenuIndex.current].current?.contains(event.target as Node)
+        ) {
+          // console.log('You clicked outside of me!');
+          closeActiveMenu();
+        }
       }
     }
 
@@ -77,51 +77,47 @@ const Titlebar: React.FC<Props> = (props) => {
     e.stopPropagation();
     e.preventDefault();
 
-    if (outsider) {
-      return setOutsider(false);
-    }
-
-    if (menusRef[index].current.classList.contains('active')) {
+    if (menusRef[index].current?.classList.contains('active')) {
       // close..
       closeActiveMenu();
     } else {
       // open..
-      menusRef[index].current.classList.add('active');
-      setActiveMenuIndex(index);
-      menusRef[index].current.parentElement.classList.add('active');
+      menusRef[index].current?.classList.add('active');
+      activeMenuIndex.current = index;
+      menusRef[index].current?.parentElement?.classList.add('active');
     }
   }
 
   function onMenuHover(index: number) {
-    if (activeMenuIndex != null) {
-      menusRef[activeMenuIndex].current.classList.toggle('active');
-      menusRef[index].current.classList.toggle('active');
-      menusRef[index].current.parentElement.classList.toggle('active');
-      menusRef[activeMenuIndex].current.parentElement.classList.toggle(
+    if (activeMenuIndex.current != null) {
+      menusRef[activeMenuIndex.current].current?.classList.toggle('active');
+      menusRef[index].current?.classList.toggle('active');
+      menusRef[index].current?.parentElement?.classList.toggle('active');
+      menusRef[activeMenuIndex.current].current?.parentElement?.classList.toggle(
         'active',
       );
 
-      setActiveMenuIndex(index);
+      activeMenuIndex.current = index;
     }
   }
 
   function closeActiveMenu() {
-    menusRef[activeMenuIndex]?.current.classList.remove('active');
-    menusRef[activeMenuIndex]?.current.parentElement.classList.remove('active');
-    setActiveMenuIndex(null);
-
-    setTimeout(function () {
-      setOutsider(false);
-    }, 200);
+    if (activeMenuIndex.current != null) {
+      menusRef[activeMenuIndex.current].current?.classList.remove('active');
+      menusRef[activeMenuIndex.current]?.current?.parentElement?.classList.remove('active');
+      activeMenuIndex.current = null;
+    }
   }
 
-  function handleAction(action: string, value: string | number) {
+  function handleAction(action?: string, value?: string | number) {
     closeActiveMenu();
     const c: Record<string, CallableFunction> = context;
-    if (typeof c[action] === 'function') {
-      c[action](value);
-    } else {
-      console.log(`action [${action}] is not available in titlebar context`);
+    if (action) {
+      if (typeof c[action] === 'function') {
+        c[action](value);
+      } else {
+        console.log(`action [${action}] is not available in titlebar context`);
+      }
     }
   }
 
@@ -129,7 +125,7 @@ const Titlebar: React.FC<Props> = (props) => {
     <div className='window-titlebar'>
       {props.icon ? (
         <section className='window-titlebar-icon'>
-          <img src={props.icon} />
+          <img src={props.icon} alt='titlebar icon' />
         </section>
       ) : (
         ''
