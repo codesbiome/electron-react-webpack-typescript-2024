@@ -15,7 +15,12 @@
     "paths": {
       "*": ["node_modules/*"],
       "@assets/*": ["./assets/*"],
-      "@src/*": ["./src/*"]
+      "@components/*": ["./src/renderer/components/*"],
+      "@common/*": ["./src/common/*"],
+      "@main/*": ["./src/main/*"],
+      "@renderer/*": ["./src/renderer/*"],
+      "@src/*": ["./src/*"],
+      "@misc/*": ["./misc/*"]
     }
   },
   "include": ["src/**/*", "tools/**/*"]
