@@ -29,6 +29,7 @@ export function createAppWindow(): BrowserWindow {
       nodeIntegrationInWorker: false,
       nodeIntegrationInSubFrames: false,
       preload: APP_WINDOW_PRELOAD_WEBPACK_ENTRY,
+      sandbox: false,
     },
   });
 
