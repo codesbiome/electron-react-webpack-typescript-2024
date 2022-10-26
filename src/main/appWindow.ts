@@ -16,7 +16,7 @@ export function createAppWindow(): BrowserWindow {
   appWindow = new BrowserWindow({
     width: 800,
     height: 600,
-    backgroundColor: '#1f252c',
+    backgroundColor: '#202020',
     show: false,
     autoHideMenuBar: true,
     icon: path.resolve('assets/images/appIcon.ico'),
@@ -26,6 +26,7 @@ export function createAppWindow(): BrowserWindow {
       nodeIntegrationInWorker: false,
       nodeIntegrationInSubFrames: false,
       preload: APP_WINDOW_PRELOAD_WEBPACK_ENTRY,
+      sandbox: false,
     },
   });
 
