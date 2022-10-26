@@ -12,7 +12,7 @@ module.exports = {
     // Set application copyright
     appCopyright: 'Copyright (C) 2021 Codesbiome, Guasam',
     // Set application icon
-    icon: path.resolve('assets/images/appIcon.ico')
+    icon: path.resolve('assets/images/appIcon.ico'),
   },
   // Forge Makers
   makers: [
@@ -45,14 +45,12 @@ module.exports = {
   ],
   // Forge Plugins
   plugins: [
-    [
-      // The Webpack plugin allows you to use standard Webpack tooling to compile both your main process code
-      // and your renderer process code, with built in support for Hot Module Reloading in the renderer
-      // process and support for multiple renderers.
-      '@electron-forge/plugin-webpack',
-      {
-        // fix content-security-policy error when image or video src isn't same origin
-        devContentSecurityPolicy: `default-src 'self' 'unsafe-inline' data:; script-src 'self' 'unsafe-eval' 'unsafe-inline' data:`,
+    {
+      name: '@electron-forge/plugin-webpack',
+      config: {
+        // Fix content-security-policy error when image or video src isn't same origin
+        // Remove 'unsafe-eval' to get rid of console warning in development mode.
+        devContentSecurityPolicy: `default-src 'self' 'unsafe-inline' data:; script-src 'self' 'unsafe-inline' data:`,
         // Ports
         port: 3000, // Webpack Dev Server port
         loggerPort: 9000, // Logger port
@@ -85,6 +83,6 @@ module.exports = {
           liveReload: false,
         },
       },
-    ],
+    },
   ],
 };
