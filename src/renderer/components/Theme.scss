@@ -7,85 +7,132 @@
  * @package : Application Theme Colors Stylesheet
 */
 
-// Exo 2 Font Family
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap');
-
-/**
- *==========================================================================
- * ERWT Light Theme
- *==========================================================================
+/*
+ *=========================================================================
+ * ERWT Dark Theme
+ *=========================================================================
  *
- * Here we apply the stylesheet codes for Light theme in application.
+ * Here we define the Dark Theme (stylesheet) for application.
  */
 
-body {
-  --base-font-size: 16px;
-  --base-font: 'Exo 2', 'Segoe UI', sans-serif;
-  --base-bgcolor: #f7fafb;
-  --selection-color: #fff;
-  --selection-bgColor: #677687;
-  --scroll-width: 10px;
-  --scroll-track-bgColor: #2f2f2f52;
-  --scroll-thumb-bgColor: rgba(59, 59, 59, 0.5);
-  --scroll-thumb-hover-bgColor: #555;
-  --button-color: #778ca9;
-  --button-bgColor: #ffffff;
-  --button-gradient: linear-gradient(0deg, #f1f3f5, white);
-  --button-border: 1px solid #d6e0ec;
-  --button-hover-bgColor: #f4f5f7;
-  --button-active-bgColor: #f1f1f1;
-  --button-badge-color: #778ca9;
-  --button-badge-bgColor: #e2e8f0;
-
-  //-----------------------------------------
+:root {
   // Application
-  //-----------------------------------------
+  --app-accent-color: #32639f;
+  --app-font-size: 16px;
+  --app-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --app-bgcolor: #202020;
+  --app-border-color: #3b3f44;
 
-  --app-border: 1px solid #f5f8f9;
-  --app-footer-bgColor: #e0e5eb;
-  --app-heading-color: #728296;
-  --main-teaser-color: #708298;
-  --main-teaser-bgColor: #fff;
-  --version-color: #90847c;
-  --version-bgColor: rgba(255, 255, 255, 0.85);
-  --version-number-color: #3aa2d5;
-  --erwt-gradient: linear-gradient(
-    180deg,
-    transparent,
-    var(--titlebar-bgcolor)
-  );
+  // Scrollbar
+  --scroll-width: 10px;
+  --scroll-track-bgcolor: #2f2f2f52;
+  --scroll-thumb-bgcolor: rgba(59, 59, 59, 0.747);
+  --scroll-thumb-hover-bgcolor: #555;
+
+  // Selection
+  --selection-bgcolor: var(--app-accent-color);
+  --selection-color: #fff;
+
+  // Button
+  --button-color: #fff;
+  --button-border: 1px solid #222424;
+  --button-bgcolor: hsl(0, 0%, 22%);
+  --button-hover-bgcolor: hsl(0, 0%, 24%);
+  --button-active-bgcolor: hsl(0deg 0% 20%);
+  --button-shadow-color: #00000078;
+
+  // Titlebar
+  --titlebar-bgcolor: hsl(0deg 0% 10%);
+  --titlebar-color: hsl(0, 0%, 85%);
+  --titlebar-title-color: hsl(0, 0%, 85%);
+  --titlebar-menu-border-color: #2d2c2c;
+  --titlebar-menu-title-hover-bgcolor: hsl(0deg 0% 12%);
+  --titlebar-menu-title-active-bgcolor: hsl(0deg 0% 14%);
+  --titlebar-menu-title-active-border-color: var(--titlebar-menu-border-color);
+  --titlebar-menu-separator-bgcolor: var(--titlebar-menu-border-color);
+  --titlebar-popup-bgcolor: hsl(0deg 0% 14%);
+  --titlebar-popup-border: 1px solid var(--titlebar-menu-border-color);
+  --titlebar-popup-shadow: 4px 10px 10px rgba(0, 0, 0, 0.2);
+  --titlebar-popup-item-name-color: hsl(0, 0%, 75%);
+  --titlebar-popup-item-shortcut-color: hsla(0, 0%, 55%, 0.8);
+  --titlebar-popup-item-hover-color: hsl(0, 0%, 85%);
+  --titlebar-popup-item-hover-bgcolor: hsl(0deg 0% 18%);
+  --titlebar-popup-item-hover-shortcut-color: var(--app-accent-color);
+  --titlebar-popup-item-name-shadow-color: #151515;
+
+  // ERWT
+  --erwt-heading-color: #dddddd;
 }
 
-/**
- *==========================================================================
- * ERWT Dark Theme
- *==========================================================================
+/*
+ *=========================================================================
+ * ERWT Light Theme
+ *=========================================================================
  *
- * Here we apply the stylesheet codes for Dark theme in application.
+ * Light theme for ERWT application.
  */
 
-body.dark-mode {
-  --base-bgcolor: #363839;
-  --button-color: #9b9b9b;
-  --button-bgColor: #3b3e3f;
-  --button-gradient: linear-gradient(0deg, #3a3d3e, #3b3e3f);
-  --button-border: 1px solid #222424;
-  --button-hover-bgColor: #3f4344;
-  --button-active-bgColor: #3c4041;
-  --button-badge-color: #93857b;
-  --button-badge-bgColor: #1f1f1fc9;
-
-  //-----------------------------------------
+body:not(.dark-mode) {
   // Application
-  //-----------------------------------------
+  --app-accent-color: #2f77ca;
+  --app-bgcolor: #f1f0f0;
 
-  --app-border: 1px solid #363839;
-  --app-footer-bgColor: #181818;
-  --app-heading-color: #bababa;
-  --main-teaser-color: #828282;
-  --main-teaser-bgColor: #191919;
-  --version-color: #86807b;
-  --version-bgColor: rgb(0 0 0 / 20%);
-  --version-number-color: #659cb6;
-  --erwt-gradient: linear-gradient(180deg, #111111, #131313);
+  // Selection
+  --selection-bgcolor: var(--app-accent-color);
+  --selection-color: #fff;
+
+  // Scrollbar
+  --scroll-track-bgcolor: #2f2f2f1f;
+  --scroll-thumb-bgcolor: rgb(59 59 59 / 30%);
+  --scroll-thumb-hover-bgcolor: var(--app-accent-color);
+
+  // Button
+  --button-border: 1px solid #eaeaea;
+  --button-bgcolor: #fff;
+  --button-color: #424242;
+  --button-shadow-color: white;
+  --button-hover-bgcolor: hsl(0, 0%, 98%);
+  --button-active-bgcolor: hsl(0, 0%, 96%);
+
+  // Titlebar
+  --titlebar-bgcolor: #dcddde;
+  --titlebar-color: #1f1f1f;
+  --titlebar-title-color: var(--titlebar-color);
+  --titlebar-menu-title-hover-bgcolor: #e6e6e6;
+  --titlebar-popup-item-hover-bgcolor: hsl(210deg 16% 92%);
+  --titlebar-popup-bgcolor: hsl(0deg 0% 99%);
+  --titlebar-menu-title-active-bgcolor: hsl(0deg 0% 99%);
+  --titlebar-menu-title-active-border-color: #d3d6d8;
+  --titlebar-popup-border: 1px solid #d3d6d8;
+  --titlebar-menu-separator-bgcolor: #d3d6d8;
+  --titlebar-popup-item-hover-bgcolor: #d6dade;
+  --titlebar-popup-item-name-color: #0e0e0e;
+  --titlebar-popup-item-name-shadow-color: rgba(255, 255, 255, 0.8);
+  --titlebar-popup-item-hover-color: #000000;
+  --titlebar-popup-item-hover-shortcut-color: var(--app-accent-color);
+  --titlebar-popup-item-hover-bgcolor: #e6e6e6;
+
+  // ERWT
+  --erwt-heading-color: #282828;
+
+  // Overrides
+  .main-teaser {
+    background: #fff;
+    color: #747474;
+
+    &:after {
+      box-shadow: none;
+    }
+  }
+
+  .versions .item {
+    color: #656565;
+    background: #fff;
+    box-shadow: 0 2px 4px #00000005;
+
+    & > span {
+      color: #999999;
+    }
+  }
 }
