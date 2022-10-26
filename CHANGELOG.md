@@ -7,6 +7,28 @@ https://github.com/codesbiome/electron-react-webpack-typescript-2022
 
 <br>
 
+### v7.1.0
+
+- 🎉 Electron version upgraded to `v21.2.0`
+- Fixed Devtools Console warning message caused by content policy.
+- Upgraded forge config plugins format to support latest version.
+- Disabled `sandbox` by default in application window.
+- Upgraded outdated deps:
+  - `electron` upgraded to `v21.2.0`
+  - `@electron-forge` deps upgraded to `v6.0.0-beta.68`
+  - `@pmmmwh/react-refresh-webpack-plugin` upgraded to `v0.5.8`
+  - `@typescript-eslint` deps upgraded to `v5.41.0`
+  - `classnames` upgraded to `v2.3.2`
+  - `eslint` upgraded to `v8.26.0`
+  - `eslint-plugin-react` upgraded to `v7.31.10`
+  - `less-loader` upgraded to `v11.1.0`
+  - `sass` upgraded to `v1.55.0`
+  - `sass-loader` upgraded to `v13.1.0`
+  - `ts-loader` upgraded to `v9.4.1`
+  - `typescript` upgraded to `v4.8.4`
+
+<br>
+
 ### v7.0.0
 
 - 🥳 New layout for default application.
