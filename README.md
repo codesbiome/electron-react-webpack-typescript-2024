@@ -13,4 +13,4 @@ This minimal version does not include custom "electron-window" integration for T
 
 **Read more about this project here:**
 <br />
-https://github.com/codesbiome/electron-react-webpack-typescript-2022
+https://github.com/codesbiome/electron-react-webpack-typescript-2023
