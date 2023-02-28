@@ -21,6 +21,6 @@ Currently only in Hebrew, English support will be added in future versions.
   - Color Picker - [Coloris](https://github.com/mdbassit/Coloris)
 
 ## Building from source
-1. Clone the repository to a folder on your machine: `git clone https://github.com/yonatanmgr/mathberet.git`
+1. Clone the repository to a folder on your machine: `git clone https://github.com/yonatanmgr/mathberet-react.git`
 2. Run `npm install` in the project root folder
 3. Run `npm start` in the project root folder
