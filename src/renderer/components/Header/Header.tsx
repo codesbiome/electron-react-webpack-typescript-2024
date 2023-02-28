@@ -10,7 +10,7 @@ const Header = () => {
     <div className='header'>
       <div className='main-heading'>
         <div className='logo'>
-          <img src={icons.LogoIcon} id='logo' alt='מתברת'/>
+          <img src={icons.logo} id='logo' alt='מתברת'/>
         </div>
         <FilePath fileName='בדיקה' folderName='תיקייה' />
         <div className='tags'>

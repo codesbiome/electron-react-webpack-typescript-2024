@@ -6,7 +6,6 @@ import LeftSidebar from './LeftSidebar/LeftSidebar';
 import Header from './Header/Header';
 import KBar from './KBar';
 
-
 const Application: React.FC = () => {
   const [darkTheme, setDarkTheme] = useState(true);
   const [versions, setVersions] = useState<Record<string, string>>({});
@@ -52,12 +51,11 @@ const Application: React.FC = () => {
 
   return (
     <div id='erwt'>
-      <Header/>
+      <Header />
       <div className='workspace'>
-        {/* <KBar /> */}
-        <RightSidebar/>
+        <RightSidebar />
         <Page />
-        <LeftSidebar/>
+        <LeftSidebar />
       </div>
     </div>
   );
