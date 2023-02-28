@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './Application.scss';
 import Page from './Page';
-import RightSidebar from './RightSidebar';
+import RightSidebar from './RightSidebar/RightSidebar';
 import LeftSidebar from './LeftSidebar';
 import Header from './Header/Header';
 import KBar from './KBar';
-
 
 const Application: React.FC = () => {
   const [darkTheme, setDarkTheme] = useState(true);
@@ -52,11 +51,11 @@ const Application: React.FC = () => {
 
   return (
     <div id='erwt'>
-      <Header/>
+      <Header />
       <div className='workspace'>
-        <RightSidebar/>
+        <RightSidebar />
         <Page />
-        <LeftSidebar/>
+        <LeftSidebar />
       </div>
     </div>
   );
