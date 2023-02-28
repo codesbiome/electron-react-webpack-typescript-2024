@@ -24,7 +24,10 @@ const ToolsPanel: React.FC = () => {
 const Page: React.FC = () => {
     return (
         <div className='page'>
-        <ToolsPanel/>
+            <div className="page-grid">
+
+            </div>
+            <ToolsPanel/>
         </div>
       );
 }
