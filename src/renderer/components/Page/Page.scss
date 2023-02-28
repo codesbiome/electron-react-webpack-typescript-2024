@@ -1,0 +1,81 @@
+@import '../Theme.scss';
+
+/**
+ *==========================================================================
+ * Application Specific Stylesheet
+ *==========================================================================
+ *
+ * Here we use the codes to apply application specific style
+ */
+
+::selection {
+  background: var(--selection-bgcolor);
+  color: var(--selection-color);
+}
+
+::-webkit-scrollbar {
+  width: var(--scroll-width);
+
+  &-track {
+    background: var(--scroll-track-bgcolor);
+  }
+
+  &-thumb {
+    background: var(--scroll-thumb-bgcolor);
+  }
+
+  &-thumb:hover {
+    background: var(--scroll-thumb-hover-bgcolor);
+  }
+}
+
+
+.page{
+    width: 100%;
+    height: 100%;
+    background: #111A1D;
+    border-width: 2px 2px 0px 2px;
+    border-style: solid;
+    box-sizing: border-box;
+    border-color: #1A2428;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .page-grid {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      left: 20vw;
+      padding-top: 80px;
+      width: 60vw;
+      height: 100%;
+      align-items: center;
+    }
+
+    .tools-panel{  
+        position: fixed;
+      padding: 8px 10px 8px 10px;
+      height: 40px;
+      bottom: 14px;
+      z-index: 20;
+      width: max-content;
+      display: flex;
+      flex-direction: row-reverse;
+      border-radius: 8px;
+      gap: 8px;
+      background: #1E2D33;
+      box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.25);
+
+      .tool{
+        border-radius: 5px;
+        width: 40px;
+        height: 40px;
+
+        &#clearPage{
+          background-color: #332222;
+        }
+      }
+    }
+  }

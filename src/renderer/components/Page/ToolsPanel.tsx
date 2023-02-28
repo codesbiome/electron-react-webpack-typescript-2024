@@ -1,5 +1,5 @@
 import React from 'react';
-import './Application.scss';
+import './Page.scss';
 
 type ToolProps = { title: string; buttonType: string };
 const Tool = ({ buttonType, title }: ToolProps) => {
@@ -20,13 +20,4 @@ const ToolsPanel = () => {
   );
 };
 
-const Page = () => {
-  return (
-    <div className='page'>
-      <div className='page-grid'></div>
-      <ToolsPanel />
-    </div>
-  );
-};
-
-export default Page;
+export default ToolsPanel

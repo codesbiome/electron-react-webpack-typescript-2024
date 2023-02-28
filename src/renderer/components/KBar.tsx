@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import * as React from 'react';
 import './Application.scss';
 
 import {
@@ -6,28 +6,28 @@ import {
   KBarPortal,
   KBarPositioner,
   KBarAnimator,
-  KBarSearch,
-  useMatches,
-  NO_GROUP,
+  KBarSearch
 } from 'kbar';
 
-const actions = [
-  {
-    id: 'blog',
-    name: 'Blog',
-    shortcut: ['b'],
-    keywords: 'writing words',
-    perform: () => (window.location.pathname = 'blog'),
-  },
-  {
-    id: 'contact',
-    name: 'Contact',
-    shortcut: ['c'],
-    keywords: 'email    ',
-    perform: () => (window.location.pathname = 'contact'),
-  },
-];
+
 function KBar() {
+  const actions = [
+    {
+      id: 'blog',
+      name: 'Blog',
+      shortcut: ['b'],
+      keywords: 'writing words',
+      perform: () => (window.location.pathname = 'blog'),
+    },
+    {
+      id: 'contact',
+      name: 'Contact',
+      shortcut: ['c'],
+      keywords: 'email    ',
+      perform: () => (window.location.pathname = 'contact'),
+    },
+  ];
+  
   return (
     <KBarProvider actions={actions}>
       <KBarPortal>

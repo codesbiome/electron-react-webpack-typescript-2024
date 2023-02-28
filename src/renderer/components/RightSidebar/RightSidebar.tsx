@@ -1,5 +1,4 @@
 import React from 'react';
-import './Application.scss';
 
 type SidebarButtonProps = { title: string; buttonType: string };
 const SidebarButton = ({ buttonType, title }: SidebarButtonProps) => {
