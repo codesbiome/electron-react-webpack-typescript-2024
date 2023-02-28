@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './Application.scss';
-import Page from './Page';
+import Page from './Page/Page';
 import RightSidebar from './RightSidebar/RightSidebar';
-import LeftSidebar from './LeftSidebar';
+import LeftSidebar from './LeftSidebar/LeftSidebar';
 import Header from './Header/Header';
 import KBar from './KBar';
 

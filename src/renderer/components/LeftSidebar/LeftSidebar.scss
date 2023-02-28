@@ -1,0 +1,26 @@
+@import '../Theme.scss';
+
+.actions-group {
+    display: none;
+}
+
+.left-sidebar.open{
+    .actions-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    
+        .actions-group-title {
+            width: 100%;
+            margin: 0;
+            color: var(--titlebar-color);
+            font-size: 25px;
+        
+        }
+    
+        .actions-group-content{
+            width: 100%;
+            min-height: 100px;
+        }
+    }
+}

@@ -55,12 +55,14 @@ body {
 
 h1 {
   margin: 0;
+
 }
 
 #app {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  -webkit-user-select: none;
   user-select: none;
 
   &.has-border {
@@ -141,57 +143,12 @@ button {
     justify-content: center;
     gap: 10px;
     
-    .page{
-      width: 100%;
-      height: 100%;
-      background: #111A1D;
-      border-width: 2px 2px 0px 2px;
-      border-style: solid;
-      box-sizing: border-box;
-      border-color: #1A2428;
-      border-radius: 15px 15px 0px 0px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      .page-grid {
-        position: fixed;
-        left: 18vw;
-        padding-top: 80px;
-        width: calc(100vw - 550px);
-        height: 100%;
-      }
-
-      .tools-panel{  
-        position: fixed;
-        left: 38vw;
-        padding: 8px 10px 8px 10px;
-        height: 40px;
-        bottom: 14px;
-        z-index: 20;
-        width: max-content;
-        display: flex;
-        flex-direction: row-reverse;
-        border-radius: 8px;
-        gap: 8px;
-        background: #1E2D33;
-        box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.25);
-
-        .tool{
-          border-radius: 5px;
-          width: 40px;
-          height: 40px;
-
-          &#clearPage{
-            background-color: #332222;
-          }
-        }
-      }
-    }
+    
 
     .right-sidebar.open, .left-sidebar.open{
       width: 100%;
-      max-width: 230px;
+      min-width: 230px;
+      max-width: 15vw;
     }
 
     .left-sidebar{
@@ -200,9 +157,10 @@ button {
       min-width: 45px;
       max-width: 45px;
       height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     }
-
-  
   }
 }
 
