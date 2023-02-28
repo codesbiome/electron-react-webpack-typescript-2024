@@ -1,171 +1,26 @@
-# Electron React Webpack Typescript (ERWT)
+![](https://i.imgur.com/I9J1zVb.png)
 
-Electron React Webpack Typescript Boilerplate with Custom Window and Titlebar Menus.
+> Mathberet (מַתְבֶּרֶת) - A digital mathematics notebook, written in Vanilla ES6 and built with Electron.
+Currently only in Hebrew, English support will be added in future versions.
 
-A minimal secure boilerplate for writing Desktop Applications using [Electron](https://www.electronjs.org/), [React](https://reactjs.org/), [Webpack](https://webpack.js.org/) & [TypeScript](https://www.typescriptlang.org/). <br /> This project makes use of latest packages and configurations to serve the best environment for development.
+**Using Mathberet** - [Wiki](https://github.com/yonatanmgr/mathberet/wiki)
 
-<br>
-<img src="assets/images/animation.gif" />
+## Libraries Used
+- Custom Block Editor
+  - [GridStack](https://github.com/gridstack/gridstack.js)
+- Math Blocks
+  - [KaTeX](https://github.com/gridstack/gridstack.js)
+  - [MathLive & Compute Engine](https://cortexjs.io/)
+- Text Blocks
+  - [Quill](https://github.com/quilljs/quill)
+- Graph Blocks
+  - [GeoGebra](https://github.com/geogebra/geogebra)
+- Misc.
+  - Storing User Preferences - [Electron Store](https://github.com/sindresorhus/electron-store)
+  - Deleting to Recycle Bin - [Trash](https://github.com/sindresorhus/trash)
+  - Color Picker - [Coloris](https://github.com/mdbassit/Coloris)
 
-Special thanks to [@guasam](https://github.com/guasam) for their contribution regarding custom window titlebar, menus & themes.
-
-<br>
-
-# Custom Electron Window Titlebar & Menus etc.
-
-This project includes [electron-window](https://github.com/guasam/electron-window) for creating custom window components.
-
-**Following are the list of features it provides :**
-
-- Custom Titlebar for Electron Window.
-- Easily changable platform specific controls for max/min/close buttons using `windows` or `mac` value for `platform` property with `<WindowFrame>` in renderer.
-- Titlebar menus can show/hide by pressing `alt` or `option` key.
-- Window frame `title` prop displays in titlebar center when menus are toggeled off.
-- Menu entries can be customized in `misc/window/titlebarMenus.ts` file.
-- Menu items and windows controls layout or colors can be customized easily by modifying the `misc/window` modules.
-
-<br><br>
-
-# Core Features
-
-- 🌟 Electron
-- 🌀 TypeScript
-- ⚛️ React
-- 🥗 SASS/SCSS Loader
-- 🛶 LESS Loader (optional)
-- 🎨 CSS Loader
-- 📸 Image Loader
-- 🆎 Font Loader
-- 🧹 ESLint
-- 📦 Electron Forge
-- 📐 Custom Window Frame
-- 📐 Custom Window Titlebar
-- 📐 Custom Window Menubar
-- 🔱 Webpack & Configuration
-- 🧩 Aliases for Project Paths
-- 🔥 React Fast Refresh + Webpack HMR
-- 🌞 Dark Mode + Light Mode (Theme)
-- 🎁 Package Bundling (Distribution / Release)
-
-<br>
-
-## Custom Aliases for Paths
-
-We can use predefined aliases for `import` paths already used in this project. Following are the details:
-
-| Alias         | Target Path                |
-| ------------- | -------------------------- |
-| `@assets`     | `/assets`                  |
-| `@main`       | `/src/main`                |
-| `@renderer`   | `/src/renderer`            |
-| `@common`     | `/src/common`              |
-| `@misc`       | `/misc`                    |
-| `@src`        | `/src`                     |
-| `@components` | `/src/renderer/components` |
-
-<br><br>
-
-# Installation
-
-![status](https://img.shields.io/badge/ERWT-Main%20Version-blue.svg)
-
-Main version of this project contains files structure in separate context for `main` and `renderer`, with custom electron window, titlebar etc.
-
-```bash
-git clone https://github.com/codesbiome/electron-react-webpack-typescript-2023
-```
-
-<br>
-<div align="center">
-    <b>OR</b>
-</div>
-<br>
-
-![status](https://img.shields.io/badge/ERWT-Minimal%20Version-0a922a.svg)
-
-Minimal version of ERWT contains very simple project files structure, no custom window, no custom titlebar & menus.
-
-```bash
-git clone -b minimal https://github.com/codesbiome/electron-react-webpack-typescript-2023
-```
-
-<br>
-
-Install dependencies using [pnpm](https://pnpm.io/) or [yarn](https://www.npmjs.com/package/yarn) or [npm](https://www.npmjs.com/) :
-
-```bash
-# using pnpm
-pnpm install
-
-# or using yarn
-yarn install
-
-# or using npm
-npm install
-```
-
-<br />
-
-## Start : Development
-
-To develop and run your application, you need to run following command.
-<br />
-Start electron application for development :
-
-```bash
-yarn start
-```
-
-<br />
-
-## Lint : Development
-
-To lint application source code using ESLint via this command :
-
-```bash
-yarn lint
-```
-
-<br />
-
-## Package : Production
-
-Customize and package your Electron app with OS-specific bundles (.app, .exe etc)
-
-```bash
-yarn package
-```
-
-<br />
-
-## Make : Production
-
-Making is a way of taking your packaged application and making platform specific distributables like DMG, EXE, or Flatpak files (amongst others).
-
-```bash
-yarn make
-```
-
-<br />
-
-## Publish : Production
-
-Publishing is a way of taking the artifacts generated by the `make` command and sending them to a service somewhere for you to distribute or use as updates. (This could be your update server or an S3 bucket)
-
-```bash
-yarn publish
-```
-
-<br />
-
-## Packager & Makers Configuration
-
-This provides an easy way of configuring your packaged application and making platform specific distributables like DMG, EXE, or Flatpak files.
-
-This configurations file is available in :
-
-```bash
-tools/forge/forge.config.js
-```
-
-For further information, you can visit [Electron Forge Configuration](https://www.electronforge.io/configuration)
+## Building from source
+1. Clone the repository to a folder on your machine: `git clone https://github.com/yonatanmgr/mathberet.git`
+2. Run `npm install` in the project root folder
+3. Run `npm start` in the project root folder
