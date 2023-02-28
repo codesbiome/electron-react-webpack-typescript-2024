@@ -4,6 +4,8 @@ import Page from './Page';
 import RightSidebar from './RightSidebar';
 import LeftSidebar from './LeftSidebar';
 import Header from './Header';
+import KBar from './KBar';
+
 
 const Application: React.FC = () => {
   const [darkTheme, setDarkTheme] = useState(true);
@@ -53,7 +55,7 @@ const Application: React.FC = () => {
       <Header/>
       <div className='workspace'>
         <RightSidebar/>
-        <Page/>
+        <Page />
         <LeftSidebar/>
       </div>
     </div>

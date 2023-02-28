@@ -84,6 +84,10 @@ button {
   align-items: center;
   outline: none;
 
+  &.tool{
+    background-color: #1A2428
+  }
+
   &:hover {
     background: var(--button-hover-bgcolor);
   }
@@ -117,77 +121,6 @@ button {
   text-align: center;
 }
 
-.main-teaser {
-  position: relative;
-  display: flex;
-  line-height: 25px;
-  font-size: 14px;
-  margin-bottom: 2em;
-  color: gray;
-  width: 63%;
-  margin: 0 auto;
-  margin-bottom: 3rem;
-  text-align: left;
-  padding-left: 1rem;
-  background: #191919;
-  padding-top: 1rem;
-  padding-bottom: 10px;
-  padding-right: 1rem;
-  border-radius: 0 0 8px 8px;
-  box-shadow: 0 8px 10px 0px #00000003;
-}
-
-.main-teaser:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: calc(100% + 40px);
-  height: 2px;
-  background: var(--app-accent-color);
-  left: -20px;
-  box-shadow: 0 10px 20px #000000e3;
-  border-radius: 8px;
-}
-
-.versions {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
-  border-radius: 10px;
-  box-shadow: 0 0 20px inset rgb(0 0 0 / 3%);
-  width: 80%;
-  margin: 0 auto;
-}
-
-.versions .item {
-  background: #191919;
-  color: #d1d1d1;
-  width: calc(50% - 1rem);
-  padding: 4px 12px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-  margin: 0;
-  box-sizing: border-box;
-  border-radius: 4px;
-
-  & > * {
-    display: flex;
-  }
-
-  &-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    opacity: 0.8;
-  }
-
-  & > span {
-    color: gray;
-    text-align: right;
-  }
-}
 
 #erwt {
   // user-select: none;
@@ -225,7 +158,7 @@ button {
       }
     
       .filepath{
-        font-size: 25px;
+        font-size: 23px;
         display: flex;
         flex-direction: row;
         direction: rtl;
@@ -236,9 +169,19 @@ button {
           font-weight: 600;
         }
       }
-    
+      
+      #logo{
+        fill: #d1d1d1;
+        display: block;
+        width: 45px;
+        height: 55%;
+      }
+
       .logo{
-        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
         height: 100%;
       }
     }
@@ -281,7 +224,6 @@ button {
 
         .tool{
           border-radius: 5px;
-          background-color: #1A2428;
           width: 40px;
           height: 40px;
         }

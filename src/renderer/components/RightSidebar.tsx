@@ -25,13 +25,8 @@ const SidebarButton: React.FC<{title: string, buttonType: string}> = ({buttonTyp
     );
 }
 
-type sidebarState = {isOpen: boolean}
 
-class RightSidebar extends React.Component<sidebarState> {
-    state: sidebarState = {
-        isOpen: false
-    }
-    
+class RightSidebar extends React.Component {
     render(): React.ReactNode {
         return (
             <div className='right-sidebar'>
