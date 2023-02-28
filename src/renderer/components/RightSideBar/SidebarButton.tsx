@@ -1,32 +1,30 @@
 import React from 'react';
 import '../Application.scss';
+import './RightSidebar.scss';
 
-type SidebarButtonProps = { title: string; buttonType: string, icon?:string };
+type SidebarButtonProps = {
+  title: string;
+  buttonType: string;
+  icon?: string;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
+};
 
-const SidebarButton = ({ buttonType, title,icon }: SidebarButtonProps) => {
+const SidebarButton = ({
+  buttonType,
+  title,
+  icon,
+  onClick,
+}: SidebarButtonProps) => {
   return (
     <div>
-    <button
-      title={title}
-      className='sidebar-button'
-      id={buttonType}
-      onClick={(event) => {
-        switch (event.currentTarget.id) {
-          case 'files':
-            document.querySelector('.right-sidebar').classList.toggle('open');
-            break;
-
-          case 'mathPanel':
-            document.querySelector('.left-sidebar').classList.toggle('open');
-            break;
-
-          default:
-            break;
-        }
-      }}
-    >
-      <img src={icon} alt={title}/>
-    </button>
+      <button
+        title={title}
+        className='sidebar-button'
+        id={buttonType}
+        onClick={onClick}
+      >
+        <img src={icon} alt={title} />
+      </button>
     </div>
   );
 };

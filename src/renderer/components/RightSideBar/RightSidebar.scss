@@ -1,4 +1,4 @@
-.right-sidebar{
+.right-sidebar {
   transition: 0.2s;
   width: 45px;
   min-width: 45px;
@@ -8,7 +8,7 @@
   flex-direction: column;
   direction: rtl;
   justify-content: space-between;
-  align-items: flex-start;     
+  align-items: flex-start;
 
   section {
     display: flex;
@@ -17,7 +17,7 @@
     align-items: flex-start;
     gap: 8px;
     transition: 0.2s;
-    .sidebar-button{
+    .sidebar-button {
       transition: 0.2s;
 
       width: 45px;
@@ -25,10 +25,9 @@
       border-radius: 15px;
     }
   }
-  section#top{
-
+  section#top {
   }
-  section#bottom{
+  section#bottom {
     padding-bottom: 10px;
   }
 }
