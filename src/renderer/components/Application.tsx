@@ -3,7 +3,7 @@ import './Application.scss';
 import Page from './Page';
 import RightSidebar from './RightSidebar';
 import LeftSidebar from './LeftSidebar';
-import Header from './Header';
+import Header from './Header/Header';
 import KBar from './KBar';
 
 
