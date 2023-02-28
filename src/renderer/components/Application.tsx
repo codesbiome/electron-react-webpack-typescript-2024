@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './Application.scss';
-import { icons } from './Icons';
+import Page from './Page';
+import RightSidebar from './RightSidebar';
+import LeftSidebar from './LeftSidebar';
+import Header from './Header';
 
 const Application: React.FC = () => {
-  const [counter, setCounter] = useState(0);
   const [darkTheme, setDarkTheme] = useState(true);
   const [versions, setVersions] = useState<Record<string, string>>({});
 
@@ -48,97 +50,11 @@ const Application: React.FC = () => {
 
   return (
     <div id='erwt'>
-      <div className='header'>
-        <div className='main-heading'>
-          <h1 className='themed'>ERWT - Electron Boilerplate</h1>
-        </div>
-        <div className='main-teaser'>
-          <div>
-            Robust boilerplate for Desktop Applications with Electron and
-            ReactJS.
-            <br />
-            Hot Reloading is used in this project for fast development
-            experience.
-            <br />
-            If you think the project is useful enough, just spread the word around!
-          </div>
-        </div>
-        <div className='versions'>
-          <div className='item'>
-            <div>
-              <img className='item-icon' src={icons.electron} /> Electron
-            </div>
-            <span>{versions?.electron}</span>
-          </div>
-          <div className='item'>
-            <div>
-              <img className='item-icon' src={icons.erwt} /> ERWT
-            </div>
-            <span>{versions?.erwt}</span>
-          </div>
-          <div className='item'>
-            <div>
-              <img className='item-icon' src={icons.typescript} /> Typescript
-            </div>
-            <span>{versions?.typescript}</span>
-          </div>
-          <div className='item'>
-            <div>
-              <img className='item-icon' src={icons.nodejs} /> Nodejs
-            </div>
-            <span>{versions?.node}</span>
-          </div>
-          <div className='item'>
-            <div>
-              <img className='item-icon' src={icons.react} /> React
-            </div>
-            <span>{versions?.react}</span>
-          </div>
-          <div className='item'>
-            <div>
-              <img className='item-icon' src={icons.webpack} /> Webpack
-            </div>
-            <span>{versions?.webpack}</span>
-          </div>
-          <div className='item'>
-            <div>
-              <img className='item-icon' src={icons.chrome} /> Chrome
-            </div>
-            <span>{versions?.chrome}</span>
-          </div>
-          <div className='item'>
-            <div>
-              <img className='item-icon' src={icons.license} /> License
-            </div>
-            <span>{versions?.license}</span>
-          </div>
-        </div>
-      </div>
-
-      <div className='footer'>
-        <div className='center'>
-          <button
-            onClick={() => {
-              if (counter > 99) return alert('Going too high!!');
-              setCounter(counter + 1);
-            }}
-          >
-            Increment {counter != 0 ? counter : ''} <span>{counter}</span>
-          </button>
-          &nbsp;&nbsp; &nbsp;&nbsp;
-          <button
-            onClick={() => {
-              if (counter == 0) return alert('Oops.. thats not possible!');
-              setCounter(counter > 0 ? counter - 1 : 0);
-            }}
-          >
-            Decrement <span>{counter}</span>
-          </button>
-          &nbsp;&nbsp; &nbsp;&nbsp;
-          <button onClick={toggleTheme}>
-            {darkTheme ? 'Light Theme' : 'Dark Theme'}
-          </button>
-        </div>
+      <Header/>
+      <div className='workspace'>
+        <RightSidebar/>
+        <Page/>
+        <LeftSidebar/>
       </div>
     </div>
   );
