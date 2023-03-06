@@ -7,6 +7,98 @@ https://github.com/codesbiome/electron-react-webpack-typescript-2021
 
 <br>
 
+### v7.3.1
+
+- Added missing eslint aliases
+- Removed unused repository sub-link from `misc/window`
+
+Upgraded outdated packages:
+
+| Package            | Version   |     |
+| ------------------ | --------- | --- |
+| electron           | `23.1.2`  | ⬆️  |
+| eslint             | `8.35.0`  | ⬆️  |
+| sass               | `1.58.3`  | ⬆️  |
+| @types/node        | `18.14.6` | ⬆️  |
+| @types/react       | `18.0.28` | ⬆️  |
+| @types/react-dom   | `18.0.11` | ⬆️  |
+| @typescript-eslint | `5.54.0`  | ⬆️  |
+
+<br>
+
+### v7.3.0
+
+- 🎉 Electron version upgraded `v23.0.0`
+- Upgraded outdated packages:
+  - `electron` upgraded to `v23.0.0`
+  - `@electron-forge` deps upgraded to `v6.0.5`
+  - `@typescript-eslint` deps upgraded to `v5.51.0`
+  - `css-loader` upgraded to `v6.7.3`
+  - `eslint` upgraded to `v8.33.0`
+  - `eslint-plugin-import` upgraded to `v2.27.5`
+  - `eslint-plugin-react` upgraded to `v7.32.2`
+  - `fork-ts-checker-webpack-plugin` upgraded to `v7.3.0`
+  - `sass` upgraded to `v1.58.0`
+  - `typescript` upgraded to `v4.9.5`
+
+<br>
+
+### v7.2.0
+
+- 🎉 Electron version upgraded `v22.0.0`
+- Upgraded outdated packages:
+  - `electron` upgraded to `v22.0.0`
+  - `@electron-forge` deps upgraded to `v6.0.4`
+  - `@pmmmwh/react-refresh-webpack-plugin` upgraded to `v0.5.10`
+  - `@typescript-eslint` deps upgraded to `v5.46.0`
+  - `css-loader` upgraded to `v6.7.2`
+  - `eslint` upgraded to `v8.29.0`
+  - `sass-loader` upgraded to `v13.2.0`
+  - `ts-loader` upgraded to `v9.4.2`
+  - `typescript` upgraded to `v4.9.4`
+  - `webpack` upgraded to `v5.75.0`
+
+<br>
+
+### v7.1.0
+
+- 🎉 Electron version upgraded to `v21.2.0`
+- Fixed Devtools Console warning message caused by content policy.
+- Upgraded forge config plugins format to support latest version.
+- Disabled `sandbox` by default in application window.
+- Upgraded outdated deps:
+  - `electron` upgraded to `v21.2.0`
+  - `@electron-forge` deps upgraded to `v6.0.0-beta.68`
+  - `@pmmmwh/react-refresh-webpack-plugin` upgraded to `v0.5.8`
+  - `@typescript-eslint` deps upgraded to `v5.41.0`
+  - `classnames` upgraded to `v2.3.2`
+  - `eslint` upgraded to `v8.26.0`
+  - `eslint-plugin-react` upgraded to `v7.31.10`
+  - `less-loader` upgraded to `v11.1.0`
+  - `sass` upgraded to `v1.55.0`
+  - `sass-loader` upgraded to `v13.1.0`
+  - `ts-loader` upgraded to `v9.4.1`
+  - `typescript` upgraded to `v4.8.4`
+
+<br>
+
+### v7.0.0
+
+- 🥳 New layout for default application.
+- 🤖 Overhaul for dark/light themes with new colors.
+- Fixed native modules compiling issue with update to related webpack loader.
+- Updated forge `devContentSecurityPolicy` config for electron window.
+- Upgraded outdated deps:
+  - `electron` upgraded to `v19.0.14`
+  - `@electron-forge` deps upgraded to `v6.0.0-beta.65`
+  - `@typescript-eslint` deps upgraded to `v5.36.1`
+  - `eslint` upgraded to `v8.23.0`
+  - `eslint-plugin-react` upgraded to `v7.30.1`
+  - `sass` upgrded to `v1.54.0`
+  - `typescript` upgraded to `v4.7.4`
+
+<br>
+
 ### v6.2.0
 
 - Upgraded outdated deps:
