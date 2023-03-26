@@ -7,6 +7,26 @@ https://github.com/codesbiome/electron-react-webpack-typescript-2022
 
 <br>
 
+### v7.3.2
+
+Upgraded outdated packages:
+
+| Package            | Version    |     |
+| ------------------ | ---------- | --- |
+| electron           | `23.2.0`   | ⬆️  |
+| eslint             | `8.36.0`   | ⬆️  |
+| sass               | `1.60.0`   | ⬆️  |
+| sass-loader        | `13.2.1`   | ⬆️  |
+| style-loader       | `3.3.2`    | ⬆️  |
+| typescript         | `5.0.2`    | ⬆️  |
+| webpack            | `5.76.3`   | ⬆️  |
+| @types/node        | `18.15.10` | ⬆️  |
+| @types/react       | `18.0.29`  | ⬆️  |
+| @types/react-dom   | `18.0.11`  | ⬆️  |
+| @typescript-eslint | `5.56.0`   | ⬆️  |
+
+<br>
+
 ### v7.3.1
 
 Upgraded outdated packages:
