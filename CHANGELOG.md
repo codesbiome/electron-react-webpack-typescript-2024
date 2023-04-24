@@ -3,7 +3,24 @@
 All notable changes to the project are listed here.
 
 For more information visit:
-https://github.com/codesbiome/electron-react-webpack-typescript-2022
+https://github.com/codesbiome/electron-react-webpack-typescript-2023
+
+<br>
+
+### v7.3.3
+
+Upgraded outdated packages:
+
+| Package            | Version  |     |
+| ------------------ | -------- | --- |
+| electron           | `24.1.2` | ⬆️  |
+| @electron-forge    | `6.1.1`  | ⬆️  |
+| @typescript-eslint | `5.59.0` | ⬆️  |
+| eslint             | `8.39.0` | ⬆️  |
+| sass               | `1.62.0` | ⬆️  |
+| sass-loader        | `13.2.2` | ⬆️  |
+| typescript         | `5.0.4`  | ⬆️  |
+| webpack            | `5.80.0` | ⬆️  |
 
 <br>
 

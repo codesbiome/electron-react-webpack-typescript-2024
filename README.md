@@ -1,13 +1,15 @@
-# Electron React Webpack Typescript (ERWT)
+# Electron React Webpack Typescript (Custom Titlebar)
 
-Electron React Webpack Typescript Boilerplate with Custom Window and Titlebar Menus.
+A minimal secure boilerplate for writing Desktop Applications using [Electron](https://www.electronjs.org/), [React](https://reactjs.org/), [Webpack](https://webpack.js.org/) & [TypeScript](https://www.typescriptlang.org/) with Custom Titlebar.
 
-A minimal secure boilerplate for writing Desktop Applications using [Electron](https://www.electronjs.org/), [React](https://reactjs.org/), [Webpack](https://webpack.js.org/) & [TypeScript](https://www.typescriptlang.org/). <br /> This project makes use of latest packages and configurations to serve the best environment for development.
+<br />
+
+This project makes use of latest packages and configuration for better development environment.
 
 <br>
 <img src="assets/images/animation.gif" />
 
-Special thanks to [@guasam](https://github.com/guasam) for their contribution regarding custom window titlebar, menus & themes.
+Special thanks to [@guasam](https://github.com/guasam) for their custom window titlebar and menus implementations.
 
 <br>
 

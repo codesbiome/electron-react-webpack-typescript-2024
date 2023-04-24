@@ -1,7 +1,7 @@
 {
   "name": "electron-react-typescript-webpack-2023",
   "productName": "ERWT Boilerplate",
-  "version": "7.3.2",
+  "version": "7.3.3",
   "description": "Custom boilerplate for writing Desktop Applications using Electron, React, Webpack, TypeScript in 2023",
   "main": ".webpack/main",
   "scripts": {
@@ -34,33 +34,33 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/codesbiome/electron-react-webpack-typescript-2022"
+    "url": "https://github.com/codesbiome/electron-react-webpack-typescript-2023"
   },
   "license": "MIT",
   "config": {
     "forge": "./tools/forge/forge.config.js"
   },
   "devDependencies": {
-    "@electron-forge/cli": "6.0.5",
-    "@electron-forge/maker-deb": "6.0.5",
-    "@electron-forge/maker-rpm": "6.0.5",
-    "@electron-forge/maker-squirrel": "6.0.5",
-    "@electron-forge/maker-zip": "6.0.5",
-    "@electron-forge/plugin-webpack": "6.0.5",
+    "@electron-forge/cli": "6.1.1",
+    "@electron-forge/maker-deb": "6.1.1",
+    "@electron-forge/maker-rpm": "6.1.1",
+    "@electron-forge/maker-squirrel": "6.1.1",
+    "@electron-forge/maker-zip": "6.1.1",
+    "@electron-forge/plugin-webpack": "6.1.1",
     "@marshallofsound/webpack-asset-relocator-loader": "^0.5.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
-    "@types/node": "^18.15.10",
-    "@types/react": "^18.0.29",
+    "@types/node": "^18.16.0",
+    "@types/react": "^18.0.38",
     "@types/react-dom": "^18.0.11",
     "@types/webpack-env": "^1.18.0",
-    "@typescript-eslint/eslint-plugin": "^5.56.0",
-    "@typescript-eslint/parser": "^5.56.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
     "@vercel/webpack-asset-relocator-loader": "^1.7.3",
     "classnames": "^2.3.2",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.3",
-    "electron": "^23.2.0",
-    "eslint": "^8.36.0",
+    "electron": "^24.1.2",
+    "eslint": "^8.39.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-react": "^7.32.2",
@@ -70,12 +70,12 @@
     "less-loader": "11.1.0",
     "node-loader": "^2.0.0",
     "react-refresh": "^0.14.0",
-    "sass": "^1.60.0",
-    "sass-loader": "^13.2.1",
+    "sass": "^1.62.0",
+    "sass-loader": "^13.2.2",
     "style-loader": "^3.3.2",
     "ts-loader": "9.4.2",
-    "typescript": "^5.0.2",
-    "webpack": "^5.76.3"
+    "typescript": "^5.0.4",
+    "webpack": "^5.80.0"
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
