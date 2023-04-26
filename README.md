@@ -15,7 +15,7 @@ Special thanks to [@guasam](https://github.com/guasam) for their custom window t
 Introducing the [ElectroVite](https://github.com/guasam/electrovite-react) project with a brief description below.
 
 > A prebuilt project for creating desktop apps using Electron, React, ViteJS with blazing fast hot-reload, easy to use custom import aliases & executable builds for distribution.
-This can be a really good alternative for this project, as it comes with ViteJS bundler which provides blazing fast hot reloads & solid performance boosts for app building process.
+
 
 
 
