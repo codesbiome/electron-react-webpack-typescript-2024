@@ -2,9 +2,6 @@
 
 A minimal secure boilerplate for writing Desktop Applications using [Electron](https://www.electronjs.org/), [React](https://reactjs.org/), [Webpack](https://webpack.js.org/) & [TypeScript](https://www.typescriptlang.org/) with Custom Titlebar.
 
-<br />
-
-This project makes use of latest packages and configuration for better development environment.
 
 <br>
 <img src="assets/images/animation.gif" />
@@ -12,6 +9,18 @@ This project makes use of latest packages and configuration for better developme
 Special thanks to [@guasam](https://github.com/guasam) for their custom window titlebar and menus implementations.
 
 <br>
+
+### <img src="https://github.com/guasam/electrovite-react/raw/main/assets/electrovite-round.png" width="32" align="top" /> &nbsp;  Want to use ViteJS instead of Webpack? 
+
+Introducing the [ElectroVite](https://github.com/guasam/electrovite-react) project with a brief description below.
+
+> A prebuilt project for creating desktop apps using Electron, React, ViteJS with blazing fast hot-reload, easy to use custom import aliases & executable builds for distribution.
+This can be a really good alternative for this project, as it comes with ViteJS bundler which provides blazing fast hot reloads & solid performance boosts for app building process.
+
+
+
+<br>
+
 
 # Custom Electron Window Titlebar & Menus etc.
 
