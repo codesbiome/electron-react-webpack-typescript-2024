@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -2292,7 +2292,7 @@ packages:
       fs-extra: 9.1.0
       get-folder-size: 2.0.1
       lodash: 4.17.21
-      word-wrap: 1.2.3
+      word-wrap: 1.2.4
       yargs: 15.4.1
     transitivePeerDependencies:
       - supports-color
@@ -2311,7 +2311,7 @@ packages:
       electron-installer-common: 0.10.3
       fs-extra: 9.1.0
       lodash: 4.17.21
-      word-wrap: 1.2.3
+      word-wrap: 1.2.4
       yargs: 16.2.0
     transitivePeerDependencies:
       - supports-color
@@ -6513,10 +6513,9 @@ packages:
     resolution: {integrity: sha512-CC1bOL87PIWSBhDcTrdeLo6eGT7mCFtrg0uIJtqJUFyK+eJnzl8A1niH56uu7KMa5XFrtiV+AQuHO3n7DsHnLQ==}
     dev: true
 
-  /word-wrap@1.2.3:
-    resolution: {integrity: sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==}
+  /word-wrap@1.2.4:
+    resolution: {integrity: sha512-2V81OA4ugVo5pRo46hAoD2ivUJx8jXmWXfUkY4KFNw0hEptvN0QfH3K4nHiwzGeKl5rFKedV48QVoqYavy4YpA==}
     engines: {node: '>=0.10.0'}
-    requiresBuild: true
     dev: true
     optional: true
 
