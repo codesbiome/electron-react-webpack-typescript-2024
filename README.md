@@ -6,7 +6,7 @@ A minimal secure boilerplate for writing Desktop Applications using [Electron](h
 <br>
 <img src="assets/images/animation.gif" />
 
-Special thanks to [@guasam](https://github.com/guasam) for their custom window titlebar and menus implementations.
+Special thanks to [@guasam](https://github.com/guasam) for Custom Window Titlebar and Menus modules.
 
 <br>
 
