@@ -7,6 +7,27 @@ https://github.com/codesbiome/electron-react-webpack-typescript-2023
 
 <br>
 
+### v7.8.0
+
+Upgraded outdated packages:
+
+| Package                        | Version  |
+| ------------------------------ | -------- |
+| electron                       | `27.1.2` |
+| @electron-forge                | `7.1.0`  |
+| @typescript-eslint             | `6.13.1` |
+| eslint-plugin-import           | `2.29.0` |
+| eslint                         | `8.54.0` |
+| less                           | `4.2.0`  |
+| sass                           | `1.69.5` |
+| ts-loader                      | `9.5.1`  |
+| typescript                     | `5.3.2`  |
+| webpack                        | `5.89.0` |
+| react-refresh-webpack-plugin   | `0.5.11` |
+| fork-ts-checker-webpack-plugin | `9.0.2`  |
+
+<br>
+
 ### v7.7.0
 
 Upgraded outdated packages:
