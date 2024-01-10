@@ -1,0 +1,71 @@
+/*
+ *=========================================================================
+ * ERWT Light Theme
+ *=========================================================================
+ *
+ * Light theme for ERWT application.
+ */
+
+body:not(.dark-mode) {
+  // Application
+  --app-accent-color: #2f77ca;
+  --app-bgcolor: #f1f0f0;
+
+  // Selection
+  --selection-bgcolor: var(--app-accent-color);
+  --selection-color: #fff;
+
+  // Scrollbar
+  --scroll-track-bgcolor: #2f2f2f1f;
+  --scroll-thumb-bgcolor: rgb(59 59 59 / 30%);
+  --scroll-thumb-hover-bgcolor: var(--app-accent-color);
+
+  // Button
+  --button-border: 1px solid #eaeaea;
+  --button-bgcolor: #fff;
+  --button-color: #424242;
+  --button-shadow-color: white;
+  --button-hover-bgcolor: hsl(0, 0%, 98%);
+  --button-active-bgcolor: hsl(0, 0%, 96%);
+
+  // Titlebar
+  --titlebar-bgcolor: #dcddde;
+  --titlebar-color: #1f1f1f;
+  --titlebar-title-color: var(--titlebar-color);
+  --titlebar-menu-title-hover-bgcolor: #e6e6e6;
+  --titlebar-popup-item-hover-bgcolor: hsl(210deg 16% 92%);
+  --titlebar-popup-bgcolor: hsl(0deg 0% 99%);
+  --titlebar-menu-title-active-bgcolor: hsl(0deg 0% 99%);
+  --titlebar-menu-title-active-border-color: #d3d6d8;
+  --titlebar-popup-border: 1px solid #d3d6d8;
+  --titlebar-menu-separator-bgcolor: #d3d6d8;
+  --titlebar-popup-item-hover-bgcolor: #d6dade;
+  --titlebar-popup-item-name-color: #0e0e0e;
+  --titlebar-popup-item-name-shadow-color: rgba(255, 255, 255, 0.8);
+  --titlebar-popup-item-hover-color: #000000;
+  --titlebar-popup-item-hover-shortcut-color: var(--app-accent-color);
+  --titlebar-popup-item-hover-bgcolor: #e6e6e6;
+
+  // ERWT
+  --erwt-heading-color: #282828;
+
+  // Overrides
+  .main-teaser {
+    background: #fff;
+    color: #747474;
+
+    &:after {
+      box-shadow: none;
+    }
+  }
+
+  .versions .item {
+    color: #656565;
+    background: #fff;
+    box-shadow: 0 2px 4px #00000005;
+
+    &>span {
+      color: #999999;
+    }
+  }
+}

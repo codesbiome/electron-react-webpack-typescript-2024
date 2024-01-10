@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import './Application.scss';
-import { icons } from './Icons';
+import '@styles/app.scss';
+import icons from '@components/icons';
 
 const Application: React.FC = () => {
   const [counter, setCounter] = useState(0);

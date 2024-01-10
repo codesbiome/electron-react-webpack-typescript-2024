@@ -7,7 +7,7 @@ import nodejs from '@assets/icons/nodejs.png';
 import webpack from '@assets/icons/webpack.png';
 import license from '@assets/icons/license.png';
 
-export const icons = {
+export default {
   chrome,
   react,
   typescript,
