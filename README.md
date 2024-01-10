@@ -4,14 +4,13 @@ A minimal secure boilerplate for writing Desktop Applications using [Electron](h
 
 <br>
 <img src="assets/images/anim_v8.gif" />
-
 <br>
 
 Special thanks to [@guasam](https://github.com/guasam) for development of Custom Window, Titlebar, UI/UX etc.
 
 <br>
 
-# Core Features
+## Core Features
 
 - 🌟 Electron
 - 🌀 TypeScript
@@ -33,7 +32,7 @@ Special thanks to [@guasam](https://github.com/guasam) for development of Custom
 
 <br>
 
-# Custom Electron Window Titlebar & Menus
+## Custom Electron Window Titlebar & Menus
 
 This project includes [electron-window](https://github.com/guasam/electron-window) as core of custom window components and modules.
 
@@ -48,7 +47,7 @@ This project includes [electron-window](https://github.com/guasam/electron-windo
 
 <br>
 
-## Custom Aliases for Paths
+### Custom Aliases for Paths
 
 We can use predefined aliases for `import` paths already used in this project. Following are the details:
 
@@ -65,7 +64,7 @@ We can use predefined aliases for `import` paths already used in this project. F
 
 <br>
 
-## Want to use Vite instead of Webpack bundler?
+### Want to use Vite instead of Webpack bundler?
 
 Introducing the [ElectroVite](https://github.com/guasam/electrovite-react) project with a brief description below.
 
@@ -73,7 +72,7 @@ A prebuilt project for creating desktop apps using Electron, React, ViteJS with 
 
 <br>
 
-# Installation
+## Installation
 
 ![status](https://img.shields.io/badge/ERWT-Main%20Version-blue.svg)
 
