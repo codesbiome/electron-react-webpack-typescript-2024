@@ -1,7 +1,6 @@
 # Electron React Webpack Typescript (Custom Titlebar)
 
-A minimal secure boilerplate for writing Desktop Applications using [Electron](https://www.electronjs.org/), [React](https://reactjs.org/), [Webpack](https://webpack.js.org/) & [TypeScript](https://www.typescriptlang.org/) with Custom Titlebar.
-
+A minimal secure boilerplate for writing Desktop Applications using [Electron](https://www.electronjs.org/), [React](https://reactjs.org/), [Webpack](https://webpack.js.org/) & [TypeScript](https://www.typescriptlang.org/) with Custom Window Titlebar.
 
 <br>
 <img src="assets/images/anim_v8.gif" />
@@ -12,21 +11,17 @@ Special thanks to [@guasam](https://github.com/guasam) for development of Custom
 
 <br>
 
-### <img src="https://github.com/guasam/electrovite-react/raw/main/assets/electrovite-round.png" width="32" align="top" /> &nbsp;  Want to use Vite instead of Webpack bundler?
+### <img src="https://github.com/guasam/electrovite-react/raw/main/assets/electrovite-round.png" width="32" align="top" /> &nbsp; Want to use Vite instead of Webpack bundler?
 
 Introducing the [ElectroVite](https://github.com/guasam/electrovite-react) project with a brief description below.
 
 > A prebuilt project for creating desktop apps using Electron, React, ViteJS with blazing fast hot-reload, easy to use custom import aliases & executable builds for distribution.
 
-
-
-
 <br>
 
+# Custom Electron Window Titlebar & Menus
 
-# Custom Electron Window Titlebar & Menus etc.
-
-This project includes [electron-window](https://github.com/guasam/electron-window) for creating custom window components.
+This project includes [electron-window](https://github.com/guasam/electron-window) as core of custom window components and modules.
 
 **Following are the list of features it provides :**
 
@@ -34,8 +29,8 @@ This project includes [electron-window](https://github.com/guasam/electron-windo
 - Easily changable platform specific controls for max/min/close buttons using `windows` or `mac` value for `platform` property with `<WindowFrame>` in renderer.
 - Titlebar menus can show/hide by pressing `alt` or `option` key.
 - Window frame `title` prop displays in titlebar center when menus are toggeled off.
-- Menu entries can be customized in `misc/window/titlebarMenus.ts` file.
-- Menu items and windows controls layout or colors can be customized easily by modifying the `misc/window` modules.
+- Menu entries can be customized in `src/main/window/titlebarMenus.ts` file.
+- Menu items and windows controls UI or colors can be customized easily by modifying the `src/renderer/window` components & styles.
 
 <br><br>
 
@@ -45,7 +40,6 @@ This project includes [electron-window](https://github.com/guasam/electron-windo
 - 🌀 TypeScript
 - ⚛️ React
 - 🥗 SASS/SCSS Loader
-- 🛶 LESS Loader (optional)
 - 🎨 CSS Loader
 - 📸 Image Loader
 - 🆎 Font Loader
@@ -72,7 +66,7 @@ We can use predefined aliases for `import` paths already used in this project. F
 | `@main`       | `/src/main`                |
 | `@renderer`   | `/src/renderer`            |
 | `@common`     | `/src/common`              |
-| `@misc`       | `/misc`                    |
+| `@styles`     | `/src/renderer/styles`     |
 | `@src`        | `/src`                     |
 | `@components` | `/src/renderer/components` |
 
