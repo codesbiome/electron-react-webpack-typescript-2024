@@ -4,13 +4,15 @@ A minimal secure boilerplate for writing Desktop Applications using [Electron](h
 
 
 <br>
-<img src="assets/images/animation.gif" />
-
-Special thanks to [@guasam](https://github.com/guasam) for Custom Window Titlebar and Menus modules.
+<img src="assets/images/anim_v8.gif" />
 
 <br>
 
-### <img src="https://github.com/guasam/electrovite-react/raw/main/assets/electrovite-round.png" width="32" align="top" /> &nbsp;  Want to use ViteJS instead of Webpack? 
+Special thanks to [@guasam](https://github.com/guasam) for development of Custom Window, Titlebar, UI/UX etc.
+
+<br>
+
+### <img src="https://github.com/guasam/electrovite-react/raw/main/assets/electrovite-round.png" width="32" align="top" /> &nbsp;  Want to use Vite instead of Webpack bundler?
 
 Introducing the [ElectroVite](https://github.com/guasam/electrovite-react) project with a brief description below.
 
