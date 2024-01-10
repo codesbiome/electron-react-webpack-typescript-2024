@@ -16,7 +16,7 @@ import classNames from 'classnames';
 import WindowControls from './WindowControls';
 import context from '@main/window/titlebarContextApi';
 import { WindowContext } from './WindowFrame';
-import './Titlebar.less';
+import './titlebar.scss';
 
 type Props = {
   title: string;
