@@ -11,29 +11,6 @@ Special thanks to [@guasam](https://github.com/guasam) for development of Custom
 
 <br>
 
-### <img src="https://github.com/guasam/electrovite-react/raw/main/assets/electrovite-round.png" width="32" align="top" /> &nbsp; Want to use Vite instead of Webpack bundler?
-
-Introducing the [ElectroVite](https://github.com/guasam/electrovite-react) project with a brief description below.
-
-> A prebuilt project for creating desktop apps using Electron, React, ViteJS with blazing fast hot-reload, easy to use custom import aliases & executable builds for distribution.
-
-<br>
-
-# Custom Electron Window Titlebar & Menus
-
-This project includes [electron-window](https://github.com/guasam/electron-window) as core of custom window components and modules.
-
-**Following are the list of features it provides :**
-
-- Custom Titlebar for Electron Window.
-- Easily changable platform specific controls for max/min/close buttons using `windows` or `mac` value for `platform` property with `<WindowFrame>` in renderer.
-- Titlebar menus can show/hide by pressing `alt` or `option` key.
-- Window frame `title` prop displays in titlebar center when menus are toggeled off.
-- Menu entries can be customized in `src/main/window/titlebarMenus.ts` file.
-- Menu items and windows controls UI or colors can be customized easily by modifying the `src/renderer/window` components & styles.
-
-<br><br>
-
 # Core Features
 
 - 🌟 Electron
@@ -56,6 +33,21 @@ This project includes [electron-window](https://github.com/guasam/electron-windo
 
 <br>
 
+# Custom Electron Window Titlebar & Menus
+
+This project includes [electron-window](https://github.com/guasam/electron-window) as core of custom window components and modules.
+
+**Following are the list of features it provides :**
+
+- Custom Titlebar for Electron Window.
+- Easily changable platform specific controls for max/min/close buttons using `windows` or `mac` value for `platform` property with `<WindowFrame>` in renderer.
+- Titlebar menus can show/hide by pressing `alt` or `option` key.
+- Window frame `title` prop displays in titlebar center when menus are toggeled off.
+- Menu entries can be customized in `src/main/window/titlebarMenus.ts` file.
+- Menu items and windows controls UI or colors can be customized easily by modifying the `src/renderer/window` components & styles.
+
+<br>
+
 ## Custom Aliases for Paths
 
 We can use predefined aliases for `import` paths already used in this project. Following are the details:
@@ -70,7 +62,16 @@ We can use predefined aliases for `import` paths already used in this project. F
 | `@styles`     | `/src/renderer/styles`     |
 | `@components` | `/src/renderer/components` |
 
-<br><br>
+
+<br>
+
+## Want to use Vite instead of Webpack bundler?
+
+Introducing the [ElectroVite](https://github.com/guasam/electrovite-react) project with a brief description below.
+
+A prebuilt project for creating desktop apps using Electron, React, ViteJS with blazing fast hot-reload, easy to use custom import aliases & executable builds for distribution.
+
+<br>
 
 # Installation
 
