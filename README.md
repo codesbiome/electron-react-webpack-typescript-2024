@@ -1,41 +1,15 @@
 # Electron React Webpack Typescript (Custom Titlebar)
 
-A minimal secure boilerplate for writing Desktop Applications using [Electron](https://www.electronjs.org/), [React](https://reactjs.org/), [Webpack](https://webpack.js.org/) & [TypeScript](https://www.typescriptlang.org/) with Custom Titlebar.
-
+A minimal secure boilerplate for writing Desktop Applications using [Electron](https://www.electronjs.org/), [React](https://reactjs.org/), [Webpack](https://webpack.js.org/) & [TypeScript](https://www.typescriptlang.org/) with Custom Window Titlebar.
 
 <br>
-<img src="assets/images/animation.gif" />
-
-Special thanks to [@guasam](https://github.com/guasam) for Custom Window Titlebar and Menus modules.
+<img src="assets/images/anim_v8.gif" />
 
 <br>
 
-### <img src="https://github.com/guasam/electrovite-react/raw/main/assets/electrovite-round.png" width="32" align="top" /> &nbsp;  Want to use ViteJS instead of Webpack? 
-
-Introducing the [ElectroVite](https://github.com/guasam/electrovite-react) project with a brief description below.
-
-> A prebuilt project for creating desktop apps using Electron, React, ViteJS with blazing fast hot-reload, easy to use custom import aliases & executable builds for distribution.
-
-
-
+Special thanks to [@guasam](https://github.com/guasam) for development of Custom Window, Titlebar, UI/UX etc.
 
 <br>
-
-
-# Custom Electron Window Titlebar & Menus etc.
-
-This project includes [electron-window](https://github.com/guasam/electron-window) for creating custom window components.
-
-**Following are the list of features it provides :**
-
-- Custom Titlebar for Electron Window.
-- Easily changable platform specific controls for max/min/close buttons using `windows` or `mac` value for `platform` property with `<WindowFrame>` in renderer.
-- Titlebar menus can show/hide by pressing `alt` or `option` key.
-- Window frame `title` prop displays in titlebar center when menus are toggeled off.
-- Menu entries can be customized in `misc/window/titlebarMenus.ts` file.
-- Menu items and windows controls layout or colors can be customized easily by modifying the `misc/window` modules.
-
-<br><br>
 
 # Core Features
 
@@ -43,7 +17,6 @@ This project includes [electron-window](https://github.com/guasam/electron-windo
 - 🌀 TypeScript
 - ⚛️ React
 - 🥗 SASS/SCSS Loader
-- 🛶 LESS Loader (optional)
 - 🎨 CSS Loader
 - 📸 Image Loader
 - 🆎 Font Loader
@@ -60,6 +33,21 @@ This project includes [electron-window](https://github.com/guasam/electron-windo
 
 <br>
 
+# Custom Electron Window Titlebar & Menus
+
+This project includes [electron-window](https://github.com/guasam/electron-window) as core of custom window components and modules.
+
+**Following are the list of features it provides :**
+
+- Custom Titlebar for Electron Window.
+- Easily changable platform specific controls for max/min/close buttons using `windows` or `mac` value for `platform` property with `<WindowFrame>` in renderer.
+- Titlebar menus can show/hide by pressing `alt` or `option` key.
+- Window frame `title` prop displays in titlebar center when menus are toggeled off.
+- Menu entries can be customized in `src/main/window/titlebarMenus.ts` file.
+- Menu items and windows controls UI or colors can be customized easily by modifying the `src/renderer/window` components & styles.
+
+<br>
+
 ## Custom Aliases for Paths
 
 We can use predefined aliases for `import` paths already used in this project. Following are the details:
@@ -70,11 +58,20 @@ We can use predefined aliases for `import` paths already used in this project. F
 | `@main`       | `/src/main`                |
 | `@renderer`   | `/src/renderer`            |
 | `@common`     | `/src/common`              |
-| `@misc`       | `/misc`                    |
 | `@src`        | `/src`                     |
+| `@styles`     | `/src/renderer/styles`     |
 | `@components` | `/src/renderer/components` |
 
-<br><br>
+
+<br>
+
+## Want to use Vite instead of Webpack bundler?
+
+Introducing the [ElectroVite](https://github.com/guasam/electrovite-react) project with a brief description below.
+
+A prebuilt project for creating desktop apps using Electron, React, ViteJS with blazing fast hot-reload, easy to use custom import aliases & executable builds for distribution.
+
+<br>
 
 # Installation
 
@@ -83,7 +80,7 @@ We can use predefined aliases for `import` paths already used in this project. F
 Main version of this project contains files structure in separate context for `main` and `renderer`, with custom electron window, titlebar etc.
 
 ```bash
-git clone https://github.com/codesbiome/electron-react-webpack-typescript-2023
+git clone https://github.com/codesbiome/electron-react-webpack-typescript-2024
 ```
 
 <br>
@@ -97,7 +94,7 @@ git clone https://github.com/codesbiome/electron-react-webpack-typescript-2023
 Minimal version of ERWT contains very simple project files structure, no custom window, no custom titlebar & menus.
 
 ```bash
-git clone -b minimal https://github.com/codesbiome/electron-react-webpack-typescript-2023
+git clone -b minimal https://github.com/codesbiome/electron-react-webpack-typescript-2024
 ```
 
 <br>

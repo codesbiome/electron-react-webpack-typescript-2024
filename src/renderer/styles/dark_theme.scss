@@ -1,0 +1,57 @@
+/*
+ *=========================================================================
+ * ERWT Dark Theme
+ *=========================================================================
+ *
+ * Here we define the Dark Theme (stylesheet) for application.
+ */
+
+:root {
+  // Application
+  --app-accent-color: #27954f;
+  --app-font-size: 16px;
+  --app-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --app-bgcolor: #1d1d1d;
+  --app-border-color: #3b3f44;
+
+  // Scrollbar
+  --scroll-width: 10px;
+  --scroll-track-bgcolor: #2f2f2f52;
+  --scroll-thumb-bgcolor: rgba(59, 59, 59, 0.747);
+  --scroll-thumb-hover-bgcolor: #555;
+
+  // Selection
+  --selection-bgcolor: var(--app-accent-color);
+  --selection-color: #fff;
+
+  // Button
+  --button-color: #fff;
+  --button-border: 1px solid #222424;
+  --button-bgcolor: hsl(0, 0%, 22%);
+  --button-hover-bgcolor: hsl(0, 0%, 24%);
+  --button-active-bgcolor: hsl(0deg 0% 20%);
+  --button-shadow-color: #00000078;
+
+  // Titlebar
+  --titlebar-bgcolor: #252525;
+  --titlebar-color: hsl(0, 0%, 85%);
+  --titlebar-title-color: hsl(0, 0%, 85%);
+  --titlebar-menu-border-color: #2d2c2c;
+  --titlebar-menu-title-hover-bgcolor: hsl(0deg 0% 12%);
+  --titlebar-menu-title-active-bgcolor: #1e1e1e;
+  --titlebar-menu-title-active-border-color: var(--titlebar-menu-border-color);
+  --titlebar-menu-separator-bgcolor: var(--titlebar-menu-border-color);
+  --titlebar-popup-bgcolor: #1e1e1e;
+  --titlebar-popup-border: 1px solid var(--titlebar-menu-border-color);
+  --titlebar-popup-shadow: 4px 10px 10px rgba(0, 0, 0, 0.2);
+  --titlebar-popup-item-name-color: hsl(0, 0%, 75%);
+  --titlebar-popup-item-shortcut-color: hsla(0, 0%, 55%, 0.8);
+  --titlebar-popup-item-hover-color: hsl(0, 0%, 85%);
+  --titlebar-popup-item-hover-bgcolor: hsl(0 0% 16.22%);
+  --titlebar-popup-item-hover-shortcut-color: var(--app-accent-color);
+  --titlebar-popup-item-name-shadow-color: #151515;
+
+  // ERWT
+  --erwt-heading-color: #ddddddec;
+}

@@ -1,4 +1,4 @@
-import '@misc/window/windowPreload';
+import '@main/window/windowPreload';
 
 // Say something
 console.log('[ERWT] : Preload execution started');

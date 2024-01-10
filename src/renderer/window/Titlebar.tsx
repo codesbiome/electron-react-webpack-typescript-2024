@@ -11,12 +11,12 @@
  */
 
 import React, { createRef, useContext, useEffect, useRef, useState } from 'react';
-import titlebarMenus from '../titlebarMenus';
+import titlebarMenus from '@main/window/titlebarMenus';
 import classNames from 'classnames';
 import WindowControls from './WindowControls';
-import context from '../titlebarContextApi';
+import context from '@main/window/titlebarContextApi';
 import { WindowContext } from './WindowFrame';
-import './Titlebar.less';
+import './titlebar.scss';
 
 type Props = {
   title: string;

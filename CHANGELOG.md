@@ -3,7 +3,24 @@
 All notable changes to the project are listed here.
 
 For more information visit:
-https://github.com/codesbiome/electron-react-webpack-typescript-2023
+https://github.com/codesbiome/electron-react-webpack-typescript-2024
+
+<br>
+
+### v8.0.0
+
+- 🎉 Application UI and Themes (light/dark).
+- Using latest Electron version `v28`
+- Changed app accent colors & added credits menu item.
+- Integrated `electron-window` components & modules in project's file structure.
+- Separated dark/light themes from application stylesheet for easy modification.
+- Added `@styles` alias for easily import stylesheets.
+- Removed `less-loader` by default from project.
+- Removed unused `misc` directory.
+- Removed unused `src/common` directory.
+- Converted `less` to `scss` for window components stylesheet.
+- Updated forge config with more useful hints.
+- Upgraded outdated packages to their latest supported versions.
 
 <br>
 

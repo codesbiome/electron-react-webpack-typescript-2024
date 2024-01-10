@@ -7,7 +7,8 @@
  * @package : Application Sass Stylesheet
 */
 
-@import './Theme.scss';
+@import './dark_theme.scss';
+@import './light_theme.scss';
 
 /**
  *==========================================================================
@@ -53,6 +54,14 @@ body {
   line-height: 1.5;
 }
 
+/* Grid texture */
+body {
+  background-size: 32px 32px;
+  background-image:
+    linear-gradient(to right, #7070700d 1px, transparent 1px),
+    linear-gradient(to bottom, #7070700d 1px, transparent 1px);
+}
+
 h1 {
   margin: 0;
 }
@@ -88,10 +97,12 @@ button {
   &:hover {
     background: var(--button-hover-bgcolor);
   }
+
   &:active {
     background: var(--button-active-bgcolor);
   }
-  & > span {
+
+  &>span {
     color: var(--button-badge-color);
     background-color: var(--button-badge-bgcolor);
     font-size: 12px;
@@ -124,7 +135,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 
   img {
     margin-right: 1rem;
@@ -132,7 +143,7 @@ button {
 
   h1 {
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--erwt-heading-color);
     line-height: 1;
     text-transform: uppercase;
@@ -152,30 +163,26 @@ button {
   display: flex;
   line-height: 25px;
   font-size: 14px;
-  margin-bottom: 2em;
-  color: gray;
-  width: 63%;
+  color: #d8d8d894;
+  width: 60%;
   margin: 0 auto;
   margin-bottom: 3rem;
-  text-align: left;
-  padding-left: 1rem;
-  background: #191919;
-  padding-top: 1rem;
-  padding-bottom: 10px;
+  justify-content: center;
+  padding: 1rem;
   padding-right: 1rem;
   border-radius: 0 0 8px 8px;
-  box-shadow: 0 8px 10px 0px #00000003;
+  box-shadow: 0 8px 10px 0px rgba(0, 0, 0, 0.01);
 }
 
 .main-teaser:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   width: calc(100% + 40px);
-  height: 2px;
+  height: 1px;
   background: var(--app-accent-color);
   left: -20px;
-  box-shadow: 0 10px 20px #000000e3;
+  box-shadow: 0 10px 20px 1px rgb(0 0 0 / 85%);
   border-radius: 8px;
 }
 
@@ -194,7 +201,7 @@ button {
   background: #191919;
   color: #d1d1d1;
   width: calc(50% - 1rem);
-  padding: 4px 12px;
+  padding: 6px 12px;
   display: flex;
   justify-content: space-between;
   font-size: 14px;
@@ -202,7 +209,7 @@ button {
   box-sizing: border-box;
   border-radius: 4px;
 
-  & > * {
+  &>* {
     display: flex;
   }
 
@@ -213,7 +220,7 @@ button {
     opacity: 0.8;
   }
 
-  & > span {
+  &>span {
     color: gray;
     text-align: right;
   }
@@ -228,22 +235,22 @@ button {
   background: var(--erwt-gradient);
 
   .header {
-    padding: 3rem 2rem 0rem 2rem;
+    padding: 4rem 2rem 0rem 2rem;
     max-width: 700px;
     margin: 0 auto;
   }
+
   .footer {
     padding: 2rem;
     background: var(--app-footer-bgColor);
+    padding-bottom: 3rem;
   }
 }
 
 /**
  *==========================================================================
- * Titlebar Overrides
+ * Titlebar Overrides for different themes
  *==========================================================================
- *
- * Here we override color, style, layout sizes for custom electron window
  */
 
 .window-titlebar {
@@ -253,6 +260,7 @@ button {
 
   &-icon {
     min-height: 33px;
+
     img {
       border-radius: 50%;
     }

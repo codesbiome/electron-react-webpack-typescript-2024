@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import './Application.scss';
-import { icons } from './Icons';
+import '@styles/app.scss';
+import icons from '@components/icons';
 
 const Application: React.FC = () => {
   const [counter, setCounter] = useState(0);
@@ -53,15 +53,7 @@ const Application: React.FC = () => {
           <h1 className='themed'>ERWT - Electron Boilerplate</h1>
         </div>
         <div className='main-teaser'>
-          <div>
-            Robust boilerplate for Desktop Applications with Electron and
-            ReactJS.
-            <br />
-            Hot Reloading is used in this project for fast development
-            experience.
-            <br />
-            If you think the project is useful enough, just spread the word around!
-          </div>
+          Desktop Application with Electron, React, Webpack & TypeScript
         </div>
         <div className='versions'>
           <div className='item'>
