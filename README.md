@@ -66,8 +66,8 @@ We can use predefined aliases for `import` paths already used in this project. F
 | `@main`       | `/src/main`                |
 | `@renderer`   | `/src/renderer`            |
 | `@common`     | `/src/common`              |
-| `@styles`     | `/src/renderer/styles`     |
 | `@src`        | `/src`                     |
+| `@styles`     | `/src/renderer/styles`     |
 | `@components` | `/src/renderer/components` |
 
 <br><br>
@@ -93,7 +93,7 @@ git clone https://github.com/codesbiome/electron-react-webpack-typescript-2023
 Minimal version of ERWT contains very simple project files structure, no custom window, no custom titlebar & menus.
 
 ```bash
-git clone -b minimal https://github.com/codesbiome/electron-react-webpack-typescript-2023
+git clone -b minimal https://github.com/codesbiome/electron-react-webpack-typescript-2024
 ```
 
 <br>
