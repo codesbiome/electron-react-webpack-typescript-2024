@@ -60,7 +60,8 @@ const Application: React.FC = () => {
             Hot Reloading is used in this project for fast development
             experience.
             <br />
-            If you think the project is useful enough, just spread the word around!
+            If you think the project is useful enough, just spread the word
+            around!
           </div>
         </div>
         <div className='versions'>

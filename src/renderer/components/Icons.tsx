@@ -15,5 +15,5 @@ export const icons = {
   electron,
   nodejs,
   webpack,
-  license
+  license,
 };
