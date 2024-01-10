@@ -1,6 +1,6 @@
 # Electron React Webpack Typescript (Custom Titlebar)
 
-A minimal secure boilerplate for writing Desktop Applications using [Electron](https://www.electronjs.org/), [React](https://reactjs.org/), [Webpack](https://webpack.js.org/) & [TypeScript](https://www.typescriptlang.org/) with Custom Window Titlebar.
+A prebuilt project for creating desktop apps using Electron, React, Webpack & Typescript with hot-reload, easy to use custom import aliases & executable builds for distribution.
 
 <br>
 <img src="assets/images/anim_v8.gif" />
@@ -67,8 +67,6 @@ We can use predefined aliases for `import` paths already used in this project. F
 ### Want to use Vite instead of Webpack bundler?
 
 Introducing the [ElectroVite](https://github.com/guasam/electrovite-react) project with a brief description below.
-
-A prebuilt project for creating desktop apps using Electron, React, ViteJS with blazing fast hot-reload, easy to use custom import aliases & executable builds for distribution.
 
 <br>
 
