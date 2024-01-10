@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import WindowFrame from '@misc/window/components/WindowFrame';
+import WindowFrame from '@renderer/window/WindowFrame';
 import Application from '@components/Application';
 
 // Say something
