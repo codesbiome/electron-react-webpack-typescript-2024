@@ -140,7 +140,7 @@ const titlebarMenus: TitlebarMenu[] = [
     ],
   },
   {
-    name: 'Author',
+    name: 'Credits',
     items: [
       {
         name: 'Guasam',
