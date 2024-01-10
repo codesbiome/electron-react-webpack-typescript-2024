@@ -8,9 +8,9 @@ module.exports = {
     // Create asar archive for main, renderer process files
     asar: true,
     // Set executable name
-    executableName: 'ERWT Boilerplate',
+    executableName: 'ERWT',
     // Set application copyright
-    appCopyright: 'Copyright (C) 2021 Codesbiome, Guasam',
+    appCopyright: '© 2021-2024 Codesbiome, Guasam',
     // Set application icon
     icon: path.resolve('assets/images/appIcon.ico'),
   },
@@ -51,9 +51,10 @@ module.exports = {
         // Fix content-security-policy error when image or video src isn't same origin
         // Remove 'unsafe-eval' to get rid of console warning in development mode.
         devContentSecurityPolicy: `default-src 'self' 'unsafe-inline' data:; script-src 'self' 'unsafe-inline' data:`,
-        // Ports
-        port: 3000, // Webpack Dev Server port
-        loggerPort: 9000, // Logger port
+        // Webpack Dev Server port
+        port: 3000,
+        // Logger port
+        loggerPort: 9000,
         // Main process webpack configuration
         mainConfig: path.join(rootDir, 'tools/webpack/webpack.main.js'),
         // Renderer process webpack configuration
@@ -69,10 +70,9 @@ module.exports = {
               rhmr: 'react-hot-loader/patch',
               // HTML index file template
               html: path.join(rootDir, 'src/renderer/app.html'),
-              // Renderer
+              // App Renderer
               js: path.join(rootDir, 'src/renderer/appRenderer.tsx'),
-              // Main Window
-              // Preload
+              // App Preload
               preload: {
                 js: path.join(rootDir, 'src/renderer/appPreload.tsx'),
               },
