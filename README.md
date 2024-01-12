@@ -26,6 +26,7 @@ Special thanks to [@guasam](https://github.com/guasam) for development of Custom
 - 📐 Custom Window Menubar
 - 🔱 Webpack & Configuration
 - 🧩 Aliases for Project Paths
+- 🗡️ Native (node) Modules Support
 - 🔥 React Fast Refresh + Webpack HMR
 - 🌞 Dark Mode + Light Mode (Theme)
 - 🎁 Package Bundling (Distribution / Release)
