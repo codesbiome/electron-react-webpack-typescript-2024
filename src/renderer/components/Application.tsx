@@ -20,7 +20,7 @@ const Application: React.FC = () => {
       setDarkTheme(false);
     }
 
-    // Apply verisons
+    // Apply versions
     const app = document.getElementById('app');
     const versions = JSON.parse(app.getAttribute('data-versions'));
     setVersions(versions);
