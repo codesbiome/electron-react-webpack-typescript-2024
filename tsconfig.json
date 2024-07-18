@@ -21,6 +21,7 @@
       "@renderer/*": ["./src/renderer/*"],
       "@src/*": ["./src/*"],
       "@misc/*": ["./misc/*"],
+      "@styles/*": ["./src/renderer/styles/*"]
     }
   },
   "include": ["src/**/*", "tools/**/*"]
