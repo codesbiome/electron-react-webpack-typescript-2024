@@ -29,7 +29,7 @@ body:not(.dark-mode) {
   --button-active-bgcolor: hsl(0, 0%, 96%);
 
   // Titlebar
-  --titlebar-bgcolor: #fff;
+  --titlebar-bgcolor: #d5d5d5c4;
   --titlebar-color: #1f1f1f;
   --titlebar-title-color: var(--titlebar-color);
   --titlebar-menu-title-hover-bgcolor: #e6e6e69e;
@@ -58,8 +58,7 @@ body:not(.dark-mode) {
 
   .versions .item {
     color: #656565;
-    background: #ffffffa2;
-    box-shadow: 0 2px 4px #00000005;
+    background: #ffffff5e;
 
     &>span {
       color: #999999;
