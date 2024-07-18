@@ -7,6 +7,34 @@ https://github.com/codesbiome/electron-react-webpack-typescript-2024
 
 <br>
 
+### v8.1.0
+
+- 🎉 Electron version upgraded `v23.0.0`.
+- Using `eslint.config.json` as eslint configuration.
+- Tweaked app themes colors.
+- Upgraded outdated packages:
+
+| Package                              | Version   |
+| ------------------------------------ | --------- |
+| electron                             | `^31.2.1` |
+| @electron-forge                      | `7.4.0`   |
+| electron-squirrel-startup            | `^1.0.1`  |
+| @pmmmwh/react-refresh-webpack-plugin | `^0.5.15` |
+| @typescript-eslint                   | `^7.16.1` |
+| css-loader                           | `^7.1.2`  |
+| eslint                               | `^9.7.0`  |
+| eslint-plugin-react                  | `^7.34.4` |
+| react-refresh                        | `^0.14.2` |
+| sass                                 | `^1.77.8` |
+| sass-loader                          | `^14.2.1` |
+| style-loader                         | `^4.0.0`  |
+| typescript                           | `^5.5.3`  |
+| webpack                              | `^5.93.0` |
+| react                                | `^18.3.1` |
+| react-dom                            | `^18.3.1` |
+
+<br>
+
 ### v8.0.0
 
 - 🎉 Application UI and Themes (light/dark).
