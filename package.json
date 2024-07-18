@@ -1,7 +1,7 @@
 {
   "name": "erwt",
   "productName": "ERWT",
-  "version": "8.0.0",
+  "version": "8.1.0",
   "description": "Robust project for developing Desktop Application with Electron, React, Webpack & TypeScript.",
   "main": ".webpack/main",
   "scripts": {
